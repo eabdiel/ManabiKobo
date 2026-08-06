@@ -9,9 +9,10 @@ Manabi Kōbō is a bilingual English–Japanese and Spanish–Japanese Flask lea
 - Unified Manabi Kōbō branding and professional color system
 - English and Spanish routes
 - Kana Dojo, Kanji tools, study plan, tracker, phrase decks, reading aid, sentence builder, audio companion, and furigana game resources
-- Tech & Office Talk replacing the former Gaki section
-- Shared draggable, horizontally resizable, minimizable tile framework
+- Tech & Office Talk with professional workplace and software-delivery phrases
+- Shared draggable, two-dimensionally resizable, minimizable tile framework
 - Browser-local layout persistence across supported workbench pages
+- Scrollable tile bodies when resized below their content height
 - Responsive desktop and mobile application shell
 
 ## Quick start

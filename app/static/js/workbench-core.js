@@ -1,5 +1,5 @@
-/* Manabi Kōbō shared workbench foundation v1.1
-   Adds consistent two-dimensional resizing and size persistence to every tile. */
+/* Manabi Kōbō shared workbench foundation v1.3
+   One contract for drag, minimize, two-dimensional resize, scrollable overflow, reset, and explicit save. */
 (() => {
   const adapters = [
     ['.native-canvas','[data-native-tile]','.native-tile-toolbar','.native-drag-handle','.native-minimize'],
@@ -22,24 +22,52 @@
         if (minimize) minimize.dataset.mkMinimize = '';
         const body = [...tile.children].find(child => child !== toolbar && !child.classList.contains('mk-resize-corner'));
         if (body) body.dataset.mkBody = '';
+
+        // Only content-heavy information surfaces receive the larger 3x2 default.
+        // Interactive control, notes, Kana Dojo, radicals, and sentence-builder tiles keep their own defaults.
+        const pageSlug = document.body.dataset.page || '';
+        const tileId = tile.dataset.mkTile;
+        const informational =
+          (tileId === 'calendar' && pageSlug === 'tracker') ||
+          (tileId === 'deck' && ['phrases-1','phrases-2','reading-aid','frequency-deck'].includes(pageSlug)) ||
+          (['mt-calendar','mt-syllabus','mt-reference','games-table'].includes(tileId));
+        if (informational) tile.classList.add('mk-information-tile');
       });
     });
   });
 
   const page = document.body.dataset.page || 'page';
   const lang = document.body.dataset.lang || 'en';
+  const canvasApis = [];
+
+  const notify = (message) => {
+    let toast = document.querySelector('.mk-layout-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'mk-layout-toast';
+      toast.setAttribute('role', 'status');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('is-visible');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => toast.classList.remove('is-visible'), 2200);
+  };
 
   document.querySelectorAll('[data-mk-canvas]').forEach((canvas, canvasIndex) => {
-    const storageKey = `mk:v2:layout:${lang}:${page}:${canvas.dataset.mkCanvas || canvasIndex}`;
+    const storageKey = `mk:v4:layout:${lang}:${page}:${canvas.dataset.mkCanvas || canvasIndex}`;
     const tiles = () => [...canvas.querySelectorAll(':scope > [data-mk-tile]')];
 
     const save = () => {
-      const state = tiles().map(tile => ({
+      const state = tiles().map((tile, order) => ({
         id: tile.dataset.mkTile,
+        order,
         width: tile.style.width || tile.style.flexBasis || '',
-        height: tile.style.height || ''
+        height: tile.style.height || '',
+        minimized: tile.classList.contains('is-minimized')
       }));
       try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (_) {}
+      return state;
     };
 
     const restore = () => {
@@ -47,17 +75,32 @@
       try { state = JSON.parse(localStorage.getItem(storageKey) || '[]'); } catch (_) {}
       if (!Array.isArray(state)) return;
       const byId = new Map(tiles().map(tile => [tile.dataset.mkTile, tile]));
-      state.forEach(item => {
+      state.sort((a,b) => (a.order ?? 0) - (b.order ?? 0)).forEach(item => {
         const tile = byId.get(item.id);
         if (!tile) return;
         canvas.appendChild(tile);
+        tile.classList.toggle('is-minimized', Boolean(item.minimized));
+        const button = tile.querySelector('[data-mk-minimize]');
+        if (button) button.textContent = item.minimized ? '+' : '−';
         if (window.innerWidth > 760) {
           if (item.width) {
             tile.style.width = item.width;
             tile.style.flexBasis = item.width;
           }
-          if (item.height) tile.style.height = item.height;
+          if (item.height && !item.minimized) tile.style.height = item.height;
         }
+      });
+    };
+
+    const reset = () => {
+      try { localStorage.removeItem(storageKey); } catch (_) {}
+      tiles().forEach(tile => {
+        tile.style.removeProperty('width');
+        tile.style.removeProperty('height');
+        tile.style.removeProperty('flex-basis');
+        tile.classList.remove('is-minimized');
+        const button = tile.querySelector('[data-mk-minimize]');
+        if (button) button.textContent = '−';
       });
     };
 
@@ -77,52 +120,44 @@
         if (matchMedia('(max-width:760px)').matches || tile.classList.contains('is-minimized')) return;
         const rect = tile.getBoundingClientRect();
         const canvasRect = canvas.getBoundingClientRect();
-        resizeState = {
-          pointerId: event.pointerId,
-          startX: event.clientX,
-          startY: event.clientY,
-          startWidth: rect.width,
-          startHeight: rect.height,
-          maxWidth: Math.max(280, canvasRect.width - 2)
-        };
+        resizeState = { pointerId:event.pointerId, startX:event.clientX, startY:event.clientY, startWidth:rect.width, startHeight:rect.height, maxWidth:Math.max(280, canvasRect.width - 2) };
         tile.classList.add('is-mk-resizing');
         handle.setPointerCapture?.(event.pointerId);
         event.preventDefault();
         event.stopPropagation();
       });
-
       handle.addEventListener('pointermove', event => {
         if (!resizeState) return;
         const minWidth = tile.dataset.mkTile === 'board' || tile.dataset.mkTile === 'calendar' ? 320 : 260;
-        const minHeight = 130;
         const width = Math.max(minWidth, Math.min(resizeState.maxWidth, resizeState.startWidth + event.clientX - resizeState.startX));
-        const height = Math.max(minHeight, resizeState.startHeight + event.clientY - resizeState.startY);
+        const height = Math.max(130, resizeState.startHeight + event.clientY - resizeState.startY);
         tile.style.width = `${Math.round(width)}px`;
         tile.style.flexBasis = `${Math.round(width)}px`;
         tile.style.height = `${Math.round(height)}px`;
       });
-
       const finishResize = () => {
         if (!resizeState) return;
         resizeState = null;
         tile.classList.remove('is-mk-resizing');
-        save();
       };
       handle.addEventListener('pointerup', finishResize);
       handle.addEventListener('pointercancel', finishResize);
     });
 
-    canvas.addEventListener('dragend', () => setTimeout(save, 0));
     restore();
+    canvasApis.push({save, reset});
 
     const resetIds = ['kana-layout-reset','study-layout-reset','tracker-layout-reset','phrase-layout-reset','native-layout-reset'];
-    resetIds.forEach(id => document.getElementById(id)?.addEventListener('click', () => {
-      try { localStorage.removeItem(storageKey); } catch (_) {}
-      tiles().forEach(tile => {
-        tile.style.removeProperty('width');
-        tile.style.removeProperty('height');
-        tile.style.removeProperty('flex-basis');
-      });
-    }, {capture:true}));
+    resetIds.forEach(id => document.getElementById(id)?.addEventListener('click', () => reset(), {capture:true}));
   });
+
+  document.querySelectorAll('[data-mk-save-layout]').forEach(button => button.addEventListener('click', () => {
+    canvasApis.forEach(api => api.save());
+    notify(lang === 'es' ? 'Diseño guardado en este navegador.' : 'Layout saved in this browser.');
+  }));
+
+  document.querySelectorAll('[data-mk-reset-page]').forEach(button => button.addEventListener('click', () => {
+    canvasApis.forEach(api => api.reset());
+    notify(lang === 'es' ? 'Diseño restablecido.' : 'Layout reset.');
+  }));
 })();

@@ -15,6 +15,7 @@
   <header class="kana-native__header">
     <div><span class="status-dot"></span><strong>{{ kana.workspace_title }}</strong><small>{{ kana.workspace_note }}</small></div>
     <div class="kana-native__actions">
+      <button class="workbench-button workbench-button--primary" type="button" data-mk-save-layout>▣ {{ 'Save layout' if lang=='en' else 'Guardar diseño' }}</button>
       <button class="workbench-button workbench-button--quiet" id="kana-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button>
       <button class="workbench-button workbench-button--quiet" id="kana-reset" type="button">↻ {{ 'Reset session' if lang=='en' else 'Reiniciar sesión' }}</button>
     </div>

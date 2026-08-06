@@ -12,7 +12,7 @@ from flask import Blueprint, abort, current_app, jsonify, redirect, render_templ
 from app.data.kana_dojo import get_kana_dojo_content
 from app.data.tracker import get_tracker_content
 from app.data.phrases import get_phrase_deck
-from app.data.study_tools import get_study_plan, get_study_tool
+from app.data.study_tools import get_study_tool
 from app.data.native_tools import get_native_tool
 from app.services.page_service import get_legacy_filename, get_page, is_valid_language, navigation_pages
 
@@ -48,7 +48,7 @@ def tool_page(lang: str, slug: str):
     page = get_page(slug)
     if not page or slug == "home":
         abort(404)
-    template_name = {"kana-dojo": "kana_dojo.html", "tracker": "tracker.html", "phrases-1": "phrases.html", "phrases-2": "phrases.html", "tech-office-talk": "phrases.html", "reading-aid": "study_tool.html", "frequency-deck": "study_tool.html", "90-day-plan": "study_plan.html", "kanji-hub": "native_tool.html", "radicals": "native_tool.html", "sentence-builder": "native_tool.html", "audio-companion": "native_tool.html", "furigana-games": "native_tool.html"}.get(slug, "tool.html")
+    template_name = {"kana-dojo": "kana_dojo.html", "tracker": "tracker.html", "phrases-1": "phrases.html", "phrases-2": "phrases.html", "tech-office-talk": "phrases.html", "reading-aid": "study_tool.html", "frequency-deck": "study_tool.html", "kanji-hub": "native_tool.html", "radicals": "native_tool.html", "sentence-builder": "native_tool.html", "audio-companion": "native_tool.html", "furigana-games": "native_tool.html"}.get(slug, "tool.html")
     context = {
         "lang": lang,
         "current": page,
@@ -62,8 +62,6 @@ def tool_page(lang: str, slug: str):
         context["deck"] = get_phrase_deck(slug, lang)
     elif slug in {"reading-aid", "frequency-deck"}:
         context["study"] = get_study_tool(slug, lang)
-    elif slug == "90-day-plan":
-        context["plan"] = get_study_plan(lang)
     elif slug in {"kanji-hub", "radicals", "sentence-builder", "audio-companion", "furigana-games"}:
         context["native"] = get_native_tool(slug, lang)
     return render_template(template_name, **context)

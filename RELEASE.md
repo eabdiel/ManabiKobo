@@ -168,3 +168,60 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `app/templates/phrases.html`
 - `app/templates/tracker.html`
 - `RELEASE.md`
+
+## v1.0.4 — Layout Persistence and Content Cleanup
+
+### Changes
+- Removed the redundant Study Plan page and navigation entry; the 90-Day Tracker is now the canonical 90-day study experience.
+- Removed the remaining Gaki no Tsukai/Gaki Style pages, route mappings, navigation links, study-plan phase, and legacy sitemap references.
+- Replaced the placeholder Gaki-derived Tech & Office Talk deck with an original professional starter deck for meetings, support, testing, deployment, code review, requirements, and workplace communication.
+- Added a visible **Save Layout** button to every draggable workbench, including the home dashboard.
+- Layout saves now persist tile order, width, height, and minimized state in browser local storage.
+- Added a home-dashboard reset control and a shared save/reset confirmation message.
+- Incremented the shared layout-storage schema to `mk:v3` to avoid conflicts with older partial layouts.
+
+### Modified files and directories
+- `app/data/pages.py`
+- `app/data/phrases.py`
+- `app/data/phrase_content.json`
+- `app/data/study_tools.py`
+- `app/routes/core.py`
+- `app/static/js/workbench-core.js`
+- `app/static/js/workspace.js`
+- `app/static/css/workbench.css`
+- `app/templates/home.html`
+- `app/templates/kana_dojo.html`
+- `app/templates/native_tool.html`
+- `app/templates/phrases.html`
+- `app/templates/study_tool.html`
+- `app/templates/tracker.html`
+- `app/static/legacy/` navigation and sitemap cleanup
+- `README.md`
+- `RELEASE.md`
+
+### Removed files
+- `app/templates/study_plan.html`
+- `app/data/study_plan_content.json`
+- `app/static/legacy/think_in_japanese_part6_90_day_plan.html`
+- `app/static/legacy/think_in_japanese_part6_90_day_plan_es.html`
+- `app/static/legacy/think_in_japanese_100_gaki_style_phrases_part3.html`
+- `app/static/legacy/think_in_japanese_100_gaki_style_phrases_part3_es.html`
+
+
+## v1.0.5 — Scrollable Resized Tiles and Informational Defaults
+
+### Changes
+- Resized tile bodies now receive their own vertical and horizontal scrollbars whenever content exceeds the available tile canvas.
+- Tile toolbars remain visible while the body scrolls, so drag, minimize, and resize controls remain reachable.
+- Added a shared informational-tile classification rather than page-specific overflow patches.
+- Content-heavy calendar, phrase-deck, reading/frequency, course-reference, and games-table tiles now open at a desktop default sized to show approximately six cards in a 3-column by 2-row viewport.
+- Kept interactive control and notes tiles at their existing sizes. Kana Dojo, Kanji Radicals, and Sentence Builder retain their specialized default layouts.
+- The 90-Day Tracker calendar uses the informational default and remains fully scrollable after the user makes it smaller.
+- Mobile layouts continue to use natural page height instead of nested tile scrolling.
+- Incremented layout storage to `mk:v4` so previously saved undersized layouts do not hide the corrected defaults.
+
+### Modified files
+- `app/static/css/workbench.css`
+- `app/static/js/workbench-core.js`
+- `README.md`
+- `RELEASE.md`

@@ -33,10 +33,3 @@ def get_study_tool(slug: str, lang: str) -> dict:
     }[slug][lang]
     return {**data, "slug": slug, "heading": labels[0], "subtitle": labels[1]}
 
-def get_study_plan(lang: str) -> dict:
-    return {
-        "slug": "90-day-plan",
-        "title": "Study Plan" if lang == "en" else "Plan de estudio",
-        "subtitle": "A practical 90-day sequence for building Japanese habits." if lang == "en" else "Una secuencia práctica de 90 días para crear hábitos de japonés.",
-        "sections": _plan_data()[lang],
-    }
