@@ -1,65 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Manabi Kōbō IDE</title>
-<style>
-body { font-family: Segoe UI, sans-serif; background:#f8f4ec; }
-.panel { background:white; border-radius:14px; padding:20px; margin:10px; }
-.layout { display:grid; grid-template-columns:260px 1fr 360px; gap:10px; }
-.editor { height:500px; background:#fff; padding:20px; }
-</style>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Language Engineering IDE{% endblock %}
 
-<div class="panel">
-<h1>MANABI KŌBŌ IDE</h1>
-<p>Language Engineering Workspace</p>
+{% block content %}
+<div class="ide-shell">
+
+<header class="ide-banner">
+    <div>
+        <div class="kicker">LANGUAGE ENGINEERING</div>
+        <h1>Manabi Kōbō IDE</h1>
+        <p>Build. Compile. Debug. Improve Japanese.</p>
+    </div>
+</header>
+
+<section class="ide-grid">
+
+<aside class="ide-sidebar">
+<h3>Project Progress</h3>
+<div class="cat-panel">
+🐱
+<p>Japanese Level</p>
+<strong>N5 Beginner</strong>
 </div>
 
-<div class="layout">
-
-<div class="panel">
-<h3>Project Explorer</h3>
 <ul>
-<li>Restaurant_Order</li>
-<li>Vocabulary</li>
-<li>Tests</li>
+<li>✓ Greeting Module</li>
+<li>◯ Restaurant API</li>
+<li>◯ Standup Project</li>
 </ul>
+</aside>
 
-<h3>Progress</h3>
-<p>N5 Beginner</p>
-<p>Project: Restaurant API</p>
+<section class="ide-editor">
+<div class="ide-toolbar">
+<button>▶ Run Compile</button>
+<button>⚙ Debug</button>
+<button>↻ Refactor</button>
 </div>
 
-<div class="panel editor">
+<div class="editor-panel">
 <h3>main.mkpl</h3>
 <pre>
-project Restaurant_Order
+project Restaurant_Order_System
 
-import japanese.restaurant
+import japanese.business
+import restaurant.vocabulary
 
-function order_food():
+function take_order(customer,item):
 
- customer.say(
-   "menu onegaishimasu"
- )
+    customer.say(
+        "sumimasen, menu onegaishimasu"
+    )
 
 compile japanese.polite
 </pre>
 </div>
+</section>
+
+<aside class="ide-output">
 
 <div class="panel">
 <h3>Compiler Output</h3>
-<p>✓ Compilation Successful</p>
-
-<h3>Diagnostics</h3>
+<p class="success">✓ Compilation Successful</p>
 <p>Naturalness Warning</p>
+</div>
 
+<div class="panel">
 <h3>Vocabulary Library</h3>
-<p>restaurant.vocabulary</p>
+<ul>
+<li>注文する - to order</li>
+<li>おすすめ - recommendation</li>
+<li>メニュー - menu</li>
+</ul>
 </div>
 
-</div>
+</aside>
 
-</body>
-</html>
+</section>
+
+<section class="translation-panel">
+<h3>Language Runtime Output</h3>
+<p>すみません、メニューをお願いします。</p>
+<p>Sumimasen, menyū o onegaishimasu.</p>
+<button>Explain</button>
+<button>Listen</button>
+</section>
+
+</div>
+{% endblock %}
