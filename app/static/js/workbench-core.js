@@ -29,7 +29,8 @@
         const tileId = tile.dataset.mkTile;
         const informational =
           (tileId === 'calendar' && pageSlug === 'tracker') ||
-          (tileId === 'deck' && ['phrases-1','phrases-2','reading-aid','frequency-deck'].includes(pageSlug)) ||
+          (tileId === 'deck' && ['phrases-1','phrases-2','tech-office-talk','reading-aid','frequency-deck'].includes(pageSlug)) ||
+          (tileId === 'workspace' && pageSlug === 'kanji-hub') ||
           (['mt-calendar','mt-syllabus','mt-reference','games-table'].includes(tileId));
         if (informational) tile.classList.add('mk-information-tile');
       });
@@ -55,7 +56,7 @@
   };
 
   document.querySelectorAll('[data-mk-canvas]').forEach((canvas, canvasIndex) => {
-    const storageKey = `mk:v4:layout:${lang}:${page}:${canvas.dataset.mkCanvas || canvasIndex}`;
+    const storageKey = `mk:v5:layout:${lang}:${page}:${canvas.dataset.mkCanvas || canvasIndex}`;
     const tiles = () => [...canvas.querySelectorAll(':scope > [data-mk-tile]')];
 
     const save = () => {

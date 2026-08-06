@@ -12,7 +12,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 18,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "コン、キン",
+      "kunyomi": "いま",
+      "anchor_sentence": "今、この瞬間です。",
+      "anchor_furigana": "いま、このしゅんかんです。",
+      "anchor_meaning": "Now means this exact moment."
     },
     {
       "rank": 2,
@@ -26,7 +31,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 18,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "カ",
+      "kunyomi": "なに、なん",
+      "anchor_sentence": "「何」は、物や答えをたずねる言葉です。",
+      "anchor_furigana": "「なに」は、ものやこたえをたずねることばです。",
+      "anchor_meaning": "何 means “what” and asks about a thing or an answer."
     },
     {
       "rank": 3,
@@ -40,7 +50,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 14,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ゲン、ゴン",
+      "kunyomi": "い.う、こと",
+      "anchor_sentence": "「言う」は、言葉を口に出すことです。",
+      "anchor_furigana": "「いう」は、ことばをくちにだすことです。",
+      "anchor_meaning": "To say means to put words into speech."
     },
     {
       "rank": 4,
@@ -54,7 +69,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 13,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ニチ、ジツ",
+      "kunyomi": "ひ、か",
+      "anchor_sentence": "「日」は、一日や太陽を表します。",
+      "anchor_furigana": "「ひ」は、いちにちやたいようをあらわします。",
+      "anchor_meaning": "日 represents a day or the sun."
     },
     {
       "rank": 5,
@@ -68,7 +88,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 7,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "キ、ケ",
+      "kunyomi": "—",
+      "anchor_sentence": "「気」は、気持ちや心の状態を表します。",
+      "anchor_furigana": "「き」は、きもちやこころのじょうたいをあらわします。",
+      "anchor_meaning": "気 represents a feeling, mood, or state of mind."
     },
     {
       "rank": 6,
@@ -82,7 +107,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 6,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "イチ、イツ",
+      "kunyomi": "ひと、ひと.つ",
+      "anchor_sentence": "「一」は、最初の一つです。",
+      "anchor_furigana": "「いち」は、さいしょのひとつです。",
+      "anchor_meaning": "一 is one: the first single item."
     },
     {
       "rank": 7,
@@ -96,7 +126,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 6,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "カイ、エ",
+      "kunyomi": "まわ.る、まわ.す",
+      "anchor_sentence": "「一回」は、一度という意味です。",
+      "anchor_furigana": "「いっかい」は、いちどといういみです。",
+      "anchor_meaning": "一回 means one time or once."
     },
     {
       "rank": 8,
@@ -110,7 +145,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 6,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "カン、ケン",
+      "kunyomi": "あいだ、ま",
+      "anchor_sentence": "「間」は、二つの物のあいだです。",
+      "anchor_furigana": "「あいだ」は、ふたつのもののあいだです。",
+      "anchor_meaning": "間 is the space or interval between two things."
     },
     {
       "rank": 9,
@@ -124,7 +164,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 6,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "シ",
+      "kunyomi": "おも.う",
+      "anchor_sentence": "「思う」は、心の中で考えることです。",
+      "anchor_furigana": "「おもう」は、こころのなかでかんがえることです。",
+      "anchor_meaning": "To think means to consider something in your mind."
     },
     {
       "rank": 10,
@@ -138,7 +183,12 @@
       "bucket": "W readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 6,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ショウ",
+      "kunyomi": "わら.う、え.む",
+      "anchor_sentence": "「笑う」は、うれしさを声や顔に出すことです。",
+      "anchor_furigana": "「わらう」は、うれしさをこえやかおにだすことです。",
+      "anchor_meaning": "To laugh is to show happiness through your voice or face."
     },
     {
       "rank": 11,
@@ -152,7 +202,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 5,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ゴウ、ガッ、カッ",
+      "kunyomi": "あ.う、あ.わせる",
+      "anchor_sentence": "「合う」は、二つの物がぴったり一致することです。",
+      "anchor_furigana": "「あう」は、ふたつのものがぴったりいっちすることです。",
+      "anchor_meaning": "To fit or match means two things agree exactly."
     },
     {
       "rank": 12,
@@ -166,7 +221,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 5,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "イ",
+      "kunyomi": "—",
+      "anchor_sentence": "「意」は、考えや気持ちを表します。",
+      "anchor_furigana": "「い」は、かんがえやきもちをあらわします。",
+      "anchor_meaning": "意 represents an idea, intention, or feeling."
     },
     {
       "rank": 13,
@@ -180,7 +240,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 5,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ミ",
+      "kunyomi": "あじ、あじ.わう",
+      "anchor_sentence": "どういう意味？",
+      "anchor_furigana": "",
+      "anchor_meaning": "What does that mean?"
     },
     {
       "rank": 14,
@@ -194,7 +259,12 @@
       "bucket": "R readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 5,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "リ",
+      "kunyomi": "—",
+      "anchor_sentence": "今日は無理かも。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Today might be impossible."
     },
     {
       "rank": 15,
@@ -208,7 +278,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "メイ、ミョウ",
+      "kunyomi": "あ.かり、あか.るい、あ.ける",
+      "anchor_sentence": "説明して。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Explain it."
     },
     {
       "rank": 16,
@@ -222,7 +297,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "イ",
+      "kunyomi": "ちが.う、ちが.える",
+      "anchor_sentence": "何か違う気がする。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Something feels off."
     },
     {
       "rank": 17,
@@ -236,7 +316,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ダイ、タイ",
+      "kunyomi": "おお、おお.きい",
+      "anchor_sentence": "それは大事やろ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That part matters, though."
     },
     {
       "rank": 18,
@@ -250,7 +335,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "コウ、ギョウ、アン",
+      "kunyomi": "い.く、ゆ.く、おこな.う",
+      "anchor_sentence": "そろそろ行こう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's get going soon."
     },
     {
       "rank": 19,
@@ -264,7 +354,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ガン",
+      "kunyomi": "かお",
+      "anchor_sentence": "なんちゅう顔してんねん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "What kind of face is that?"
     },
     {
       "rank": 20,
@@ -278,7 +373,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "シン",
+      "kunyomi": "ま",
+      "anchor_sentence": "急に真面目になるな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Don't suddenly get serious."
     },
     {
       "rank": 21,
@@ -292,7 +392,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ケン",
+      "kunyomi": "み.る、み.える、み.せる",
+      "anchor_sentence": "ログ見てみよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's check the log."
     },
     {
       "rank": 22,
@@ -306,7 +411,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ム、ブ",
+      "kunyomi": "な.い",
+      "anchor_sentence": "今日は無理かも。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Today might be impossible."
     },
     {
       "rank": 23,
@@ -320,7 +430,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "シュウ",
+      "kunyomi": "お.わる、お.える",
+      "anchor_sentence": "終わり方おかしい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That ending was weird."
     },
     {
       "rank": 24,
@@ -334,7 +449,12 @@
       "bucket": "Y readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 4,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "キュウ",
+      "kunyomi": "やす.む、やす.める",
+      "anchor_sentence": "ちょっと休憩しよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's take a quick break."
     },
     {
       "rank": 25,
@@ -348,7 +468,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "フク",
+      "kunyomi": "はら",
+      "anchor_sentence": "お腹すいた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm hungry."
     },
     {
       "rank": 26,
@@ -362,7 +487,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "カン",
+      "kunyomi": "—",
+      "anchor_sentence": "なんかいい感じ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "It feels pretty good."
     },
     {
       "rank": 27,
@@ -376,7 +506,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "コウ",
+      "kunyomi": "かんが.える",
+      "anchor_sentence": "ちょっと考えよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let me think for a second."
     },
     {
       "rank": 28,
@@ -390,7 +525,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ホウ",
+      "kunyomi": "かた",
+      "anchor_sentence": "今の言い方、いいね。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That way of saying it was nice."
     },
     {
       "rank": 29,
@@ -404,7 +544,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "フ",
+      "kunyomi": "こわ.い",
+      "anchor_sentence": "怖い怖い。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Scary, scary."
     },
     {
       "rank": 30,
@@ -418,7 +563,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ライ",
+      "kunyomi": "く.る、きた.る",
+      "anchor_sentence": "急に来るな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Don't come at me suddenly."
     },
     {
       "rank": 31,
@@ -432,7 +582,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "メイ",
+      "kunyomi": "まよ.う",
+      "anchor_sentence": "迷ったかも。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I might be lost."
     },
     {
       "rank": 32,
@@ -446,7 +601,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "シン",
+      "kunyomi": "ね.る、ね.かす",
+      "anchor_sentence": "今日は早く寝よう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'll sleep early today."
     },
     {
       "rank": 33,
@@ -460,7 +620,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ミン",
+      "kunyomi": "ねむ.る、ねむ.い",
+      "anchor_sentence": "眠すぎる。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm way too sleepy."
     },
     {
       "rank": 34,
@@ -474,7 +639,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ショウ",
+      "kunyomi": "すく.ない、すこ.し",
+      "anchor_sentence": "もう少しだけ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Just a little more."
     },
     {
       "rank": 35,
@@ -488,7 +658,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ジョ",
+      "kunyomi": "たす.ける、たす.かる",
+      "anchor_sentence": "これは助かる。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This helps a lot."
     },
     {
       "rank": 36,
@@ -502,7 +677,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ヒ",
+      "kunyomi": "つか.れる",
+      "anchor_sentence": "すごく疲れた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm really tired."
     },
     {
       "rank": 37,
@@ -516,7 +696,12 @@
       "bucket": "W readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "ブン、フン、ブ",
+      "kunyomi": "わ.ける、わ.かる",
+      "anchor_sentence": "意味が分からない。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I don't understand what it means."
     },
     {
       "rank": 38,
@@ -530,7 +715,12 @@
       "bucket": "Y readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 3,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "アン",
+      "kunyomi": "やす.い",
+      "anchor_sentence": "安っ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Whoa, cheap."
     },
     {
       "rank": 39,
@@ -544,7 +734,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "アク、オ",
+      "kunyomi": "わる.い",
+      "anchor_sentence": "タイミング悪いわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Bad timing."
     },
     {
       "rank": 40,
@@ -558,7 +753,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "トウ、ズ、ト",
+      "kunyomi": "あたま、かしら",
+      "anchor_sentence": "今日は頭が回らない。",
+      "anchor_furigana": "",
+      "anchor_meaning": "My brain isn't working today."
     },
     {
       "rank": 41,
@@ -572,7 +772,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "怪しいな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's suspicious."
     },
     {
       "rank": 42,
@@ -586,7 +791,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "大丈夫？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Are you okay?"
     },
     {
       "rank": 43,
@@ -600,7 +810,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "近い近い。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Too close, too close."
     },
     {
       "rank": 44,
@@ -614,7 +829,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "誰が決めたん？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Who decided that?"
     },
     {
       "rank": 45,
@@ -628,7 +848,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "駅はどっち？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Which way is the station?"
     },
     {
       "rank": 46,
@@ -642,7 +867,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "理不尽やわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's unreasonable."
     },
     {
       "rank": 47,
@@ -656,7 +886,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "英語で何て言うの？",
+      "anchor_furigana": "",
+      "anchor_meaning": "How do you say it in English?"
     },
     {
       "rank": 48,
@@ -670,7 +905,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今日は早く寝よう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'll sleep early today."
     },
     {
       "rank": 49,
@@ -684,7 +924,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "変な空気なった。",
+      "anchor_furigana": "",
+      "anchor_meaning": "The vibe got weird."
     },
     {
       "rank": 50,
@@ -698,7 +943,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今日は忙しそう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Today looks busy."
     },
     {
       "rank": 51,
@@ -712,7 +962,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "何の時間やねん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "What kind of segment is this?"
     },
     {
       "rank": 52,
@@ -726,7 +981,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "大丈夫？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Are you okay?"
     },
     {
       "rank": 53,
@@ -740,7 +1000,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "意外と簡単。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Surprisingly easy."
     },
     {
       "rank": 54,
@@ -754,7 +1019,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ちょっと休憩しよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's take a quick break."
     },
     {
       "rank": 55,
@@ -768,7 +1038,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "誰が決めたん？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Who decided that?"
     },
     {
       "rank": 56,
@@ -782,7 +1057,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ちょっと聞いてもいい？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Can I ask something?"
     },
     {
       "rank": 57,
@@ -796,7 +1076,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "心臓止まるわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "My heart almost stopped."
     },
     {
       "rank": 58,
@@ -810,7 +1095,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "それは大事やろ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That part matters, though."
     },
     {
       "rank": 59,
@@ -824,7 +1114,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "空気おかしいやろ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "The vibe is weird, right?"
     },
     {
       "rank": 60,
@@ -838,7 +1133,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "急に来るな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Don't come at me suddenly."
     },
     {
       "rank": 61,
@@ -852,7 +1152,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "急に真面目になるな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Don't suddenly get serious."
     },
     {
       "rank": 62,
@@ -866,7 +1171,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "急に真面目になるな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Don't suddenly get serious."
     },
     {
       "rank": 63,
@@ -880,7 +1190,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今はこれに集中。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Focus on this for now."
     },
     {
       "rank": 64,
@@ -894,7 +1209,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "何が起きたん？",
+      "anchor_furigana": "",
+      "anchor_meaning": "What happened?"
     },
     {
       "rank": 65,
@@ -908,7 +1228,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "なんで俺だけ？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Why only me?"
     },
     {
       "rank": 66,
@@ -922,7 +1247,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "最高。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Awesome / the best."
     },
     {
       "rank": 67,
@@ -936,7 +1266,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "説明して。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Explain it."
     },
     {
       "rank": 68,
@@ -950,7 +1285,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今はこれに集中。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Focus on this for now."
     },
     {
       "rank": 69,
@@ -964,7 +1304,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これ食べてみたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to try eating this."
     },
     {
       "rank": 70,
@@ -978,7 +1323,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "絶対そうやと思った。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I totally knew it."
     },
     {
       "rank": 71,
@@ -992,7 +1342,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "高っ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Whoa, expensive."
     },
     {
       "rank": 72,
@@ -1006,7 +1361,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "意外と簡単。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Surprisingly easy."
     },
     {
       "rank": 73,
@@ -1020,7 +1380,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "楽しい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This is fun."
     },
     {
       "rank": 74,
@@ -1034,7 +1399,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これ、どう使うの？",
+      "anchor_furigana": "",
+      "anchor_meaning": "How do I use this?"
     },
     {
       "rank": 75,
@@ -1048,7 +1418,12 @@
       "bucket": "W readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "忘れないようにしよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let me make sure I don't forget."
     },
     {
       "rank": 76,
@@ -1062,7 +1437,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "自然に言えるようになりたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to be able to say it naturally."
     },
     {
       "rank": 77,
@@ -1076,7 +1456,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 2,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "絶対そうやと思った。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I totally knew it."
     },
     {
       "rank": 78,
@@ -1090,7 +1475,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "適当すぎるやろ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's way too half-baked."
     },
     {
       "rank": 79,
@@ -1104,7 +1494,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "危なかった。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That was close."
     },
     {
       "rank": 80,
@@ -1118,7 +1513,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ちょっと歩こう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's walk a little."
     },
     {
       "rank": 81,
@@ -1132,7 +1532,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "焦らなくていい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "No need to rush."
     },
     {
       "rank": 82,
@@ -1146,7 +1551,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これは後回しでいい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This can wait."
     },
     {
       "rank": 83,
@@ -1160,7 +1570,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今日も頑張ろう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's do our best today too."
     },
     {
       "rank": 84,
@@ -1174,7 +1589,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "この場所、いいね。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This place is nice."
     },
     {
       "rank": 85,
@@ -1188,7 +1608,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "準備できた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm ready."
     },
     {
       "rank": 86,
@@ -1202,7 +1627,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ちょっと微妙。",
+      "anchor_furigana": "",
+      "anchor_meaning": "It's kind of iffy."
     },
     {
       "rank": 87,
@@ -1216,7 +1646,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "なんで黙ってんねん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Why are you quiet?"
     },
     {
       "rank": 88,
@@ -1230,7 +1665,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "また出た。",
+      "anchor_furigana": "",
+      "anchor_meaning": "There it is again."
     },
     {
       "rank": 89,
@@ -1244,7 +1684,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "電気を消そう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's turn off the light."
     },
     {
       "rank": 90,
@@ -1258,7 +1703,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "英語で何て言うの？",
+      "anchor_furigana": "",
+      "anchor_meaning": "How do you say it in English?"
     },
     {
       "rank": 91,
@@ -1272,7 +1722,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "意外と簡単。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Surprisingly easy."
     },
     {
       "rank": 92,
@@ -1286,7 +1741,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今日も頑張ろう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's do our best today too."
     },
     {
       "rank": 93,
@@ -1300,7 +1760,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "元気？",
+      "anchor_furigana": "",
+      "anchor_meaning": "How are you?"
     },
     {
       "rank": 94,
@@ -1314,7 +1779,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "原因はこれかも。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This might be the cause."
     },
     {
       "rank": 95,
@@ -1328,7 +1798,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ええ加減にせえ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Cut it out already."
     },
     {
       "rank": 96,
@@ -1342,7 +1817,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "地獄やん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This is hell."
     },
     {
       "rank": 97,
@@ -1356,7 +1836,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "よし、始めよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Alright, let's start."
     },
     {
       "rank": 98,
@@ -1370,7 +1855,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "反則やん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's against the rules."
     },
     {
       "rank": 99,
@@ -1384,7 +1874,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "部屋を片付けよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's clean up the room."
     },
     {
       "rank": 100,
@@ -1398,7 +1893,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "それは卑怯やわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's unfair."
     },
     {
       "rank": 101,
@@ -1412,7 +1912,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "そこ拾うんかい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's what you're reacting to?"
     },
     {
       "rank": 102,
@@ -1426,7 +1931,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "久しぶり。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Long time no see."
     },
     {
       "rank": 103,
@@ -1440,7 +1950,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "人が多い。",
+      "anchor_furigana": "",
+      "anchor_meaning": "There are a lot of people."
     },
     {
       "rank": 104,
@@ -1454,7 +1969,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "コーヒーが必要。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I need coffee."
     },
     {
       "rank": 105,
@@ -1468,7 +1988,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "日本語で何て言うんだっけ？",
+      "anchor_furigana": "",
+      "anchor_meaning": "How do you say it in Japanese again?"
     },
     {
       "rank": 106,
@@ -1482,7 +2007,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "家に帰りたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to go home."
     },
     {
       "rank": 107,
@@ -1496,7 +2026,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "原因はこれかも。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This might be the cause."
     },
     {
       "rank": 108,
@@ -1510,7 +2045,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "嫌な予感する。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I have a bad feeling."
     },
     {
       "rank": 109,
@@ -1524,7 +2064,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "地獄やん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This is hell."
     },
     {
       "rank": 110,
@@ -1538,7 +2083,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "自然に言えるようになりたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to be able to say it naturally."
     },
     {
       "rank": 111,
@@ -1552,7 +2102,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "準備できた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm ready."
     },
     {
       "rank": 112,
@@ -1566,7 +2121,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ええ加減にせえ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Cut it out already."
     },
     {
       "rank": 113,
@@ -1580,7 +2140,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "家に帰りたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to go home."
     },
     {
       "rank": 114,
@@ -1594,7 +2159,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "俺関係ないやん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This has nothing to do with me."
     },
     {
       "rank": 115,
@@ -1608,7 +2178,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "あとで確認しよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'll check later."
     },
     {
       "rank": 116,
@@ -1622,7 +2197,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "俺関係ないやん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This has nothing to do with me."
     },
     {
       "rank": 117,
@@ -1636,7 +2216,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "体が重い。",
+      "anchor_furigana": "",
+      "anchor_meaning": "My body feels heavy."
     },
     {
       "rank": 118,
@@ -1650,7 +2235,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "部屋を片付けよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's clean up the room."
     },
     {
       "rank": 119,
@@ -1664,7 +2254,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "電気を消そう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's turn off the light."
     },
     {
       "rank": 120,
@@ -1678,7 +2273,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "顔だけ真剣やん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Only your face looks serious."
     },
     {
       "rank": 121,
@@ -1692,7 +2292,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "一個ずつやろう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's do it one at a time."
     },
     {
       "rank": 122,
@@ -1706,7 +2311,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "巻き込まれた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I got dragged into this."
     },
     {
       "rank": 123,
@@ -1720,7 +2330,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "声でかいねん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "You're too loud."
     },
     {
       "rank": 124,
@@ -1734,7 +2349,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "細かいねん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "You're too picky/detail-focused."
     },
     {
       "rank": 125,
@@ -1748,7 +2368,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "悔しいけど笑った。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm annoyed, but I laughed."
     },
     {
       "rank": 126,
@@ -1762,7 +2387,12 @@
       "bucket": "K/G readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "それは卑怯やわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's unfair."
     },
     {
       "rank": 127,
@@ -1776,7 +2406,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ちょっと待って。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Wait a second."
     },
     {
       "rank": 128,
@@ -1790,7 +2425,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これは負けたわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This one beat me."
     },
     {
       "rank": 129,
@@ -1804,7 +2444,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "巻き込まれた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I got dragged into this."
     },
     {
       "rank": 130,
@@ -1818,7 +2463,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "道に迷った。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I got lost."
     },
     {
       "rank": 131,
@@ -1832,7 +2482,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "水が飲みたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to drink water."
     },
     {
       "rank": 132,
@@ -1846,7 +2501,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "忘れ物ないかな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I wonder if I forgot anything."
     },
     {
       "rank": 133,
@@ -1860,7 +2520,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "思ったより難しい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Harder than I expected."
     },
     {
       "rank": 134,
@@ -1874,7 +2539,12 @@
       "bucket": "M readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ちょっと微妙。",
+      "anchor_furigana": "",
+      "anchor_meaning": "It's kind of iffy."
     },
     {
       "rank": 135,
@@ -1888,7 +2558,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今日は長い日だ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Today is a long day."
     },
     {
       "rank": 136,
@@ -1902,7 +2577,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これで直るかな？",
+      "anchor_furigana": "",
+      "anchor_meaning": "I wonder if this will fix it."
     },
     {
       "rank": 137,
@@ -1916,7 +2596,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "納得いかん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I don't accept that."
     },
     {
       "rank": 138,
@@ -1930,7 +2615,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "あとで確認しよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'll check later."
     },
     {
       "rank": 139,
@@ -1944,7 +2634,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "水が飲みたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to drink water."
     },
     {
       "rank": 140,
@@ -1958,7 +2653,12 @@
       "bucket": "N readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "喉かわいた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm thirsty."
     },
     {
       "rank": 141,
@@ -1972,7 +2672,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ここで降りるの？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Do I get off here?"
     },
     {
       "rank": 142,
@@ -1986,7 +2691,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これは覚えたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to remember this."
     },
     {
       "rank": 143,
@@ -2000,7 +2710,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これ美味しそう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This looks tasty."
     },
     {
       "rank": 144,
@@ -2014,7 +2729,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "体が重い。",
+      "anchor_furigana": "",
+      "anchor_meaning": "My body feels heavy."
     },
     {
       "rank": 145,
@@ -2028,7 +2748,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "人が多い。",
+      "anchor_furigana": "",
+      "anchor_meaning": "There are a lot of people."
     },
     {
       "rank": 146,
@@ -2042,7 +2767,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "天才か。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Are you a genius?"
     },
     {
       "rank": 147,
@@ -2056,7 +2786,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これを先に終わらせよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let me finish this first."
     },
     {
       "rank": 148,
@@ -2070,7 +2805,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "洗濯しなきゃ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I have to do laundry."
     },
     {
       "rank": 149,
@@ -2084,7 +2824,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "写真を撮りたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to take a picture."
     },
     {
       "rank": 150,
@@ -2098,7 +2843,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "知らんけど。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I don't know though."
     },
     {
       "rank": 151,
@@ -2112,7 +2862,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "静かでいい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "It's nice and quiet."
     },
     {
       "rank": 152,
@@ -2126,7 +2881,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "見た瞬間アウト。",
+      "anchor_furigana": "",
+      "anchor_meaning": "The moment I saw it, I was out."
     },
     {
       "rank": 153,
@@ -2140,7 +2900,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "反則やん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's against the rules."
     },
     {
       "rank": 154,
@@ -2154,7 +2919,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ギリギリ耐えた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I barely held it in."
     },
     {
       "rank": 155,
@@ -2168,7 +2938,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "洗濯しなきゃ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I have to do laundry."
     },
     {
       "rank": 156,
@@ -2182,7 +2957,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "一回試してみよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's try it once."
     },
     {
       "rank": 157,
@@ -2196,7 +2976,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "適当すぎるやろ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's way too half-baked."
     },
     {
       "rank": 158,
@@ -2210,7 +2995,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "天才か。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Are you a genius?"
     },
     {
       "rank": 159,
@@ -2224,7 +3014,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今の、聞き取れなかった。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I couldn't catch that."
     },
     {
       "rank": 160,
@@ -2238,7 +3033,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "写真を撮りたい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I want to take a picture."
     },
     {
       "rank": 161,
@@ -2252,7 +3052,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "心臓止まるわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "My heart almost stopped."
     },
     {
       "rank": 162,
@@ -2266,7 +3071,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "この場所、いいね。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This place is nice."
     },
     {
       "rank": 163,
@@ -2280,7 +3090,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "納得いかん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I don't accept that."
     },
     {
       "rank": 164,
@@ -2294,7 +3109,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "部屋を片付けよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's clean up the room."
     },
     {
       "rank": 165,
@@ -2308,7 +3128,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "理不尽やわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's unreasonable."
     },
     {
       "rank": 166,
@@ -2322,7 +3147,12 @@
       "bucket": "T/D readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "次はどこに行く？",
+      "anchor_furigana": "",
+      "anchor_meaning": "Where do we go next?"
     },
     {
       "rank": 167,
@@ -2336,7 +3166,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "やっと動いた。",
+      "anchor_furigana": "",
+      "anchor_meaning": "It finally worked."
     },
     {
       "rank": 168,
@@ -2350,7 +3185,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "嬉しい。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I'm happy."
     },
     {
       "rank": 169,
@@ -2364,7 +3204,12 @@
       "bucket": "W readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "これ罠やろ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "This is a trap, right?"
     },
     {
       "rank": 170,
@@ -2378,7 +3223,12 @@
       "bucket": "Y readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "部屋を片付けよう。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Let's clean up the room."
     },
     {
       "rank": 171,
@@ -2392,7 +3242,12 @@
       "bucket": "Y readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "嫌な予感する。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I have a bad feeling."
     },
     {
       "rank": 172,
@@ -2406,7 +3261,12 @@
       "bucket": "Y readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "コーヒーが必要。",
+      "anchor_furigana": "",
+      "anchor_meaning": "I need coffee."
     },
     {
       "rank": 173,
@@ -2420,7 +3280,12 @@
       "bucket": "Y readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "オチ弱いな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That punchline is weak."
     },
     {
       "rank": 174,
@@ -2434,7 +3299,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "雑やな。",
+      "anchor_furigana": "",
+      "anchor_meaning": "That's sloppy."
     },
     {
       "rank": 175,
@@ -2448,7 +3318,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "全然あかん。",
+      "anchor_furigana": "",
+      "anchor_meaning": "Totally not good."
     },
     {
       "rank": 176,
@@ -2462,7 +3337,12 @@
       "bucket": "S/Z/J readings",
       "source": "Think in Japanese Core / Part 4",
       "count": 1,
-      "tier": "core"
+      "tier": "core",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "心臓止まるわ。",
+      "anchor_furigana": "",
+      "anchor_meaning": "My heart almost stopped."
     },
     {
       "rank": 177,
@@ -2476,7 +3356,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "国",
+      "anchor_furigana": "",
+      "anchor_meaning": "country"
     },
     {
       "rank": 178,
@@ -2490,7 +3375,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "会社",
+      "anchor_furigana": "",
+      "anchor_meaning": "company"
     },
     {
       "rank": 179,
@@ -2504,7 +3394,12 @@
       "bucket": "N readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今年",
+      "anchor_furigana": "",
+      "anchor_meaning": "this year"
     },
     {
       "rank": 180,
@@ -2518,7 +3413,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "十",
+      "anchor_furigana": "",
+      "anchor_meaning": "ten"
     },
     {
       "rank": 181,
@@ -2532,7 +3432,12 @@
       "bucket": "N readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "二つ",
+      "anchor_furigana": "",
+      "anchor_meaning": "two things"
     },
     {
       "rank": 182,
@@ -2546,7 +3451,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "三つ",
+      "anchor_furigana": "",
+      "anchor_meaning": "three things"
     },
     {
       "rank": 183,
@@ -2560,7 +3470,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "同じ",
+      "anchor_furigana": "",
+      "anchor_meaning": "same"
     },
     {
       "rank": 184,
@@ -2574,7 +3489,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "政治",
+      "anchor_furigana": "",
+      "anchor_meaning": "politics"
     },
     {
       "rank": 185,
@@ -2588,7 +3508,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "会社",
+      "anchor_furigana": "",
+      "anchor_meaning": "company"
     },
     {
       "rank": 186,
@@ -2602,7 +3527,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "月曜日",
+      "anchor_furigana": "",
+      "anchor_meaning": "Monday"
     },
     {
       "rank": 187,
@@ -2616,7 +3546,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "会議",
+      "anchor_furigana": "",
+      "anchor_meaning": "meeting"
     },
     {
       "rank": 188,
@@ -2630,7 +3565,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "名前",
+      "anchor_furigana": "",
+      "anchor_meaning": "name"
     },
     {
       "rank": 189,
@@ -2644,7 +3584,12 @@
       "bucket": "M readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "市民",
+      "anchor_furigana": "",
+      "anchor_meaning": "citizen"
     },
     {
       "rank": 190,
@@ -2658,7 +3603,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "先生",
+      "anchor_furigana": "",
+      "anchor_meaning": "teacher"
     },
     {
       "rank": 191,
@@ -2672,7 +3622,12 @@
       "bucket": "R readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "連絡",
+      "anchor_furigana": "",
+      "anchor_meaning": "contact"
     },
     {
       "rank": 192,
@@ -2686,7 +3641,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "五つ",
+      "anchor_furigana": "",
+      "anchor_meaning": "five things"
     },
     {
       "rank": 193,
@@ -2700,7 +3660,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "出発",
+      "anchor_furigana": "",
+      "anchor_meaning": "departure"
     },
     {
       "rank": 194,
@@ -2714,7 +3679,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "上",
+      "anchor_furigana": "",
+      "anchor_meaning": "up"
     },
     {
       "rank": 195,
@@ -2728,7 +3698,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "東京",
+      "anchor_furigana": "",
+      "anchor_meaning": "Tokyo"
     },
     {
       "rank": 196,
@@ -2742,7 +3717,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "学者",
+      "anchor_furigana": "",
+      "anchor_meaning": "scholar"
     },
     {
       "rank": 197,
@@ -2756,7 +3736,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "市",
+      "anchor_furigana": "",
+      "anchor_meaning": "city"
     },
     {
       "rank": 198,
@@ -2770,7 +3755,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "授業",
+      "anchor_furigana": "",
+      "anchor_meaning": "class"
     },
     {
       "rank": 199,
@@ -2784,7 +3774,12 @@
       "bucket": "N readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "以内",
+      "anchor_furigana": "",
+      "anchor_meaning": "within"
     },
     {
       "rank": 200,
@@ -2798,7 +3793,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "相談",
+      "anchor_furigana": "",
+      "anchor_meaning": "consultation"
     },
     {
       "rank": 201,
@@ -2812,7 +3812,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "四つ",
+      "anchor_furigana": "",
+      "anchor_meaning": "four things"
     },
     {
       "rank": 202,
@@ -2826,7 +3831,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "予定",
+      "anchor_furigana": "",
+      "anchor_meaning": "plan"
     },
     {
       "rank": 203,
@@ -2840,7 +3850,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今回",
+      "anchor_furigana": "",
+      "anchor_meaning": "this time"
     },
     {
       "rank": 204,
@@ -2854,7 +3869,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "新しい",
+      "anchor_furigana": "",
+      "anchor_meaning": "new"
     },
     {
       "rank": 205,
@@ -2868,7 +3888,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "店員",
+      "anchor_furigana": "",
+      "anchor_meaning": "shop staff"
     },
     {
       "rank": 206,
@@ -2882,7 +3907,12 @@
       "bucket": "R readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "立つ",
+      "anchor_furigana": "",
+      "anchor_meaning": "to stand"
     },
     {
       "rank": 207,
@@ -2896,7 +3926,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "開く",
+      "anchor_furigana": "",
+      "anchor_meaning": "to open"
     },
     {
       "rank": 208,
@@ -2910,7 +3945,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "手",
+      "anchor_furigana": "",
+      "anchor_meaning": "hand"
     },
     {
       "rank": 209,
@@ -2924,7 +3964,12 @@
       "bucket": "R readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "力",
+      "anchor_furigana": "",
+      "anchor_meaning": "power"
     },
     {
       "rank": 210,
@@ -2938,7 +3983,12 @@
       "bucket": "M readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "質問",
+      "anchor_furigana": "",
+      "anchor_meaning": "question"
     },
     {
       "rank": 211,
@@ -2952,7 +4002,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "時代",
+      "anchor_furigana": "",
+      "anchor_meaning": "era"
     },
     {
       "rank": 212,
@@ -2966,7 +4021,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "東京",
+      "anchor_furigana": "",
+      "anchor_meaning": "Tokyo"
     },
     {
       "rank": 213,
@@ -2980,7 +4040,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "通る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to pass"
     },
     {
       "rank": 214,
@@ -2994,7 +4059,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "田んぼ",
+      "anchor_furigana": "",
+      "anchor_meaning": "rice field"
     },
     {
       "rank": 215,
@@ -3008,7 +4078,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "主人",
+      "anchor_furigana": "",
+      "anchor_meaning": "husband/master"
     },
     {
       "rank": 216,
@@ -3022,7 +4097,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "問題",
+      "anchor_furigana": "",
+      "anchor_meaning": "problem"
     },
     {
       "rank": 217,
@@ -3036,7 +4116,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "作る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to make"
     },
     {
       "rank": 218,
@@ -3050,7 +4135,12 @@
       "bucket": "Y readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "用事",
+      "anchor_furigana": "",
+      "anchor_meaning": "errand"
     },
     {
       "rank": 219,
@@ -3064,7 +4154,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今度",
+      "anchor_furigana": "",
+      "anchor_meaning": "next time"
     },
     {
       "rank": 220,
@@ -3078,7 +4173,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "強い",
+      "anchor_furigana": "",
+      "anchor_meaning": "strong"
     },
     {
       "rank": 221,
@@ -3092,7 +4192,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "公園",
+      "anchor_furigana": "",
+      "anchor_meaning": "park"
     },
     {
       "rank": 222,
@@ -3106,7 +4211,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "持つ",
+      "anchor_furigana": "",
+      "anchor_meaning": "to hold"
     },
     {
       "rank": 223,
@@ -3120,7 +4230,12 @@
       "bucket": "Y readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "野菜",
+      "anchor_furigana": "",
+      "anchor_meaning": "vegetables"
     },
     {
       "rank": 224,
@@ -3134,7 +4249,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "以上",
+      "anchor_furigana": "",
+      "anchor_meaning": "more than"
     },
     {
       "rank": 225,
@@ -3148,7 +4268,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "世界",
+      "anchor_furigana": "",
+      "anchor_meaning": "world"
     },
     {
       "rank": 226,
@@ -3162,7 +4287,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "正しい",
+      "anchor_furigana": "",
+      "anchor_meaning": "correct"
     },
     {
       "rank": 227,
@@ -3176,7 +4306,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "病院",
+      "anchor_furigana": "",
+      "anchor_meaning": "hospital"
     },
     {
       "rank": 228,
@@ -3190,7 +4325,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "世界",
+      "anchor_furigana": "",
+      "anchor_meaning": "world"
     },
     {
       "rank": 229,
@@ -3204,7 +4344,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "教える",
+      "anchor_furigana": "",
+      "anchor_meaning": "to teach"
     },
     {
       "rank": 230,
@@ -3218,7 +4363,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "文",
+      "anchor_furigana": "",
+      "anchor_meaning": "sentence"
     },
     {
       "rank": 231,
@@ -3232,7 +4382,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "映画",
+      "anchor_furigana": "",
+      "anchor_meaning": "movie"
     },
     {
       "rank": 232,
@@ -3246,7 +4401,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "海",
+      "anchor_furigana": "",
+      "anchor_meaning": "sea"
     },
     {
       "rank": 233,
@@ -3260,7 +4420,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "売る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to sell"
     },
     {
       "rank": 234,
@@ -3274,7 +4439,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "別",
+      "anchor_furigana": "",
+      "anchor_meaning": "separate"
     },
     {
       "rank": 235,
@@ -3288,7 +4458,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "商品",
+      "anchor_furigana": "",
+      "anchor_meaning": "product"
     },
     {
       "rank": 236,
@@ -3302,7 +4477,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "時計",
+      "anchor_furigana": "",
+      "anchor_meaning": "clock"
     },
     {
       "rank": 237,
@@ -3316,7 +4496,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "死ぬ",
+      "anchor_furigana": "",
+      "anchor_meaning": "to die"
     },
     {
       "rank": 238,
@@ -3330,7 +4515,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "特別",
+      "anchor_furigana": "",
+      "anchor_meaning": "special"
     },
     {
       "rank": 239,
@@ -3344,7 +4534,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "私",
+      "anchor_furigana": "",
+      "anchor_meaning": "I"
     },
     {
       "rank": 240,
@@ -3358,7 +4553,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "朝",
+      "anchor_furigana": "",
+      "anchor_meaning": "morning"
     },
     {
       "rank": 241,
@@ -3372,7 +4572,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "運動",
+      "anchor_furigana": "",
+      "anchor_meaning": "exercise"
     },
     {
       "rank": 242,
@@ -3386,7 +4591,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "台所",
+      "anchor_furigana": "",
+      "anchor_meaning": "kitchen"
     },
     {
       "rank": 243,
@@ -3400,7 +4610,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "広い",
+      "anchor_furigana": "",
+      "anchor_meaning": "wide"
     },
     {
       "rank": 244,
@@ -3414,7 +4629,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "住む",
+      "anchor_furigana": "",
+      "anchor_meaning": "to live"
     },
     {
       "rank": 245,
@@ -3428,7 +4648,12 @@
       "bucket": "Y readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "有名",
+      "anchor_furigana": "",
+      "anchor_meaning": "famous"
     },
     {
       "rank": 246,
@@ -3442,7 +4667,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "口",
+      "anchor_furigana": "",
+      "anchor_meaning": "mouth"
     },
     {
       "rank": 247,
@@ -3456,7 +4686,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "町",
+      "anchor_furigana": "",
+      "anchor_meaning": "town"
     },
     {
       "rank": 248,
@@ -3470,7 +4705,12 @@
       "bucket": "R readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "料理",
+      "anchor_furigana": "",
+      "anchor_meaning": "cooking"
     },
     {
       "rank": 249,
@@ -3484,7 +4724,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "工場",
+      "anchor_furigana": "",
+      "anchor_meaning": "factory"
     },
     {
       "rank": 250,
@@ -3498,7 +4743,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "建物",
+      "anchor_furigana": "",
+      "anchor_meaning": "building"
     },
     {
       "rank": 251,
@@ -3512,7 +4762,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "送る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to send"
     },
     {
       "rank": 252,
@@ -3526,7 +4781,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "切る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to cut"
     },
     {
       "rank": 253,
@@ -3540,7 +4800,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "運転",
+      "anchor_furigana": "",
+      "anchor_meaning": "driving"
     },
     {
       "rank": 254,
@@ -3554,7 +4819,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "研究",
+      "anchor_furigana": "",
+      "anchor_meaning": "research"
     },
     {
       "rank": 255,
@@ -3568,7 +4838,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "足",
+      "anchor_furigana": "",
+      "anchor_meaning": "foot"
     },
     {
       "rank": 256,
@@ -3582,7 +4857,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "研究",
+      "anchor_furigana": "",
+      "anchor_meaning": "research"
     },
     {
       "rank": 257,
@@ -3596,7 +4876,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "着る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to wear"
     },
     {
       "rank": 258,
@@ -3610,7 +4895,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "店",
+      "anchor_furigana": "",
+      "anchor_meaning": "store"
     },
     {
       "rank": 259,
@@ -3624,7 +4914,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "病院",
+      "anchor_furigana": "",
+      "anchor_meaning": "hospital"
     },
     {
       "rank": 260,
@@ -3638,7 +4933,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "質問",
+      "anchor_furigana": "",
+      "anchor_meaning": "question"
     },
     {
       "rank": 261,
@@ -3652,7 +4952,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "家族",
+      "anchor_furigana": "",
+      "anchor_meaning": "family"
     },
     {
       "rank": 262,
@@ -3666,7 +4971,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "銀行",
+      "anchor_furigana": "",
+      "anchor_meaning": "bank"
     },
     {
       "rank": 263,
@@ -3680,7 +4990,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "映画",
+      "anchor_furigana": "",
+      "anchor_meaning": "movie"
     },
     {
       "rank": 264,
@@ -3694,7 +5009,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "親",
+      "anchor_furigana": "",
+      "anchor_meaning": "parent"
     },
     {
       "rank": 265,
@@ -3708,7 +5028,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "試験",
+      "anchor_furigana": "",
+      "anchor_meaning": "exam"
     },
     {
       "rank": 266,
@@ -3722,7 +5047,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "医者",
+      "anchor_furigana": "",
+      "anchor_meaning": "doctor"
     },
     {
       "rank": 267,
@@ -3736,7 +5066,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "仕事",
+      "anchor_furigana": "",
+      "anchor_meaning": "work"
     },
     {
       "rank": 268,
@@ -3750,7 +5085,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "去年",
+      "anchor_furigana": "",
+      "anchor_meaning": "last year"
     },
     {
       "rank": 269,
@@ -3764,7 +5104,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "漢字",
+      "anchor_furigana": "",
+      "anchor_meaning": "kanji"
     },
     {
       "rank": 270,
@@ -3778,7 +5123,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "答える",
+      "anchor_furigana": "",
+      "anchor_meaning": "to answer"
     },
     {
       "rank": 271,
@@ -3792,7 +5142,12 @@
       "bucket": "Y readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "夜",
+      "anchor_furigana": "",
+      "anchor_meaning": "night"
     },
     {
       "rank": 272,
@@ -3806,7 +5161,12 @@
       "bucket": "Vowels / vowel-start readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "音",
+      "anchor_furigana": "",
+      "anchor_meaning": "sound"
     },
     {
       "rank": 273,
@@ -3820,7 +5180,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "注意",
+      "anchor_furigana": "",
+      "anchor_meaning": "caution"
     },
     {
       "rank": 274,
@@ -3834,7 +5199,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "古い",
+      "anchor_furigana": "",
+      "anchor_meaning": "old"
     },
     {
       "rank": 275,
@@ -3848,7 +5218,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "歌",
+      "anchor_furigana": "",
+      "anchor_meaning": "song"
     },
     {
       "rank": 276,
@@ -3862,7 +5237,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "買う",
+      "anchor_furigana": "",
+      "anchor_meaning": "to buy"
     },
     {
       "rank": 277,
@@ -3876,7 +5256,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "地図",
+      "anchor_furigana": "",
+      "anchor_meaning": "map"
     },
     {
       "rank": 278,
@@ -3890,7 +5275,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "今週",
+      "anchor_furigana": "",
+      "anchor_meaning": "this week"
     },
     {
       "rank": 279,
@@ -3904,7 +5294,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "教室",
+      "anchor_furigana": "",
+      "anchor_meaning": "classroom"
     },
     {
       "rank": 280,
@@ -3918,7 +5313,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "風",
+      "anchor_furigana": "",
+      "anchor_meaning": "wind"
     },
     {
       "rank": 281,
@@ -3932,7 +5332,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "紙",
+      "anchor_furigana": "",
+      "anchor_meaning": "paper"
     },
     {
       "rank": 282,
@@ -3946,7 +5351,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "黒い",
+      "anchor_furigana": "",
+      "anchor_meaning": "black"
     },
     {
       "rank": 283,
@@ -3960,7 +5370,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "花",
+      "anchor_furigana": "",
+      "anchor_meaning": "flower"
     },
     {
       "rank": 284,
@@ -3974,7 +5389,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "春",
+      "anchor_furigana": "",
+      "anchor_meaning": "spring"
     },
     {
       "rank": 285,
@@ -3988,7 +5408,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "赤い",
+      "anchor_furigana": "",
+      "anchor_meaning": "red"
     },
     {
       "rank": 286,
@@ -4002,7 +5427,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "青い",
+      "anchor_furigana": "",
+      "anchor_meaning": "blue"
     },
     {
       "rank": 287,
@@ -4016,7 +5446,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "図書館",
+      "anchor_furigana": "",
+      "anchor_meaning": "library"
     },
     {
       "rank": 288,
@@ -4030,7 +5465,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "色",
+      "anchor_furigana": "",
+      "anchor_meaning": "color"
     },
     {
       "rank": 289,
@@ -4044,7 +5484,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "走る",
+      "anchor_furigana": "",
+      "anchor_meaning": "to run"
     },
     {
       "rank": 290,
@@ -4058,7 +5503,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "秋",
+      "anchor_furigana": "",
+      "anchor_meaning": "autumn"
     },
     {
       "rank": 291,
@@ -4072,7 +5522,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "夏",
+      "anchor_furigana": "",
+      "anchor_meaning": "summer"
     },
     {
       "rank": 292,
@@ -4086,7 +5541,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "習う",
+      "anchor_furigana": "",
+      "anchor_meaning": "to learn"
     },
     {
       "rank": 293,
@@ -4100,7 +5560,12 @@
       "bucket": "Y readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "西洋",
+      "anchor_furigana": "",
+      "anchor_meaning": "the West"
     },
     {
       "rank": 294,
@@ -4114,7 +5579,12 @@
       "bucket": "R readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "旅行",
+      "anchor_furigana": "",
+      "anchor_meaning": "travel"
     },
     {
       "rank": 295,
@@ -4128,7 +5598,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "服",
+      "anchor_furigana": "",
+      "anchor_meaning": "clothes"
     },
     {
       "rank": 296,
@@ -4142,7 +5617,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "夕方",
+      "anchor_furigana": "",
+      "anchor_meaning": "evening"
     },
     {
       "rank": 297,
@@ -4156,7 +5636,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "借りる",
+      "anchor_furigana": "",
+      "anchor_meaning": "to borrow"
     },
     {
       "rank": 298,
@@ -4170,7 +5655,12 @@
       "bucket": "Y readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "曜日",
+      "anchor_furigana": "",
+      "anchor_meaning": "weekday"
     },
     {
       "rank": 299,
@@ -4184,7 +5674,12 @@
       "bucket": "N readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "肉",
+      "anchor_furigana": "",
+      "anchor_meaning": "meat"
     },
     {
       "rank": 300,
@@ -4198,7 +5693,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "貸す",
+      "anchor_furigana": "",
+      "anchor_meaning": "to lend"
     },
     {
       "rank": 301,
@@ -4212,7 +5712,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "食堂",
+      "anchor_furigana": "",
+      "anchor_meaning": "cafeteria"
     },
     {
       "rank": 302,
@@ -4226,7 +5731,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "鳥",
+      "anchor_furigana": "",
+      "anchor_meaning": "bird"
     },
     {
       "rank": 303,
@@ -4240,7 +5750,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "ご飯",
+      "anchor_furigana": "",
+      "anchor_meaning": "rice/meal"
     },
     {
       "rank": 304,
@@ -4254,7 +5769,12 @@
       "bucket": "H/B/P/F readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "勉強",
+      "anchor_furigana": "",
+      "anchor_meaning": "study"
     },
     {
       "rank": 305,
@@ -4268,7 +5788,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "冬",
+      "anchor_furigana": "",
+      "anchor_meaning": "winter"
     },
     {
       "rank": 306,
@@ -4282,7 +5807,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "昼",
+      "anchor_furigana": "",
+      "anchor_meaning": "noon"
     },
     {
       "rank": 307,
@@ -4296,7 +5826,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "お茶",
+      "anchor_furigana": "",
+      "anchor_meaning": "tea"
     },
     {
       "rank": 308,
@@ -4310,7 +5845,12 @@
       "bucket": "T/D readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "弟",
+      "anchor_furigana": "",
+      "anchor_meaning": "younger brother"
     },
     {
       "rank": 309,
@@ -4324,7 +5864,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "牛肉",
+      "anchor_furigana": "",
+      "anchor_meaning": "beef"
     },
     {
       "rank": 310,
@@ -4338,7 +5883,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "魚",
+      "anchor_furigana": "",
+      "anchor_meaning": "fish"
     },
     {
       "rank": 311,
@@ -4352,7 +5902,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "兄",
+      "anchor_furigana": "",
+      "anchor_meaning": "older brother"
     },
     {
       "rank": 312,
@@ -4366,7 +5921,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "犬",
+      "anchor_furigana": "",
+      "anchor_meaning": "dog"
     },
     {
       "rank": 313,
@@ -4380,7 +5940,12 @@
       "bucket": "M readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "妹",
+      "anchor_furigana": "",
+      "anchor_meaning": "younger sister"
     },
     {
       "rank": 314,
@@ -4394,7 +5959,12 @@
       "bucket": "S/Z/J readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "姉",
+      "anchor_furigana": "",
+      "anchor_meaning": "older sister"
     },
     {
       "rank": 315,
@@ -4408,7 +5978,12 @@
       "bucket": "K/G readings",
       "source": "Common Japanese frequency seed",
       "count": 0,
-      "tier": "common"
+      "tier": "common",
+      "onyomi": "—",
+      "kunyomi": "—",
+      "anchor_sentence": "漢字",
+      "anchor_furigana": "",
+      "anchor_meaning": "kanji"
     }
   ],
   "radicals": [

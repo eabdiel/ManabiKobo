@@ -1,3 +1,22 @@
+# Manabi Kōbō v1.0.6 — Kanji Hub & Professional Deck Readability
+
+## Summary
+- Added the shared 3×2 informational-tile default and overflow scrolling to Kanji Hub.
+- Applied the same easier-to-read 3×2 default to Tech & Office Talk.
+- Redesigned Kanji Hub cards with separate on’yomi and kun’yomi panels, meaning-first memory anchors, kana/furigana support, translation, and expandable source references.
+- Added curated on’yomi/kun’yomi data for the initial core kanji set and meaning-defining memory anchors for the first twelve high-frequency cards.
+- Advanced layout persistence to `mk:v5` so the improved defaults are visible during testing.
+
+## Modified files
+- `app/data/tool_content.json`
+- `app/static/css/app.css`
+- `app/static/js/native_tools.js`
+- `app/static/js/workbench-core.js`
+- `app/templates/native_tool.html`
+- `RELEASE.md`
+
+---
+
 # Think in Japanese V2.26 — Hosted Companion & Cloud Run Standardization
 
 **Release date:** August 5, 2026  

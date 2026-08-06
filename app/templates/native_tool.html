@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ native.title }} — Think in Japanese{% endblock %}
+{% block title %}{{ native.title }} — Manabi Kōbō{% endblock %}
 {% block content %}
 <section class="kana-heading"><div><span class="section-kicker">{{ current.icon }} {{ 'LEARNING TOOL' if lang=='en' else 'HERRAMIENTA DE APRENDIZAJE' }}</span><h1>{{ native.title }}</h1><p>{{ native.subtitle }}</p></div></section>
 <section class="native-tool" data-language="{{ lang }}" data-tool="{{ native.slug }}"><header class="study-native__header"><div><span class="status-dot"></span><strong>{{ 'Interactive workbench' if lang=='en' else 'Entorno interactivo' }}</strong><small>{{ 'Drag, resize, and minimize the tiles. Your layout and local study state stay in this browser.' if lang=='en' else 'Mueve, ajusta y minimiza los paneles. El diseño y el estado local permanecen en este navegador.' }}</small></div><div class="mk-layout-actions"><button class="workbench-button workbench-button--primary" type="button" data-mk-save-layout>▣ {{ 'Save layout' if lang=='en' else 'Guardar diseño' }}</button><button class="workbench-button workbench-button--quiet" id="native-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button></div></header>
