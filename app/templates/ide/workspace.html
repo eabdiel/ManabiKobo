@@ -1,12 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Manabi Kōbō IDE</title>
+<style>
+body { font-family: Segoe UI, sans-serif; background:#f8f4ec; }
+.panel { background:white; border-radius:14px; padding:20px; margin:10px; }
+.layout { display:grid; grid-template-columns:260px 1fr 360px; gap:10px; }
+.editor { height:500px; background:#fff; padding:20px; }
+</style>
 </head>
 <body>
-<h1>Manabi Kōbō Language Engineering IDE</h1>
-<div>Project Explorer</div>
-<div>MK-LPL Editor</div>
-<div>Compiler Output</div>
+
+<div class="panel">
+<h1>MANABI KŌBŌ IDE</h1>
+<p>Language Engineering Workspace</p>
+</div>
+
+<div class="layout">
+
+<div class="panel">
+<h3>Project Explorer</h3>
+<ul>
+<li>Restaurant_Order</li>
+<li>Vocabulary</li>
+<li>Tests</li>
+</ul>
+
+<h3>Progress</h3>
+<p>N5 Beginner</p>
+<p>Project: Restaurant API</p>
+</div>
+
+<div class="panel editor">
+<h3>main.mkpl</h3>
+<pre>
+project Restaurant_Order
+
+import japanese.restaurant
+
+function order_food():
+
+ customer.say(
+   "menu onegaishimasu"
+ )
+
+compile japanese.polite
+</pre>
+</div>
+
+<div class="panel">
+<h3>Compiler Output</h3>
+<p>✓ Compilation Successful</p>
+
+<h3>Diagnostics</h3>
+<p>Naturalness Warning</p>
+
+<h3>Vocabulary Library</h3>
+<p>restaurant.vocabulary</p>
+</div>
+
+</div>
+
 </body>
 </html>
