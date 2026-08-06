@@ -1,3 +1,20 @@
+# Manabi Kōbō v1.0.16 — Curated Reference Hub
+
+- Added a timeless **What I’m Currently Using** card without a date, so the section remains relevant as the creator’s learning stack evolves.
+- Added **Edwin’s Learning Path**, showing how Manabi Kōbō tools, courses, books, listening resources, and daily-review tools can complement one another.
+- Reorganized the page into clearly separated affiliate recommendations and direct/non-affiliate resources.
+- Replaced The Japan Shop direct URL with affiliate URL `https://www.thejapanshop.com?aff=142`.
+- Marked The Japan Shop card and link as affiliate-supported and moved it into the affiliate recommendation section.
+- Added responsive styling for the learning-stack card and staged learning path.
+
+## Modified files
+
+- `app/templates/reference_hub.html`
+- `app/static/css/app.css`
+- `RELEASE.md`
+
+---
+
 # Manabi Kōbō v1.0.14 — Header Control Rendering Fix
 
 - Applied the same `language-switch` component class directly to the Home Save Layout and Reset Layout buttons.
