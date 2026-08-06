@@ -293,3 +293,22 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `app/static/js/native_tools.js`
 - `app/static/js/workbench-core.js`
 - `RELEASE.md`
+
+## v1.0.10 — Favicon and Installable Web App
+
+### Added
+- Production favicon and app-icon set under `app/static/icons/`.
+- Web app manifest with standalone display, start URL, theme colors, standard icons, and a maskable Android icon.
+- Root-scoped service worker registration so supported browsers recognize Manabi Kōbō as installable.
+- Context-aware **Install app** control in the shared top navigation.
+- iPhone/iPad and Android home-screen installation guidance dialog in English and Spanish.
+- Apple mobile-web-app, Android mobile-web-app, Microsoft tile, theme-color, and application-name metadata.
+
+### Modified files and directories
+- `app/routes/core.py`
+- `app/templates/base.html`
+- `app/static/css/app.css`
+- `app/static/js/install-app.js`
+- `app/static/service-worker.js`
+- `app/static/icons/`
+- `RELEASE.md`

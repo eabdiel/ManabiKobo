@@ -716,3 +716,61 @@ body[data-page="audio-companion"] .mt-routine-grid{
   body[data-page="audio-companion"] [data-native-tile]{order:initial!important;width:100%!important;height:auto!important}
   body[data-page="audio-companion"] .mt-practice-grid{grid-template-columns:1fr}
 }
+
+/* Installable app controls */
+.install-app-button {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--mk-accent, #b63b20) 45%, transparent);
+  border-radius: 9px;
+  background: var(--mk-accent, #b63b20);
+  color: #fff;
+  padding: .52rem .78rem;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.install-app-button:hover { filter: brightness(.94); }
+.install-app-button[hidden] { display: none !important; }
+.install-dialog[hidden] { display: none; }
+.install-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(20, 18, 16, .62);
+  backdrop-filter: blur(5px);
+}
+.install-dialog-card {
+  position: relative;
+  width: min(620px, 100%);
+  border: 1px solid var(--mk-border, #d8cfc1);
+  border-radius: 18px;
+  background: var(--mk-surface, #fffdf8);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .24);
+  padding: 1.5rem;
+  text-align: center;
+}
+.install-dialog-icon { width: 84px; height: 84px; border-radius: 20px; }
+.install-dialog-card h2 { margin: .7rem 0 1rem; }
+.install-dialog-close {
+  position: absolute;
+  top: .65rem;
+  right: .75rem;
+  border: 0;
+  background: transparent;
+  font-size: 1.65rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.install-platform-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; text-align: left; }
+.install-platform-grid > div { border: 1px solid var(--mk-border, #d8cfc1); border-radius: 12px; background: var(--mk-surface-soft, #f4eee5); padding: 1rem; }
+.install-platform-grid h3 { margin: 0 0 .4rem; }
+.install-platform-grid p { margin: 0; line-height: 1.5; }
+.install-dialog-open { overflow: hidden; }
+@media (max-width: 680px) {
+  .install-app-button { padding: .45rem .58rem; font-size: .82rem; }
+  .install-platform-grid { grid-template-columns: 1fr; }
+}

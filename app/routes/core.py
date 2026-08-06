@@ -73,6 +73,15 @@ def legacy(filename: str):
     return send_from_directory(Path(current_app.config["LEGACY_DIR"]), filename)
 
 
+@core_bp.get("/service-worker.js")
+def service_worker():
+    """Serve the PWA service worker at the site root so it controls every route."""
+    response = send_from_directory(current_app.static_folder, "service-worker.js")
+    response.headers["Cache-Control"] = "no-cache"
+    response.headers["Service-Worker-Allowed"] = "/"
+    return response
+
+
 @core_bp.get("/health")
 def health():
     """Return a lightweight readiness response for local and hosted checks."""

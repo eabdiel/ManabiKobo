@@ -1,9 +1,20 @@
 <!doctype html>
 <html lang="{{ lang }}">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#a9321b">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#B63B20">
+  <meta name="application-name" content="Manabi Kōbō">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Manabi Kōbō">
+  <meta name="msapplication-TileColor" content="#B63B20">
+  <meta name="msapplication-config" content="{{ url_for('static', filename='icons/browserconfig.xml') }}">
   <title>{% block title %}Manabi Kōbō{% endblock %}</title>
-  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='icons/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icons/favicon-16x16.png') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}">
+  <link rel="manifest" href="{{ url_for('static', filename='icons/site.webmanifest') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/design-tokens.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/workbench.css') }}">
@@ -14,7 +25,7 @@
   <button class="icon-button menu-button" type="button" aria-label="{{ 'Open navigation' if lang=='en' else 'Abrir navegación' }}" data-drawer-open>☰</button>
   <a class="brand" href="{{ url_for('core.home', lang=lang) }}" aria-label="Manabi Kōbō home"><img class="brand-wordmark" src="{{ url_for('static', filename='assets/manabi-kobo-logo.png') }}" alt=""><span class="brand-name">MANABI KŌBŌ<small>{{ 'Professional Japanese' if lang=='en' else 'Japonés profesional' }}</small></span></a>
   <nav class="desktop-nav" aria-label="Primary">{% for p in pages[:8] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span>{{ p.en if lang=='en' else p.es }}</a>{% endfor %}</nav>
-  <div class="top-actions"><a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a></div>
+  <div class="top-actions"><button class="install-app-button" type="button" data-install-app hidden>{{ 'Install app' if lang=='en' else 'Instalar app' }}</button><a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a></div>
 </header>
 <div class="app-layout"><aside class="sidebar" data-drawer>
   <div class="sidebar-head"><img src="{{ url_for('static',filename='assets/manabi-kobo-logo.png') }}" alt=""><div><b>Manabi Kōbō</b><small>{{ 'Professional learning workbench' if lang=='en' else 'Entorno profesional de aprendizaje' }}</small></div><button class="icon-button close-button" data-drawer-close>×</button></div>
@@ -22,5 +33,16 @@
   <div class="study-tip"><b>{{ 'Office Study Tip' if lang=='en' else 'Consejo de estudio' }}</b><p>{{ 'Use one focused tool for 10–15 minutes, then apply one phrase during your workday.' if lang=='en' else 'Usa una herramienta por 10–15 minutos y aplica una frase durante tu jornada.' }}</p></div>
 </aside><div class="drawer-scrim" data-drawer-close></div><main id="main" class="main-content">{% block content %}{% endblock %}</main></div>
 <nav class="mobile-tabs" aria-label="Mobile navigation">{% for p in [pages[0],pages[1],pages[2],pages[7]] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span><small>{{ p.en if lang=='en' else p.es }}</small></a>{% endfor %}<button data-drawer-open><span>☰</span><small>{{ 'More' if lang=='en' else 'Más' }}</small></button></nav>
-<script type="module" src="{{ url_for('static',filename='js/app.js') }}"></script><script src="{{ url_for('static',filename='js/workbench-core.js') }}" defer></script>{% block scripts %}{% endblock %}
+<div class="install-dialog" data-install-dialog hidden role="dialog" aria-modal="true" aria-labelledby="install-dialog-title">
+  <section class="install-dialog-card">
+    <button class="install-dialog-close" type="button" data-install-close aria-label="{{ 'Close' if lang=='en' else 'Cerrar' }}">×</button>
+    <img src="{{ url_for('static', filename='icons/android-chrome-192x192.png') }}" alt="" class="install-dialog-icon">
+    <h2 id="install-dialog-title">{{ 'Install Manabi Kōbō' if lang=='en' else 'Instalar Manabi Kōbō' }}</h2>
+    <div class="install-platform-grid">
+      <div><h3>iPhone / iPad</h3><p>{{ 'Open this page in Safari, tap Share, then choose “Add to Home Screen”.' if lang=='en' else 'Abre esta página en Safari, toca Compartir y selecciona “Añadir a pantalla de inicio”.' }}</p></div>
+      <div><h3>Android</h3><p>{{ 'Open this page in Chrome, open the browser menu, then choose “Install app” or “Add to Home screen”.' if lang=='en' else 'Abre esta página en Chrome, abre el menú y selecciona “Instalar app” o “Añadir a pantalla de inicio”.' }}</p></div>
+    </div>
+  </section>
+</div>
+<script type="module" src="{{ url_for('static',filename='js/app.js') }}"></script><script src="{{ url_for('static',filename='js/workbench-core.js') }}" defer></script><script src="{{ url_for('static',filename='js/install-app.js') }}" defer></script>{% block scripts %}{% endblock %}
 </body></html>
