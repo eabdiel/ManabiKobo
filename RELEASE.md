@@ -1,3 +1,22 @@
+# Manabi Kōbō v1.0.11 — Pre-Deployment Polish
+
+## Changes
+
+- Moved the Home dashboard **Save Layout** and **Reset Layout** controls into the shared top header, immediately before the language selector.
+- Removed the duplicate layout-action row from the Home page content.
+- Added a responsive compact presentation for the header controls on narrower desktop displays.
+- Updated the Home footer to end with **Another tool by ProgreTech.com**, linked to `https://progretech.com`.
+- Added matching Spanish footer wording.
+
+## Modified files
+
+- `app/templates/base.html`
+- `app/templates/home.html`
+- `app/static/css/app.css`
+- `RELEASE.md`
+
+---
+
 # Manabi Kōbō v1.0.6 — Kanji Hub & Professional Deck Readability
 
 ## Summary

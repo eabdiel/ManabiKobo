@@ -25,7 +25,16 @@
   <button class="icon-button menu-button" type="button" aria-label="{{ 'Open navigation' if lang=='en' else 'Abrir navegación' }}" data-drawer-open>☰</button>
   <a class="brand" href="{{ url_for('core.home', lang=lang) }}" aria-label="Manabi Kōbō home"><img class="brand-wordmark" src="{{ url_for('static', filename='assets/manabi-kobo-logo.png') }}" alt=""><span class="brand-name">MANABI KŌBŌ<small>{{ 'Professional Japanese' if lang=='en' else 'Japonés profesional' }}</small></span></a>
   <nav class="desktop-nav" aria-label="Primary">{% for p in pages[:8] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span>{{ p.en if lang=='en' else p.es }}</a>{% endfor %}</nav>
-  <div class="top-actions"><button class="install-app-button" type="button" data-install-app hidden>{{ 'Install app' if lang=='en' else 'Instalar app' }}</button><a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a></div>
+  <div class="top-actions">
+    <button class="install-app-button" type="button" data-install-app hidden>{{ 'Install app' if lang=='en' else 'Instalar app' }}</button>
+    {% if current and current.slug == 'home' %}
+    <div class="header-layout-actions" aria-label="{{ 'Dashboard layout actions' if lang=='en' else 'Acciones del diseño del panel' }}">
+      <button class="header-layout-button header-layout-button--save" type="button" data-mk-save-layout title="{{ 'Save dashboard layout' if lang=='en' else 'Guardar diseño del panel' }}"><span aria-hidden="true">▣</span><span class="header-layout-label">{{ 'Save' if lang=='en' else 'Guardar' }}</span></button>
+      <button class="header-layout-button" type="button" data-mk-reset-page title="{{ 'Reset dashboard layout' if lang=='en' else 'Restablecer diseño del panel' }}"><span aria-hidden="true">↺</span><span class="header-layout-label">{{ 'Reset' if lang=='en' else 'Restablecer' }}</span></button>
+    </div>
+    {% endif %}
+    <a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a>
+  </div>
 </header>
 <div class="app-layout"><aside class="sidebar" data-drawer>
   <div class="sidebar-head"><img src="{{ url_for('static',filename='assets/manabi-kobo-logo.png') }}" alt=""><div><b>Manabi Kōbō</b><small>{{ 'Professional learning workbench' if lang=='en' else 'Entorno profesional de aprendizaje' }}</small></div><button class="icon-button close-button" data-drawer-close>×</button></div>
