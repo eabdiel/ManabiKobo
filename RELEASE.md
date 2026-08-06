@@ -1,3 +1,19 @@
+# Manabi Kōbō v1.0.17 — Reference Hub Feature Tiles
+
+## Changes
+- Converted **What I’m Currently Using** into a centered, bordered feature tile.
+- Converted **Edwin’s Learning Path** into a centered feature panel with a contained two-column card grid.
+- Improved spacing, visual hierarchy, shadows, and responsive behavior for both sections.
+- Advanced the shared stylesheet cache key to `1.0.17` so browsers load the corrected styling immediately.
+
+## Modified Files
+- `app/templates/reference_hub.html`
+- `app/templates/base.html`
+- `app/static/css/app.css`
+- `RELEASE.md`
+
+---
+
 # Manabi Kōbō v1.0.16 — Curated Reference Hub
 
 - Added a timeless **What I’m Currently Using** card without a date, so the section remains relevant as the creator’s learning stack evolves.
