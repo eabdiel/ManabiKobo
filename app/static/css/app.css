@@ -500,3 +500,122 @@ body[data-page="radicals"] .radical-result-count{
   body[data-page="radicals"] [data-native-tile="workspace"]{height:auto;min-height:0}
   body[data-page="radicals"] .radical-card-grid{grid-template-columns:1fr}
 }
+
+/* =============================================================================
+   Manabi Kōbō v1.0.8 — Sentence Builder default workspace
+   Establishes a useful two-row desktop layout while preserving the shared
+   drag, resize, scroll, minimize, save, and reset behavior.
+   ============================================================================= */
+body[data-page="sentence-builder"] .native-canvas{
+  align-items:flex-start;
+  justify-content:flex-start;
+  gap:12px;
+}
+
+/* First row: reference material and core patterns. */
+body[data-page="sentence-builder"] [data-native-tile="color-key"]{
+  order:1;
+  width:230px;
+  flex-basis:230px;
+  height:390px;
+}
+body[data-page="sentence-builder"] [data-native-tile="syllabus"]{
+  order:2;
+  width:190px;
+  flex-basis:190px;
+  height:390px;
+}
+body[data-page="sentence-builder"] [data-native-tile="patterns"]{
+  order:3;
+  width:min(620px,calc(100% - 720px));
+  flex-basis:min(620px,calc(100% - 720px));
+  height:390px;
+}
+body[data-page="sentence-builder"] [data-native-tile="flashcards"]{
+  order:4;
+  width:235px;
+  flex-basis:235px;
+  height:390px;
+}
+
+/* Second row: quick reference, controls, interactive builder, and notes. */
+body[data-page="sentence-builder"] [data-native-tile="cheatsheet"]{
+  order:5;
+  width:230px;
+  flex-basis:230px;
+  height:430px;
+}
+body[data-page="sentence-builder"] [data-native-tile="controls"]{
+  order:6;
+  width:250px;
+  flex-basis:250px;
+  height:430px;
+}
+body[data-page="sentence-builder"] [data-native-tile="workspace"]{
+  order:7;
+  width:min(555px,calc(100% - 790px));
+  flex-basis:min(555px,calc(100% - 790px));
+  height:430px;
+}
+body[data-page="sentence-builder"] [data-native-tile="guide"]{
+  order:8;
+  width:235px;
+  flex-basis:235px;
+  height:430px;
+}
+
+/* Keep the dense learning references readable inside their compact defaults. */
+body[data-page="sentence-builder"] .sentence-pattern-grid{
+  grid-template-columns:repeat(3,minmax(185px,1fr));
+  gap:.8rem;
+}
+body[data-page="sentence-builder"] .sentence-syllabus-grid,
+body[data-page="sentence-builder"] .sentence-cheat-grid{
+  grid-template-columns:1fr;
+  gap:.8rem;
+}
+body[data-page="sentence-builder"] .sentence-pattern-card,
+body[data-page="sentence-builder"] .sentence-syllabus-grid article,
+body[data-page="sentence-builder"] .sentence-cheat-grid article{
+  padding:.85rem;
+}
+body[data-page="sentence-builder"] .sentence-flashcard{
+  min-height:245px;
+}
+
+@media(max-width:1320px){
+  body[data-page="sentence-builder"] [data-native-tile="patterns"]{
+    width:560px;
+    flex-basis:560px;
+  }
+  body[data-page="sentence-builder"] [data-native-tile="workspace"]{
+    width:520px;
+    flex-basis:520px;
+  }
+  body[data-page="sentence-builder"] .sentence-pattern-grid{
+    grid-template-columns:repeat(2,minmax(200px,1fr));
+  }
+}
+
+@media(max-width:1040px){
+  body[data-page="sentence-builder"] [data-native-tile]{
+    width:calc(50% - 8px);
+    flex-basis:calc(50% - 8px);
+  }
+  body[data-page="sentence-builder"] [data-native-tile="patterns"],
+  body[data-page="sentence-builder"] [data-native-tile="workspace"]{
+    width:100%;
+    flex-basis:100%;
+  }
+}
+
+@media(max-width:760px){
+  body[data-page="sentence-builder"] [data-native-tile]{
+    width:100%;
+    height:auto;
+    flex-basis:100%!important;
+  }
+  body[data-page="sentence-builder"] .sentence-pattern-grid{
+    grid-template-columns:1fr;
+  }
+}

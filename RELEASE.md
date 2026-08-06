@@ -259,3 +259,19 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `app/static/css/app.css`
 - `app/static/js/workbench-core.js`
 - `RELEASE.md`
+
+## v1.0.8 — Sentence Builder Default Layout
+
+### Summary
+- Updated the Sentence Builder to open in a structured two-row desktop layout matching the reviewed arrangement.
+- First row now defaults to Color Key, Structured Syllabus, Core Sentence Patterns, and Pattern Flashcards.
+- Second row now defaults to Mini Grammar Cheat Sheet, Controls, Sentence Builder, and Guidance & Notes.
+- Added practical default widths and heights while preserving scrollbars for content that exceeds a tile's canvas.
+- Kept all shared drag, horizontal/vertical resize, minimize, Save Layout, and Reset Layout behavior intact.
+- Added responsive two-column and single-column fallbacks for smaller screens.
+- Advanced the shared layout storage key to `mk:v7` so the new default is visible during testing.
+
+### Files modified
+- `app/static/css/app.css`
+- `app/static/js/workbench-core.js`
+- `RELEASE.md`
