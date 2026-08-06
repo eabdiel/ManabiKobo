@@ -1,3 +1,18 @@
+# Manabi Kōbō v1.0.13 — Header Control Consistency
+
+## Changes
+
+- Restyled the Home **Save Layout** and **Reset Layout** controls to use the same warm surface, border, radius, height, typography, and hover treatment as the EN/ES language switch.
+- Removed the red primary-button treatment from Save Layout so all three top-right controls now read as one consistent control group.
+- Added explicit button appearance resets and stronger selectors to prevent Opera, Chrome, or other browsers from rendering native gray button chrome.
+
+## Modified Files
+
+- `app/static/css/app.css`
+- `RELEASE.md`
+
+---
+
 # Manabi Kōbō v1.0.12 — Header Layout Button Polish
 
 ## Changes
