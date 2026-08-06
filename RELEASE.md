@@ -1,3 +1,19 @@
+# Manabi Kōbō v1.0.12 — Header Layout Button Polish
+
+## Changes
+- Restyled the Home page Save Layout and Reset Layout controls as compact branded pill buttons.
+- Save uses the Torii-red primary treatment; Reset uses a warm cream outlined treatment.
+- Added stronger hover, focus, and shadow states so the controls match the rest of the Manabi Kōbō interface.
+- Added explicit browser appearance resets to prevent native gray button styling from overriding the design.
+- Retained compact icon-only behavior at narrower desktop widths.
+
+## Modified files
+- `app/static/css/app.css`
+- `app/templates/base.html`
+- `RELEASE.md`
+
+---
+
 # Manabi Kōbō v1.0.11 — Pre-Deployment Polish
 
 ## Changes
