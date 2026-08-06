@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ deck.title }} — Think in Japanese{% endblock %}
+{% block title %}{{ deck.title }} — Manabi Kōbō{% endblock %}
 {% block content %}
 <section class="kana-heading phrase-heading"><div><span class="section-kicker">{{ current.icon }} {{ deck.kicker }}</span><h1>{{ deck.title }}</h1><p>{{ deck.subtitle }}</p></div></section>
 <section class="phrase-guide"><span class="section-kicker">💡 {{ 'HOW TO USE THIS DECK' if lang=='en' else 'CÓMO USAR ESTE MAZO' }}</span><ol>{% for step in deck.usage %}<li><b>{{ loop.index }}</b><span>{{ step }}</span></li>{% endfor %}</ol></section>

@@ -1,10 +1,23 @@
-/* Shared Manabi Kōbō tile contract. Every workbench uses these data attributes. */
-[data-mk-canvas]{display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px;min-width:0}
-[data-mk-tile]{position:relative;flex:1 1 340px;min-width:280px;min-height:130px;overflow:hidden;background:var(--mk-surface);border:1px solid var(--mk-line);border-radius:var(--mk-radius);box-shadow:var(--mk-shadow)}
+/* Shared Manabi Kōbō tile contract v1.1.
+   All workbench pages receive the same two-dimensional resize behavior here. */
+[data-mk-canvas]{display:flex;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;gap:14px;min-width:0}
+[data-mk-tile]{position:relative;box-sizing:border-box;flex:0 0 340px;min-width:280px;min-height:130px;max-width:100%;overflow:hidden;background:var(--mk-surface);border:1px solid var(--mk-line);border-radius:var(--mk-radius);box-shadow:var(--mk-shadow)}
 [data-mk-toolbar]{display:flex;align-items:center;gap:9px;min-height:42px;padding:8px 11px;background:var(--mk-surface-alt);border-bottom:1px solid var(--mk-line);font-size:.78rem;font-weight:800;letter-spacing:.02em;user-select:none}
-[data-mk-drag]{cursor:grab;color:var(--mk-muted);font-family:var(--mk-font-code)}[data-mk-drag]:active{cursor:grabbing}
+[data-mk-drag]{cursor:grab;color:var(--mk-muted);font-family:var(--mk-font-code)}
+[data-mk-drag]:active{cursor:grabbing}
 [data-mk-minimize],[data-mk-reset]{border:1px solid var(--mk-line);background:var(--mk-surface);color:var(--mk-ink);border-radius:8px;cursor:pointer}
-[data-mk-minimize]{margin-left:auto;width:28px;height:28px}.mk-resize-handle{cursor:ew-resize;color:var(--mk-muted);touch-action:none}
+[data-mk-minimize]{margin-left:auto;width:28px;height:28px}
+.mk-resize-handle{color:var(--mk-muted);touch-action:none}
+.mk-resize-corner{position:absolute;right:4px;bottom:4px;z-index:12;width:20px;height:20px;border:0;background:transparent;cursor:nwse-resize;touch-action:none;padding:0}
+.mk-resize-corner::after{content:"";position:absolute;right:2px;bottom:2px;width:11px;height:11px;border-right:3px solid color-mix(in srgb,var(--mk-red) 75%,transparent);border-bottom:3px solid color-mix(in srgb,var(--mk-red) 75%,transparent);border-radius:0 0 3px 0}
+[data-mk-tile].is-mk-resizing{user-select:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--mk-red) 20%,transparent),var(--mk-shadow)}
 [data-mk-tile].is-minimized{min-height:0!important;height:auto!important;flex-basis:280px!important}
-[data-mk-tile].is-minimized>[data-mk-body]{display:none!important}[data-mk-tile].is-dragging{opacity:.55;outline:2px dashed var(--mk-red)}
-@media(max-width:760px){[data-mk-canvas]{display:grid;grid-template-columns:1fr}[data-mk-tile]{min-width:0;width:100%!important;flex-basis:auto!important}.mk-resize-handle{display:none}}
+[data-mk-tile].is-minimized>[data-mk-body]{display:none!important}
+[data-mk-tile].is-minimized>.mk-resize-corner{display:none}
+[data-mk-tile].is-dragging{opacity:.55;outline:2px dashed var(--mk-red)}
+.kana-practice-grid[data-mk-canvas]{justify-content:center}
+@media(max-width:760px){
+  [data-mk-canvas]{display:grid;grid-template-columns:1fr}
+  [data-mk-tile]{min-width:0;width:100%!important;height:auto!important;flex-basis:auto!important}
+  .mk-resize-handle,.mk-resize-corner{display:none}
+}

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ tracker.title }} — Think in Japanese{% endblock %}
+{% block title %}{{ tracker.title }} — Manabi Kōbō{% endblock %}
 {% block content %}
 <section class="kana-heading tracker-heading"><div><span class="section-kicker">{{ current.icon }} {{ tracker.kicker }}</span><h1>{{ tracker.title }}</h1><p>{{ tracker.subtitle }}</p></div></section>
 <section class="tracker-guide"><span class="section-kicker">💡 {{ tracker.how_title|upper }}</span><h2>{{ tracker.how_title }}</h2><ol>{% for step in tracker.steps %}<li><b>{{ loop.index }}</b><span>{{ step }}</span></li>{% endfor %}</ol></section>

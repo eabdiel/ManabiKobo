@@ -135,8 +135,8 @@ Purpose:
 ============================================================================= */
 .kana-native__actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
 .kana-native{overflow:visible}
-.kana-practice-grid{display:flex!important;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;gap:16px;min-width:0;overflow:visible;padding-bottom:28px}
-.kana-workbench-tile{position:relative;box-sizing:border-box;min-width:240px;max-width:100%;height:auto!important;min-height:0;resize:none;overflow:visible;transition:box-shadow .16s ease,border-color .16s ease,opacity .16s ease;flex:0 0 auto}
+.kana-practice-grid{display:flex!important;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;justify-content:center;gap:16px;min-width:0;overflow:visible;padding-bottom:28px}
+.kana-workbench-tile{position:relative;box-sizing:border-box;min-width:240px;max-width:100%;min-height:130px;resize:none;overflow:visible;transition:box-shadow .16s ease,border-color .16s ease,opacity .16s ease;flex:0 0 auto}
 .kana-control-card{flex-basis:285px;width:285px}
 .kana-board-card{flex-basis:620px;width:620px;min-width:min(520px,100%)}
 .kana-session-card{flex-basis:305px;width:305px}

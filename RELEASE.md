@@ -143,3 +143,28 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `static/`
 - `templates/`
 - Python `__pycache__/` directories and compiled bytecode
+
+## v1.0.3 — Shared Two-Dimensional Tile Layout Fix
+
+### Changes
+- Added one shared two-dimensional resize implementation for every Manabi Kōbō workbench tile.
+- Tile width and height are now persisted per page and language in browser local storage.
+- Added a consistent bottom-right resize handle to Kana Dojo, Study Plan, 90-Day Tracker, phrase decks, and native tools.
+- Centered the Kana Dojo tile canvas in the available workspace.
+- Removed the Kana Dojo rule that forced tiles back to automatic height.
+- Filled the previously empty Daily 20-Minute Routine study-plan tile.
+- Renamed Phrases 1 to Essential Phrases and Phrases 2 to Natural Conversation, including Spanish labels.
+- Updated affected browser page titles from Think in Japanese to Manabi Kōbō.
+- Removed remaining offline-download wording from the two phrase-deck instruction lists.
+
+### Modified files
+- `app/static/css/workbench.css`
+- `app/static/css/app.css`
+- `app/static/js/workbench-core.js`
+- `app/data/phrases.py`
+- `app/data/study_plan_content.json`
+- `app/templates/kana_dojo.html`
+- `app/templates/study_plan.html`
+- `app/templates/phrases.html`
+- `app/templates/tracker.html`
+- `RELEASE.md`
