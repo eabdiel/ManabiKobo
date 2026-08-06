@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}{{ plan.title }} — Think in Japanese{% endblock %}
+{% block content %}
+<section class="kana-heading"><div><span class="section-kicker">🗺️ {{ 'GUIDED ROADMAP' if lang=='en' else 'RUTA GUIADA' }}</span><h1>{{ plan.title }}</h1><p>{{ plan.subtitle }}</p></div></section>
+<section class="study-native" data-language="{{ lang }}" data-tool="study-plan"><header class="study-native__header"><div><span class="status-dot"></span><strong>{{ 'Interactive study-plan workspace' if lang=='en' else 'Área interactiva del plan de estudio' }}</strong><small>{{ 'Move, resize, or minimize any section.' if lang=='en' else 'Mueve, ajusta o minimiza cualquier sección.' }}</small></div><button class="workbench-button workbench-button--quiet" id="study-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button></header><div class="study-canvas" id="study-canvas">{% for section in plan.sections %}<article class="study-workbench-tile" data-study-tile="plan-{{ loop.index }}"><div class="study-tile-toolbar"><span class="study-drag-handle">⠿</span><span>{{ section.title }}</span><button class="study-minimize" type="button">−</button><span class="study-resize-hint">↘</span></div><div class="study-tile-body"><ul class="plan-list">{% for line in section.body %}<li>{{ line }}</li>{% endfor %}</ul></div></article>{% endfor %}</div></section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static',filename='js/study_tools.js') }}"></script>{% endblock %}

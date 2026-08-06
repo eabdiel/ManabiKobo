@@ -1,0 +1,13 @@
+# Think in Japanese — Cloud Build source exclusions
+.gcloudignore
+.git
+.gitignore
+.idea
+.venv
+venv
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.zip
+*.log
+.DS_Store

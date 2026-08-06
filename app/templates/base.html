@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#a9321b">
+  <title>{% block title %}Manabi Kōbō{% endblock %}</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/design-tokens.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/workbench.css') }}">
+</head>
+<body data-lang="{{ lang }}" data-page="{{ current.slug if current else '' }}">
+<a class="skip-link" href="#main">{{ 'Skip to content' if lang=='en' else 'Saltar al contenido' }}</a>
+<header class="topbar">
+  <button class="icon-button menu-button" type="button" aria-label="{{ 'Open navigation' if lang=='en' else 'Abrir navegación' }}" data-drawer-open>☰</button>
+  <a class="brand" href="{{ url_for('core.home', lang=lang) }}" aria-label="Manabi Kōbō home"><img class="brand-wordmark" src="{{ url_for('static', filename='assets/manabi-kobo-logo.png') }}" alt=""><span class="brand-name">MANABI KŌBŌ<small>{{ 'Professional Japanese' if lang=='en' else 'Japonés profesional' }}</small></span></a>
+  <nav class="desktop-nav" aria-label="Primary">{% for p in pages[:8] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span>{{ p.en if lang=='en' else p.es }}</a>{% endfor %}</nav>
+  <div class="top-actions"><a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a></div>
+</header>
+<div class="app-layout"><aside class="sidebar" data-drawer>
+  <div class="sidebar-head"><img src="{{ url_for('static',filename='assets/manabi-kobo-logo.png') }}" alt=""><div><b>Manabi Kōbō</b><small>{{ 'Professional learning workbench' if lang=='en' else 'Entorno profesional de aprendizaje' }}</small></div><button class="icon-button close-button" data-drawer-close>×</button></div>
+  {% for group,label_en,label_es in [('learn','Learn','Aprender'),('tools','Practice & Tools','Práctica y herramientas'),('support','Professional Resources','Recursos profesionales')] %}<div class="nav-label">{{ label_en if lang=='en' else label_es }}</div>{% for p in pages if p.group==group %}<a class="side-link {{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span class="nav-icon">{{ p.icon }}</span><span>{{ p.en if lang=='en' else p.es }}</span></a>{% endfor %}{% endfor %}
+  <div class="study-tip"><b>{{ 'Office Study Tip' if lang=='en' else 'Consejo de estudio' }}</b><p>{{ 'Use one focused tool for 10–15 minutes, then apply one phrase during your workday.' if lang=='en' else 'Usa una herramienta por 10–15 minutos y aplica una frase durante tu jornada.' }}</p></div>
+</aside><div class="drawer-scrim" data-drawer-close></div><main id="main" class="main-content">{% block content %}{% endblock %}</main></div>
+<nav class="mobile-tabs" aria-label="Mobile navigation">{% for p in [pages[0],pages[1],pages[2],pages[7]] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span><small>{{ p.en if lang=='en' else p.es }}</small></a>{% endfor %}<button data-drawer-open><span>☰</span><small>{{ 'More' if lang=='en' else 'Más' }}</small></button></nav>
+<script type="module" src="{{ url_for('static',filename='js/app.js') }}"></script><script src="{{ url_for('static',filename='js/workbench-core.js') }}" defer></script>{% block scripts %}{% endblock %}
+</body></html>

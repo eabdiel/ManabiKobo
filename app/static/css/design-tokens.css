@@ -1,0 +1,9 @@
+:root{
+ --mk-bg:#f5f2eb;--mk-surface:#fffdfa;--mk-surface-alt:#ece6dc;--mk-ink:#181a1b;
+ --mk-muted:#666b6f;--mk-red:#a9321b;--mk-red-dark:#762315;--mk-gold:#b18a50;
+ --mk-line:#d8d0c4;--mk-success:#2f6c50;--mk-radius:12px;--mk-radius-lg:18px;
+ --mk-shadow:0 10px 30px rgba(33,27,21,.09);--mk-sidebar:250px;--mk-topbar:66px;
+ --mk-font-body:Inter,"Segoe UI",system-ui,sans-serif;
+ --mk-font-jp:"Noto Sans JP","Yu Gothic UI","Meiryo",sans-serif;
+ --mk-font-code:"JetBrains Mono","Cascadia Code",monospace;
+}
