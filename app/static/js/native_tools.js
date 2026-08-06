@@ -1,5 +1,5 @@
 /*=============================================================================
-Think in Japanese native support-tool workbenches
+Manabi Kōbō native support-tool workbenches
 =============================================================================
 Purpose:
   Provides stable tile layout controls and native interactions for Kanji Hub,
@@ -8,7 +8,8 @@ Purpose:
 (() => {
   const root=document.querySelector('.native-tool'); if(!root) return;
   const canvas=document.getElementById('native-canvas'), tool=root.dataset.tool, lang=root.dataset.language||'en';
-  const L=(en,es)=>lang==='es'?es:en, layoutKey=`tij-${tool}-${lang}-native-layout-v1`, notesKey=`tij-${tool}-${lang}-notes-v1`;
+  const nativeLayoutVersion=tool==='audio-companion'?'v2':'v1';
+  const L=(en,es)=>lang==='es'?es:en, layoutKey=`tij-${tool}-${lang}-native-layout-${nativeLayoutVersion}`, notesKey=`tij-${tool}-${lang}-notes-v1`;
   let data={}; try{data=JSON.parse(document.getElementById('native-data')?.textContent||'{}')}catch(_){data={}}
   let dragged=null,resizing=null;
   const saveLayout=()=>localStorage.setItem(layoutKey,JSON.stringify([...canvas.querySelectorAll('[data-native-tile]')].map(t=>({id:t.dataset.nativeTile,width:t.style.flexBasis||'',min:t.classList.contains('is-minimized')}))));

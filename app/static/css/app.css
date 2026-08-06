@@ -619,3 +619,100 @@ body[data-page="sentence-builder"] .sentence-flashcard{
     grid-template-columns:1fr;
   }
 }
+
+
+/*=============================================================================
+Manabi Kōbō v1.0.9 — Audio Course Companion compact default workspace
+=============================================================================*/
+body[data-page="audio-companion"] .native-canvas{
+  gap:.8rem;
+  align-items:flex-start;
+}
+body[data-page="audio-companion"] [data-native-tile="controls"]{
+  order:1;
+  flex-basis:220px;
+  width:220px;
+  height:405px;
+}
+body[data-page="audio-companion"] [data-native-tile="workspace"]{
+  order:2;
+  flex-basis:760px;
+  width:760px;
+  height:405px;
+}
+body[data-page="audio-companion"] [data-native-tile="guide"]{
+  order:3;
+  flex-basis:220px;
+  width:220px;
+  height:405px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-syllabus"]{
+  order:4;
+  flex-basis:455px;
+  width:455px;
+  height:350px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-calendar"]{
+  order:5;
+  flex-basis:535px;
+  width:535px;
+  height:350px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-routine"]{
+  order:6;
+  flex-basis:220px;
+  width:220px;
+  height:350px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-progress"]{
+  order:7;
+  flex-basis:300px;
+  width:300px;
+  height:290px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-reference"]{
+  order:8;
+  flex-basis:610px;
+  width:610px;
+  height:290px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-writing"]{
+  order:9;
+  flex-basis:480px;
+  width:480px;
+  height:290px;
+}
+body[data-page="audio-companion"] [data-native-tile="mt-flashcards"]{
+  order:10;
+  flex-basis:340px;
+  width:340px;
+  height:290px;
+}
+body[data-page="audio-companion"] .mt-practice-grid{
+  grid-template-columns:repeat(4,minmax(165px,1fr));
+  gap:.8rem;
+}
+body[data-page="audio-companion"] .mt-unit-grid{
+  grid-template-columns:repeat(3,minmax(190px,1fr));
+  gap:.8rem;
+}
+body[data-page="audio-companion"] .mt-routine-grid{
+  grid-template-columns:1fr;
+}
+@media(max-width:1250px) and (min-width:761px){
+  body[data-page="audio-companion"] [data-native-tile="workspace"]{flex-basis:650px;width:650px}
+  body[data-page="audio-companion"] [data-native-tile="guide"]{flex-basis:260px;width:260px}
+  body[data-page="audio-companion"] [data-native-tile="mt-syllabus"],
+  body[data-page="audio-companion"] [data-native-tile="mt-calendar"]{flex-basis:calc(50% - .5rem);width:calc(50% - .5rem)}
+  body[data-page="audio-companion"] [data-native-tile="mt-routine"]{flex-basis:320px;width:320px}
+  body[data-page="audio-companion"] .mt-practice-grid{grid-template-columns:repeat(3,minmax(165px,1fr))}
+}
+@media(max-width:900px) and (min-width:761px){
+  body[data-page="audio-companion"] [data-native-tile]{flex-basis:calc(50% - .5rem);width:calc(50% - .5rem)}
+  body[data-page="audio-companion"] [data-native-tile="workspace"]{flex-basis:100%;width:100%}
+  body[data-page="audio-companion"] .mt-practice-grid{grid-template-columns:repeat(2,minmax(165px,1fr))}
+}
+@media(max-width:760px){
+  body[data-page="audio-companion"] [data-native-tile]{order:initial!important;width:100%!important;height:auto!important}
+  body[data-page="audio-companion"] .mt-practice-grid{grid-template-columns:1fr}
+}

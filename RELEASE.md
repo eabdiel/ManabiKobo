@@ -275,3 +275,21 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `app/static/css/app.css`
 - `app/static/js/workbench-core.js`
 - `RELEASE.md`
+
+
+## v1.0.9 — Audio Course Companion Compact Layout
+
+### Summary
+- Updated the Audio Course Companion / Michel Thomas page to open in a compact two-row desktop arrangement based on the reviewed layout.
+- The first row now defaults to compact Controls, a wide phrase-reinforcement workspace, and Guidance & Notes.
+- The second row now defaults to the CD-by-CD Syllabus, 6/12 Week Calendar, and Suggested Weekly Routine.
+- Progress, detailed track reference, kana writing, and recall-card tiles continue below in restrained scrollable canvases instead of opening at full content height.
+- All tile bodies retain overflow scrolling, while dragging, two-dimensional resizing, minimizing, Save Layout, and Reset Layout remain available.
+- Added responsive two-column and single-column fallbacks for smaller screens.
+- Advanced the shared layout storage key to `mk:v8` and the audio-page native layout key to `v2` so previously saved expanded dimensions do not override the new reviewed default.
+
+### Files modified
+- `app/static/css/app.css`
+- `app/static/js/native_tools.js`
+- `app/static/js/workbench-core.js`
+- `RELEASE.md`
