@@ -1,3 +1,18 @@
+# Manabi Kōbō v1.0.14 — Header Control Rendering Fix
+
+- Applied the same `language-switch` component class directly to the Home Save Layout and Reset Layout buttons.
+- Added a high-specificity header rule so Opera, Chrome, and Edge cannot render those controls with native gray button chrome.
+- Added stylesheet cache-busting query strings to the shared base template so the corrected CSS loads immediately during local testing.
+- Preserved the existing Save Layout and Reset Layout behavior.
+
+## Modified files
+
+- `app/templates/base.html`
+- `app/static/css/app.css`
+- `RELEASE.md`
+
+---
+
 # Manabi Kōbō v1.0.13 — Header Control Consistency
 
 ## Changes

@@ -822,3 +822,48 @@ button.header-layout-button--save{
 .site-footer a:hover{text-decoration:underline}
 @media(max-width:1100px){.header-layout-label{display:none}button.header-layout-button{width:40px;min-width:40px;padding:0!important}.header-layout-actions{gap:7px}}
 @media(max-width:800px){.header-layout-actions{display:none}.site-footer-separator{display:none}.site-footer{flex-direction:column;gap:4px;padding-bottom:84px}}
+
+
+/* v1.0.14 — Home layout controls use the exact language-switch control chrome. */
+.top-actions .header-layout-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.top-actions button.language-switch.header-layout-button {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: auto !important;
+  min-width: 40px !important;
+  height: 40px !important;
+  padding: 0 11px !important;
+  margin: 0 !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 12px !important;
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  box-shadow: none !important;
+  display: inline-flex !important;
+  place-items: unset !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  font: inherit !important;
+  font-size: .76rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+}
+.top-actions button.language-switch.header-layout-button:hover,
+.top-actions .language-switch:hover {
+  background: var(--surface2) !important;
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+@media(max-width:1100px) {
+  .top-actions button.language-switch.header-layout-button {
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+  }
+}
