@@ -407,3 +407,96 @@ body[data-page="tech-office-talk"] [data-mk-tile="deck"].mk-information-tile{wid
 body[data-page="tech-office-talk"] .phrase-list{grid-template-columns:repeat(3,minmax(230px,1fr))}
 @media(max-width:1100px){.kanji-card-grid,body[data-page="tech-office-talk"] .phrase-list{grid-template-columns:repeat(2,minmax(230px,1fr))}}
 @media(max-width:760px){.kanji-card-grid,body[data-page="tech-office-talk"] .phrase-list{grid-template-columns:1fr}.kanji-readings{grid-template-columns:1fr}.kanji-readings>div+div{border-left:0;border-top:1px solid var(--border)}}
+
+/* =============================================================================
+   Manabi Kōbō v1.0.7 — compact Kanji Radicals defaults
+   Keeps the radicals tool immediately useful without opening as a full-page wall.
+   ============================================================================= */
+body[data-page="radicals"] .native-canvas{
+  align-items:flex-start;
+  justify-content:flex-start;
+  gap:14px;
+}
+body[data-page="radicals"] [data-native-tile="controls"]{
+  width:290px;
+  flex-basis:290px;
+}
+body[data-page="radicals"] [data-native-tile="workspace"]{
+  width:min(820px,calc(100% - 620px));
+  flex-basis:min(820px,calc(100% - 620px));
+  height:560px;
+  min-height:420px;
+}
+body[data-page="radicals"] [data-native-tile="guide"]{
+  width:290px;
+  flex-basis:290px;
+}
+body[data-page="radicals"] .radical-card-grid{
+  grid-template-columns:repeat(4,minmax(170px,1fr));
+  gap:10px;
+}
+body[data-page="radicals"] .radical-card{
+  --radical-red:var(--accent);
+  padding:12px;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line));
+  border-top:4px solid var(--accent);
+  border-radius:14px;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 94%,var(--soft)) 0%,var(--surface) 100%);
+  box-shadow:0 8px 18px color-mix(in srgb,var(--ink) 7%,transparent);
+}
+body[data-page="radicals"] .radical-symbol{
+  color:var(--accent);
+  font-size:48px;
+  padding:2px 0 0;
+}
+body[data-page="radicals"] .radical-card h3{
+  margin:5px 0 1px;
+  font-size:.96rem;
+}
+body[data-page="radicals"] .radical-card p{
+  margin:4px 0;
+  font-size:.79rem;
+  line-height:1.38;
+}
+body[data-page="radicals"] .radical-position-grid{
+  grid-template-columns:repeat(3,14px);
+  grid-template-rows:repeat(3,14px);
+  margin:6px auto 8px;
+}
+body[data-page="radicals"] .radical-examples{
+  padding-top:5px;
+  font-size:.78rem;
+}
+body[data-page="radicals"] .radical-example{
+  min-height:38px;
+  padding:3px 7px;
+  border-color:color-mix(in srgb,var(--accent) 18%,var(--line));
+  background:color-mix(in srgb,var(--soft) 72%,var(--surface));
+  font-size:22px;
+}
+body[data-page="radicals"] .radical-result-count{
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  margin:0 0 10px;
+  padding:4px 10px;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line));
+  border-radius:999px;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface));
+  color:var(--accent-strong,var(--accent));
+}
+@media(max-width:1250px){
+  body[data-page="radicals"] [data-native-tile="workspace"]{width:calc(100% - 320px);flex-basis:calc(100% - 320px)}
+  body[data-page="radicals"] [data-native-tile="guide"]{width:100%;flex-basis:100%}
+  body[data-page="radicals"] .radical-card-grid{grid-template-columns:repeat(3,minmax(170px,1fr))}
+}
+@media(max-width:900px){
+  body[data-page="radicals"] [data-native-tile="controls"],
+  body[data-page="radicals"] [data-native-tile="workspace"],
+  body[data-page="radicals"] [data-native-tile="guide"]{width:100%;flex-basis:100%}
+  body[data-page="radicals"] .radical-card-grid{grid-template-columns:repeat(2,minmax(160px,1fr))}
+}
+@media(max-width:760px){
+  body[data-page="radicals"] [data-native-tile="workspace"]{height:auto;min-height:0}
+  body[data-page="radicals"] .radical-card-grid{grid-template-columns:1fr}
+}

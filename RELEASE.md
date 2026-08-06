@@ -244,3 +244,18 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `app/static/js/workbench-core.js`
 - `README.md`
 - `RELEASE.md`
+
+## v1.0.7 — Compact Kanji Radicals Workspace
+
+### Changes
+- Reduced the Kanji Radicals default workspace height so the page opens as a focused tool instead of a long preloaded canvas.
+- Set a balanced desktop default with compact controls, a scrollable radicals workspace, and a slim guidance tile.
+- Changed the radicals grid to four compact cards across on wide desktop screens, three across on medium screens, two across on tablets, and one across on mobile.
+- Applied the Manabi Kōbō visual treatment used by the Kanji Hub: torii-red accents, warm neutral surfaces, compact result badges, and restrained shadows.
+- Preserved shared drag, resize, minimize, Save Layout, Reset Layout, and overflow scrolling behavior.
+- Incremented layout storage to `mk:v6` so previously saved oversized radical layouts do not override the new defaults.
+
+### Modified files
+- `app/static/css/app.css`
+- `app/static/js/workbench-core.js`
+- `RELEASE.md`

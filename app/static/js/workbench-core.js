@@ -1,4 +1,4 @@
-/* Manabi Kōbō shared workbench foundation v1.3
+/* Manabi Kōbō shared workbench foundation v1.4
    One contract for drag, minimize, two-dimensional resize, scrollable overflow, reset, and explicit save. */
 (() => {
   const adapters = [
@@ -56,7 +56,7 @@
   };
 
   document.querySelectorAll('[data-mk-canvas]').forEach((canvas, canvasIndex) => {
-    const storageKey = `mk:v5:layout:${lang}:${page}:${canvas.dataset.mkCanvas || canvasIndex}`;
+    const storageKey = `mk:v6:layout:${lang}:${page}:${canvas.dataset.mkCanvas || canvasIndex}`;
     const tiles = () => [...canvas.querySelectorAll(':scope > [data-mk-tile]')];
 
     const save = () => {
