@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Reference Hub & About' if lang=='en' else 'Centro de referencias y Acerca de' }} — Manabi Kōbō{% endblock %}
+{% block content %}
+<section class="reference-hero">
+  <div class="reference-hero-copy">
+    <span class="section-kicker">{{ 'ABOUT · LINKS · RECOMMENDATIONS' if lang=='en' else 'ACERCA DE · ENLACES · RECOMENDACIONES' }}</span>
+    <h1>{{ 'Reference Hub' if lang=='en' else 'Centro de referencias' }}</h1>
+    <p>{{ 'A personal collection of learning tools, courses, books, and communities that have helped me connect Japanese study with a professional technology career.' if lang=='en' else 'Una colección personal de herramientas, cursos, libros y comunidades que me han ayudado a conectar el estudio del japonés con una carrera profesional en tecnología.' }}</p>
+    <div class="reference-flags" aria-label="{{ 'Puerto Rico and Japan' if lang=='en' else 'Puerto Rico y Japón' }}">
+      <figure><img src="{{ url_for('static', filename='assets/flag_puerto_rico.svg') }}" alt="{{ 'Puerto Rican flag' if lang=='en' else 'Bandera de Puerto Rico' }}"><figcaption>Puerto Rico</figcaption></figure>
+      <span class="reference-bridge" aria-hidden="true">→</span>
+      <figure><img src="{{ url_for('static', filename='assets/flag_japan.svg') }}" alt="{{ 'Japanese flag' if lang=='en' else 'Bandera de Japón' }}"><figcaption>日本</figcaption></figure>
+    </div>
+  </div>
+  <aside class="creator-card">
+    <div class="creator-monogram">ER</div>
+    <div>
+      <span class="resource-badge resource-badge--neutral">{{ 'CREATOR' if lang=='en' else 'CREADOR' }}</span>
+      <h2>Edwin A. Rodriguez</h2>
+      <p>{{ 'Software and SAP resiliency engineer, builder, bilingual learner, and lifelong technology student from Puerto Rico.' if lang=='en' else 'Ingeniero de software y resiliencia SAP, creador, estudiante bilingüe y aprendiz permanente de tecnología de Puerto Rico.' }}</p>
+      <a class="resource-button resource-button--secondary" href="https://www.linkedin.com/in/edwinabdielrodz/" target="_blank" rel="noopener noreferrer">{{ 'View LinkedIn profile' if lang=='en' else 'Ver perfil de LinkedIn' }} ↗</a>
+    </div>
+  </aside>
+</section>
+
+<section class="reference-about-panel">
+  <div>
+    <span class="section-kicker">{{ 'WHY I BUILT MANABI KŌBŌ' if lang=='en' else 'POR QUÉ CREÉ MANABI KŌBŌ' }}</span>
+    <h2>{{ 'Japanese study built for working professionals' if lang=='en' else 'Estudio de japonés para profesionales' }}</h2>
+  </div>
+  <div class="reference-about-copy">
+    <p>{{ 'I created Manabi Kōbō because most Japanese-learning resources are either classroom-first or entertainment-first. As a software and SAP professional, I wanted a practical workspace where English and Spanish speakers can build language fundamentals while also learning the vocabulary used in meetings, documentation, troubleshooting, software delivery, and collaboration with Japanese teams.' if lang=='en' else 'Creé Manabi Kōbō porque muchos recursos de japonés se enfocan primero en el salón de clases o en el entretenimiento. Como profesional de software y SAP, quería un espacio práctico donde estudiantes de inglés y español pudieran desarrollar fundamentos del idioma y también aprender vocabulario de reuniones, documentación, solución de problemas, entregas de software y colaboración con equipos japoneses.' }}</p>
+    <p>{{ 'This page is my living reference shelf: resources I use, have tested, or believe are worth evaluating. Every learner is different, so treat these as starting points—not a promise that one product will work for everyone.' if lang=='en' else 'Esta página es mi biblioteca viva de referencias: recursos que uso, he probado o considero útiles para evaluar. Cada estudiante es diferente, así que tómalos como puntos de partida, no como una promesa de que un producto funcionará para todos.' }}</p>
+  </div>
+</section>
+
+<section class="affiliate-disclosure-panel">
+  <strong>{{ 'Affiliate disclosure' if lang=='en' else 'Aviso de afiliados' }}</strong>
+  <p>{{ 'Some links below are affiliate links. If you purchase through one of them, I may receive a small commission at no additional cost to you. Affiliate status never changes the price you pay, and non-affiliate resources are clearly labeled.' if lang=='en' else 'Algunos enlaces a continuación son enlaces de afiliado. Si compras mediante uno de ellos, puedo recibir una pequeña comisión sin costo adicional para ti. El estado de afiliado no cambia el precio que pagas y los recursos sin afiliación están claramente identificados.' }}</p>
+</section>
+
+<section class="current-stack-panel reference-feature-tile">
+  <div class="current-stack-icon" aria-hidden="true">現</div>
+  <div>
+    <span class="section-kicker">{{ "WHAT I'M CURRENTLY USING" if lang=='en' else 'LO QUE ESTOY USANDO' }}</span>
+    <h2>{{ 'My practical Japanese-learning stack' if lang=='en' else 'Mi conjunto práctico para aprender japonés' }}</h2>
+    <p>{{ 'This is the combination I return to: audio practice for speaking instincts, structured books and classes for grammar, short daily tools for repetition, and authentic reading and listening for context. The list can evolve, but the goal stays the same—use a few complementary resources consistently instead of trying everything at once.' if lang=='en' else 'Esta es la combinación a la que regreso: práctica de audio para desarrollar intuición al hablar, libros y clases estructuradas para gramática, herramientas diarias cortas para repetir y lectura y escucha auténticas para obtener contexto. La lista puede evolucionar, pero la meta permanece: usar pocos recursos complementarios con constancia en lugar de intentar todo a la vez.' }}</p>
+    <div class="current-stack-tags" aria-label="{{ 'Current learning categories' if lang=='en' else 'Categorías actuales de aprendizaje' }}">
+      <span>{{ 'Speaking & listening' if lang=='en' else 'Habla y escucha' }}</span>
+      <span>{{ 'Structured study' if lang=='en' else 'Estudio estructurado' }}</span>
+      <span>{{ 'Reading practice' if lang=='en' else 'Práctica de lectura' }}</span>
+      <span>{{ 'Daily review' if lang=='en' else 'Repaso diario' }}</span>
+    </div>
+  </div>
+</section>
+
+<section class="reference-section">
+  <div class="section-heading">
+    <span class="section-kicker">{{ 'CREATOR SPOTLIGHT' if lang=='en' else 'DESTACADO DEL CREADOR' }}</span>
+    <h2>{{ 'A bilingual story project from Puerto Rico' if lang=='en' else 'Un proyecto bilingüe de Puerto Rico' }}</h2>
+  </div>
+  <article class="book-feature-card">
+    <img src="{{ url_for('static', filename='assets/lo-escuche-por-camuy-learning-japanese.png') }}" alt="Lo Escuché por Camuy — Japanese learning edition book cover">
+    <div>
+      <span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE LINK' if lang=='en' else 'ENLACE DE AFILIADO' }}</span>
+      <h3>Lo Escuché por Camuy — {{ 'Japanese Learning Edition' if lang=='en' else 'Edición para aprender japonés' }}</h3>
+      <p>{{ 'A bilingual Spanish–Japanese edition inspired by Puerto Rican legends and storytelling. It offers a different kind of reading practice: cultural context, parallel-language exposure, and a personal bridge between Puerto Rico and Japan.' if lang=='en' else 'Una edición bilingüe español–japonés inspirada en leyendas y relatos puertorriqueños. Ofrece una práctica de lectura diferente: contexto cultural, exposición paralela a los idiomas y un puente personal entre Puerto Rico y Japón.' }}</p>
+      <a class="resource-button" href="https://amzn.to/45c6Eu5" target="_blank" rel="nofollow sponsored noopener">{{ 'View the book on Amazon' if lang=='en' else 'Ver el libro en Amazon' }} ↗</a>
+    </div>
+  </article>
+</section>
+
+<section class="reference-section">
+  <div class="section-heading">
+    <span class="section-kicker">{{ 'RECOMMENDED PRODUCTS · AFFILIATE' if lang=='en' else 'PRODUCTOS RECOMENDADOS · AFILIADOS' }}</span>
+    <h2>{{ 'Books, courses, and tools I genuinely recommend' if lang=='en' else 'Libros, cursos y herramientas que recomiendo de verdad' }}</h2>
+    <p>{{ 'These recommendations use affiliate links and can complement the free tools inside Manabi Kōbō. Each card explains where the resource fits best.' if lang=='en' else 'Estas recomendaciones usan enlaces de afiliado y pueden complementar las herramientas gratuitas de Manabi Kōbō. Cada tarjeta explica dónde encaja mejor el recurso.' }}</p>
+  </div>
+  <div class="resource-card-grid">
+    <article class="resource-card"><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>Michel Thomas Japanese</h3><p>{{ 'Strong for audio-first learners who want to build sentence instincts through guided recall. It works best as a speaking foundation, followed by reading and kana reinforcement.' if lang=='en' else 'Útil para estudiantes que prefieren audio y desean desarrollar intuición para formar oraciones mediante recuerdo guiado. Funciona mejor como base oral, seguida por lectura y práctica de kana.' }}</p><a class="resource-button" href="https://amzn.to/43JOn6N" target="_blank" rel="nofollow sponsored noopener">{{ 'View Michel Thomas' if lang=='en' else 'Ver Michel Thomas' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>Genki I Bundle</h3><p>{{ 'A widely used beginner textbook and workbook combination. It is useful when you want a clear lesson sequence, grammar explanations, exercises, and classroom-style structure.' if lang=='en' else 'Una combinación muy utilizada de libro y cuaderno para principiantes. Es útil para seguir una secuencia clara de lecciones, explicaciones gramaticales, ejercicios y estructura tipo salón de clases.' }}</p><a class="resource-button" href="https://amzn.to/4oQzU2v" target="_blank" rel="nofollow sponsored noopener">{{ 'View Genki bundle' if lang=='en' else 'Ver paquete Genki' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>Mondly Premium Lifetime</h3><p>{{ 'A light daily supplement for vocabulary, listening, and maintaining momentum when you only have a few minutes. It is most useful as repetition beside a more structured main course.' if lang=='en' else 'Un complemento diario ligero para vocabulario, escucha y mantener el ritmo cuando solo tienes unos minutos. Es más útil como repetición junto a un curso principal estructurado.' }}</p><a class="resource-button" href="https://www.stacksocial.com/sales/mondly-premium-lifetime-subscription-all-languages?aid=a-qlrk51n8" target="_blank" rel="nofollow sponsored noopener">{{ 'View Mondly offer' if lang=='en' else 'Ver oferta de Mondly' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>Dr. Moku’s Japanese Flash Cards</h3><p>{{ 'A visual mnemonic option for learners who remember characters better through imagery and memorable associations. Useful for early kana recognition and quick review.' if lang=='en' else 'Una opción de mnemotecnia visual para quienes recuerdan mejor los caracteres mediante imágenes y asociaciones memorables. Útil para reconocimiento inicial de kana y repasos rápidos.' }}</p><a class="resource-button" href="https://amzn.to/3RZd8cC" target="_blank" rel="nofollow sponsored noopener">{{ 'View flash cards' if lang=='en' else 'Ver tarjetas' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>Tuttle Bilingual Story Books</h3><p>{{ 'Parallel-text stories can make reading less intimidating by giving learners cultural material and translation support without removing the Japanese text.' if lang=='en' else 'Los cuentos con texto paralelo hacen la lectura menos intimidante al ofrecer material cultural y apoyo de traducción sin eliminar el texto japonés.' }}</p><a class="resource-button" href="https://amzn.to/4watL34" target="_blank" rel="nofollow sponsored noopener">{{ 'Browse bilingual books' if lang=='en' else 'Ver libros bilingües' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>Rosetta Stone Sapphire</h3><p>{{ 'An immersion-oriented option with contextual exercises and pronunciation practice. It can be a useful cross-device supplement for learners who prefer guided visual and audio repetition.' if lang=='en' else 'Una opción orientada a la inmersión con ejercicios contextuales y práctica de pronunciación. Puede ser un complemento útil para quienes prefieren repetición visual y auditiva guiada en distintos dispositivos.' }}</p><a class="resource-button" href="https://www.stacksocial.com/sales/rosetta-stone-sapphire-1-year-subscriptionaid?aid=a-qlrk51n8" target="_blank" rel="nofollow sponsored noopener">{{ 'View Sapphire subscription' if lang=='en' else 'Ver suscripción Sapphire' }} ↗</a></article>
+    <article class="resource-card resource-card--brand"><img src="{{ url_for('static', filename='assets/the-japan-shop-logo.png') }}" alt="The Japan Shop logo"><div><span class="resource-badge resource-badge--affiliate">{{ 'AFFILIATE' if lang=='en' else 'AFILIADO' }}</span><h3>The Japan Shop</h3><p>{{ 'A specialist store for Japanese-learning books, eBooks, audio, Makoto materials, kanji resources, culture notes, and JLPT study content. It is especially useful when you want materials created specifically for independent Japanese learners.' if lang=='en' else 'Una tienda especializada en libros, eBooks, audio, materiales Makoto, recursos de kanji, notas culturales y contenido de JLPT. Es especialmente útil cuando buscas materiales creados específicamente para estudiantes independientes de japonés.' }}</p><a class="resource-button" href="https://www.thejapanshop.com?aff=142" target="_blank" rel="nofollow sponsored noopener">{{ 'Visit The Japan Shop' if lang=='en' else 'Visitar The Japan Shop' }} ↗</a></div></article>
+  </div>
+</section>
+
+<section class="reference-section">
+  <div class="section-heading">
+    <span class="section-kicker">{{ 'FREE & DIRECT RESOURCES' if lang=='en' else 'RECURSOS GRATUITOS Y DIRECTOS' }}</span>
+    <h2>{{ 'Trusted places to learn, listen, and practice' if lang=='en' else 'Lugares confiables para aprender, escuchar y practicar' }}</h2>
+    <p>{{ 'These links are presented as non-affiliate resources unless a card explicitly says otherwise.' if lang=='en' else 'Estos enlaces se presentan como recursos sin afiliación, salvo que una tarjeta indique lo contrario.' }}</p>
+  </div>
+  <div class="resource-card-grid resource-card-grid--direct">
+    <article class="resource-card"><span class="resource-badge resource-badge--direct">{{ 'DIRECT · NON-AFFILIATE' if lang=='en' else 'DIRECTO · SIN AFILIACIÓN' }}</span><h3>Pimsleur Japanese</h3><p>{{ 'A long-established audio program built around speaking, listening, graduated recall, and short daily sessions. It is especially valuable for learners who can study while commuting or doing routine tasks.' if lang=='en' else 'Un programa de audio establecido que se basa en hablar, escuchar, recuerdo gradual y sesiones diarias cortas. Es especialmente útil para estudiar durante viajes o tareas rutinarias.' }}</p><a class="resource-button resource-button--secondary" href="https://www.pimsleur.com/learn-japanese" target="_blank" rel="noopener noreferrer">{{ 'Explore Pimsleur' if lang=='en' else 'Explorar Pimsleur' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--direct">{{ 'LIVE SCHOOL' if lang=='en' else 'ESCUELA EN VIVO' }}</span><h3>Attain Online Japanese Language School</h3><p>{{ 'Live small-group classes, recorded lesson access, structured progression, and JLPT-oriented study make AOJ worth evaluating for learners who want accountability and teacher interaction.' if lang=='en' else 'Clases en vivo en grupos pequeños, acceso a grabaciones, progresión estructurada y estudio orientado al JLPT hacen que AOJ sea una opción valiosa para quienes buscan responsabilidad e interacción con profesores.' }}</p><div class="resource-button-row"><a class="resource-button resource-button--secondary" href="https://aoj-ls.jp/en/" target="_blank" rel="noopener noreferrer">{{ 'Visit AOJ School' if lang=='en' else 'Visitar AOJ School' }} ↗</a><a class="resource-link" href="https://www.udemy.com/share/1013qG3@w4_XM5atZaxFgmBxqv5LTMH0VNGPDlzvRYpf_S6pARY51a2j8PhFGpvLbmcDB5OF/" target="_blank" rel="noopener noreferrer">Udemy {{ 'courses' if lang=='en' else 'cursos' }} ↗</a></div></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--direct">{{ 'FREE ARTICLES' if lang=='en' else 'ARTÍCULOS GRATIS' }}</span><h3>Tofugu</h3><p>{{ 'A respected Japanese language and culture publication with detailed grammar explanations, kana guides, resource reviews, and practical answers to common learner questions.' if lang=='en' else 'Una publicación reconocida sobre idioma y cultura japonesa con explicaciones gramaticales detalladas, guías de kana, reseñas de recursos y respuestas prácticas a preguntas comunes.' }}</p><a class="resource-button resource-button--secondary" href="https://www.tofugu.com/" target="_blank" rel="noopener noreferrer">{{ 'Read Tofugu' if lang=='en' else 'Leer Tofugu' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--direct">{{ 'JAPAN FOUNDATION' if lang=='en' else 'FUNDACIÓN JAPÓN' }}</span><h3>Erin’s Challenge</h3><p>{{ 'A free Japan Foundation video library with lesson-based scenarios, downloadable materials, cultural segments, vocabulary, and natural examples for beginner and intermediate learners.' if lang=='en' else 'Una biblioteca gratuita de videos de la Fundación Japón con situaciones por lección, materiales descargables, segmentos culturales, vocabulario y ejemplos naturales para niveles inicial e intermedio.' }}</p><a class="resource-button resource-button--secondary" href="https://www.erin.jpf.go.jp/" target="_blank" rel="noopener noreferrer">{{ 'Open Erin’s Challenge' if lang=='en' else 'Abrir Erin’s Challenge' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--direct">{{ 'NATURAL JAPANESE' if lang=='en' else 'JAPONÉS NATURAL' }}</span><h3>Real Real Japan</h3><p>{{ 'A conversation-focused resource designed around memorable, natural phrases and humor. It can help learners move beyond textbook-only wording and notice how people actually speak.' if lang=='en' else 'Un recurso enfocado en conversación con frases naturales, memorables y humor. Puede ayudar a superar el lenguaje exclusivamente de libros y notar cómo habla la gente realmente.' }}</p><a class="resource-button resource-button--secondary" href="https://realrealjapan.com/" target="_blank" rel="noopener noreferrer">{{ 'Visit Real Real Japan' if lang=='en' else 'Visitar Real Real Japan' }} ↗</a></article>
+    <article class="resource-card"><span class="resource-badge resource-badge--direct">{{ 'FREE YOUTUBE' if lang=='en' else 'YOUTUBE GRATIS' }}</span><h3>JapanesePod101</h3><p>{{ 'The free YouTube channel offers a large range of listening lessons, vocabulary videos, dialogues, and level-specific practice. It is especially convenient for quick listening sessions.' if lang=='en' else 'El canal gratuito de YouTube ofrece muchas lecciones de escucha, videos de vocabulario, diálogos y práctica por nivel. Es especialmente conveniente para sesiones rápidas de comprensión auditiva.' }}</p><a class="resource-button resource-button--secondary" href="https://www.youtube.com/@JapanesePod101" target="_blank" rel="noopener noreferrer">{{ 'Watch JapanesePod101' if lang=='en' else 'Ver JapanesePod101' }} ↗</a></article>
+  </div>
+</section>
+
+<section class="reference-section learning-path-section reference-feature-tile">
+  <div class="section-heading">
+    <span class="section-kicker">{{ "EDWIN'S LEARNING PATH" if lang=='en' else 'RUTA DE APRENDIZAJE DE EDWIN' }}</span>
+    <h2>{{ 'How I combine these resources' if lang=='en' else 'Cómo combino estos recursos' }}</h2>
+    <p>{{ 'No single app needs to do everything. This path pairs each stage with the kind of resource that supports it best.' if lang=='en' else 'Ninguna aplicación tiene que hacerlo todo. Esta ruta combina cada etapa con el tipo de recurso que mejor la apoya.' }}</p>
+  </div>
+  <div class="learning-path-grid">
+    <article><span class="path-step">1</span><div><h3>{{ 'Build recognition' if lang=='en' else 'Desarrollar reconocimiento' }}</h3><p>Kana Dojo → Dr. Moku → Michel Thomas</p><small>{{ 'Learn the sounds, recognize the scripts, and begin forming sentences aloud.' if lang=='en' else 'Aprende los sonidos, reconoce los alfabetos y comienza a formar oraciones en voz alta.' }}</small></div></article>
+    <article><span class="path-step">2</span><div><h3>{{ 'Add structure' if lang=='en' else 'Añadir estructura' }}</h3><p>Essential Phrases → Genki I → Attain</p><small>{{ 'Connect useful phrases to grammar explanations, exercises, and teacher feedback.' if lang=='en' else 'Conecta frases útiles con explicaciones gramaticales, ejercicios y comentarios de profesores.' }}</small></div></article>
+    <article><span class="path-step">3</span><div><h3>{{ 'Practice production' if lang=='en' else 'Practicar producción' }}</h3><p>Sentence Builder → 90-Day Tracker</p><small>{{ 'Turn vocabulary into sentences and use a repeatable schedule to stay consistent.' if lang=='en' else 'Convierte vocabulario en oraciones y usa un calendario repetible para mantener constancia.' }}</small></div></article>
+    <article><span class="path-step">4</span><div><h3>{{ 'Read with support' if lang=='en' else 'Leer con apoyo' }}</h3><p>Reading Aid → Tuttle → Erin’s Challenge</p><small>{{ 'Use furigana, parallel text, and contextual video before moving toward unsupported material.' if lang=='en' else 'Usa furigana, texto paralelo y videos contextuales antes de avanzar a material sin apoyo.' }}</small></div></article>
+    <article><span class="path-step">5</span><div><h3>{{ 'Develop natural input' if lang=='en' else 'Desarrollar comprensión natural' }}</h3><p>Natural Conversation → JapanesePod101 → Real Real Japan</p><small>{{ 'Listen repeatedly and notice how natural speech differs from textbook-only Japanese.' if lang=='en' else 'Escucha repetidamente y observa cómo el habla natural difiere del japonés de libros.' }}</small></div></article>
+    <article class="path-daily"><span class="path-step">日</span><div><h3>{{ 'Keep a light daily loop' if lang=='en' else 'Mantener un ciclo diario ligero' }}</h3><p>Mondly · Pimsleur · Kanji Hub · Frequency Deck</p><small>{{ 'Short review sessions protect momentum between longer study blocks.' if lang=='en' else 'Los repasos cortos mantienen el ritmo entre sesiones de estudio más largas.' }}</small></div></article>
+  </div>
+</section>
+
+<section class="reference-closing">
+  <div><span class="section-kicker">{{ 'KEEP BUILDING' if lang=='en' else 'SIGUE CONSTRUYENDO' }}</span><h2>{{ 'Use the resource that matches today’s goal.' if lang=='en' else 'Usa el recurso que coincida con la meta de hoy.' }}</h2></div>
+  <p>{{ 'Audio for speaking. A textbook for structure. Live classes for accountability. Native content for context. Manabi Kōbō is the workbench that helps connect them.' if lang=='en' else 'Audio para hablar. Un libro para estructura. Clases en vivo para responsabilidad. Contenido nativo para contexto. Manabi Kōbō es el taller que ayuda a conectarlos.' }}</p>
+</section>
+{% endblock %}

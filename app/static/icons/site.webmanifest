@@ -1,0 +1,35 @@
+{
+  "id": "/",
+  "name": "Manabi Kōbō — Professional Japanese",
+  "short_name": "Manabi Kōbō",
+  "description": "Professional Japanese learning tools for developers, engineers, and technology professionals.",
+  "lang": "en",
+  "start_url": "/en/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#F8F5EE",
+  "theme_color": "#B63B20",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/static/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
