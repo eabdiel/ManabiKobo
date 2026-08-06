@@ -377,3 +377,24 @@ The AI companion depends on its hosted JavaScript provider and therefore require
 - `app/static/service-worker.js`
 - `app/static/icons/`
 - `RELEASE.md`
+
+## v1.0.15 — Reference Hub and Affiliate Resource Shelf
+
+### Summary
+- Added a bilingual Reference Hub / About page under Professional Resources.
+- Added creator background, Puerto Rico–Japan identity treatment, LinkedIn link, affiliate disclosure, creator book feature, affiliate-supported recommendations, and non-affiliate learning resources.
+- Added new book-cover and The Japan Shop image assets.
+- Added the page to navigation, the Home tool catalog, route tests, and the shared design system.
+
+### Modified files
+- `app/data/pages.py`
+- `app/routes/core.py`
+- `app/static/css/app.css`
+- `app/templates/base.html`
+- `tests/test_app.py`
+- `RELEASE.md`
+
+### Added files
+- `app/templates/reference_hub.html`
+- `app/static/assets/lo-escuche-por-camuy-learning-japanese.png`
+- `app/static/assets/the-japan-shop-logo.png`

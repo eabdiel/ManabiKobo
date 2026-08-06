@@ -46,6 +46,7 @@ def test_core_learning_routes_render():
         "/en/kana-dojo/",
         "/en/tracker/",
         "/en/tech-office-talk/",
+        "/en/reference-hub/",
         "/en/kanji-hub/",
         "/es/kana-dojo/",
     )

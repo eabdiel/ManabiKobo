@@ -48,7 +48,7 @@ def tool_page(lang: str, slug: str):
     page = get_page(slug)
     if not page or slug == "home":
         abort(404)
-    template_name = {"kana-dojo": "kana_dojo.html", "tracker": "tracker.html", "phrases-1": "phrases.html", "phrases-2": "phrases.html", "tech-office-talk": "phrases.html", "reading-aid": "study_tool.html", "frequency-deck": "study_tool.html", "kanji-hub": "native_tool.html", "radicals": "native_tool.html", "sentence-builder": "native_tool.html", "audio-companion": "native_tool.html", "furigana-games": "native_tool.html"}.get(slug, "tool.html")
+    template_name = {"kana-dojo": "kana_dojo.html", "tracker": "tracker.html", "phrases-1": "phrases.html", "phrases-2": "phrases.html", "tech-office-talk": "phrases.html", "reading-aid": "study_tool.html", "frequency-deck": "study_tool.html", "kanji-hub": "native_tool.html", "radicals": "native_tool.html", "sentence-builder": "native_tool.html", "audio-companion": "native_tool.html", "furigana-games": "native_tool.html", "reference-hub": "reference_hub.html"}.get(slug, "tool.html")
     context = {
         "lang": lang,
         "current": page,

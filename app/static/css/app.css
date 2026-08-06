@@ -867,3 +867,42 @@ button.header-layout-button--save{
     padding: 0 !important;
   }
 }
+
+/* v1.0.15 — Reference Hub / About page */
+.reference-hero{max-width:1180px;margin:0 auto 18px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(290px,.65fr);gap:18px;align-items:stretch}
+.reference-hero-copy,.creator-card,.reference-about-panel,.affiliate-disclosure-panel,.book-feature-card,.resource-card,.reference-closing{border:1px solid var(--line);background:var(--surface);border-radius:18px;box-shadow:var(--shadow)}
+.reference-hero-copy{padding:clamp(24px,4vw,48px);background:linear-gradient(135deg,var(--surface) 0%,#f4eadb 100%);position:relative;overflow:hidden}
+.reference-hero-copy:after{content:"参";position:absolute;right:24px;bottom:-38px;font-size:11rem;font-weight:900;color:rgba(182,59,32,.06);line-height:1}
+.reference-hero h1{font-size:clamp(2.7rem,6vw,5rem);margin:.2rem 0 .6rem;letter-spacing:-.045em}
+.reference-hero-copy>p{font-size:1.08rem;line-height:1.7;max-width:780px;color:var(--muted)}
+.reference-flags{display:flex;align-items:center;gap:18px;margin-top:28px;position:relative;z-index:1}
+.reference-flags figure{margin:0;display:grid;gap:7px;justify-items:center;font-weight:900;color:var(--ink)}
+.reference-flags img{width:112px;height:72px;object-fit:cover;border:1px solid var(--line);border-radius:12px;background:white;padding:6px;box-shadow:0 8px 22px rgba(30,30,30,.08)}
+.reference-bridge{font-size:1.7rem;color:var(--primary);font-weight:900}
+.creator-card{padding:28px;display:flex;flex-direction:column;justify-content:center;gap:18px;background:var(--ink);color:#fff}
+.creator-card p{color:#e9e2d6;line-height:1.65}
+.creator-monogram{width:76px;height:76px;border-radius:22px;display:grid;place-items:center;background:var(--primary);color:#fff;font-size:1.7rem;font-weight:1000;border:3px solid rgba(255,255,255,.3)}
+.reference-about-panel{max-width:1180px;margin:0 auto 18px;padding:28px;display:grid;grid-template-columns:minmax(240px,.75fr) minmax(0,1.5fr);gap:28px}
+.reference-about-panel h2{font-size:clamp(1.6rem,3vw,2.5rem);margin:.25rem 0}
+.reference-about-copy{display:grid;gap:12px}.reference-about-copy p{margin:0;line-height:1.72;color:var(--muted)}
+.affiliate-disclosure-panel{max-width:1180px;margin:0 auto 28px;padding:18px 22px;border-left:5px solid var(--primary);display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:#fff8ed}
+.affiliate-disclosure-panel strong{color:var(--primary);white-space:nowrap}.affiliate-disclosure-panel p{margin:0;line-height:1.55;color:var(--muted)}
+.reference-section{max-width:1180px;margin:0 auto 32px}.reference-section .section-heading{margin-bottom:14px}.reference-section .section-heading p{color:var(--muted);max-width:800px}
+.book-feature-card{padding:22px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;align-items:center}
+.book-feature-card>img{width:100%;max-height:330px;object-fit:contain;border-radius:12px;box-shadow:0 14px 36px rgba(30,30,30,.18)}
+.book-feature-card h3{font-size:clamp(1.5rem,3vw,2.3rem);margin:.55rem 0}.book-feature-card p{line-height:1.7;color:var(--muted)}
+.resource-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.resource-card{padding:20px;display:flex;flex-direction:column;align-items:flex-start;min-height:270px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.resource-card:hover{transform:translateY(-3px);border-color:rgba(182,59,32,.45);box-shadow:0 16px 34px rgba(30,30,30,.11)}
+.resource-card h3{margin:.65rem 0 .45rem;font-size:1.22rem}.resource-card p{color:var(--muted);line-height:1.62;margin:0 0 18px}.resource-card .resource-button{margin-top:auto}
+.resource-badge{display:inline-flex;align-items:center;min-height:25px;padding:4px 9px;border-radius:999px;font-size:.66rem;font-weight:1000;letter-spacing:.08em}
+.resource-badge--affiliate{background:#f8ded5;color:#922c18}.resource-badge--direct{background:#e4eee5;color:#245934}.resource-badge--neutral{background:rgba(255,255,255,.16);color:#fff}
+.resource-button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border-radius:10px;background:var(--primary);color:#fff!important;text-decoration:none;font-weight:900;border:1px solid var(--primary);transition:transform .15s ease,background .15s ease}
+.resource-button:hover{background:var(--primary-dark,#8f2e1a);transform:translateY(-1px)}
+.resource-button--secondary{background:var(--surface);color:var(--ink)!important;border-color:var(--line)}.creator-card .resource-button--secondary{background:#fff;color:var(--ink)!important}
+.resource-button--secondary:hover{background:var(--surface2);border-color:var(--primary);color:var(--primary)!important}
+.resource-button-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:auto}.resource-link{font-weight:900;color:var(--primary)}
+.resource-card--brand{grid-column:span 2;display:grid;grid-template-columns:145px minmax(0,1fr);gap:20px;align-items:center}.resource-card--brand>img{width:100%;max-height:145px;object-fit:contain}
+.reference-closing{max-width:1180px;margin:0 auto 24px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,var(--ink),#34312d);color:#fff}.reference-closing p{color:#e9e2d6;line-height:1.7;margin:0}
+@media(max-width:980px){.reference-hero{grid-template-columns:1fr}.creator-card{flex-direction:row;align-items:center}.resource-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-about-panel{grid-template-columns:1fr}.resource-card--brand{grid-column:span 2}}
+@media(max-width:680px){.reference-hero-copy{padding:24px}.reference-flags img{width:92px;height:60px}.creator-card{flex-direction:column;align-items:flex-start}.affiliate-disclosure-panel{grid-template-columns:1fr;gap:6px}.book-feature-card{grid-template-columns:1fr}.book-feature-card>img{max-width:210px;margin:auto}.resource-card-grid{grid-template-columns:1fr}.resource-card--brand{grid-column:auto;grid-template-columns:100px minmax(0,1fr)}.reference-closing{grid-template-columns:1fr}.reference-hero-copy:after{font-size:7rem}}
