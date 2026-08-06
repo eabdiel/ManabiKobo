@@ -1,13 +1,21 @@
-# Think in Japanese — Cloud Build source exclusions
+# Manabi Kōbō — Google Cloud Build source exclusions
 .gcloudignore
 .git
 .gitignore
-.idea
-.venv
-venv
+.github/
+.idea/
+.vscode/
+.venv/
+venv/
 __pycache__/
 **/__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 *.py[cod]
 *.zip
 *.log
+.env
+.env.*
+!.env.example
 .DS_Store

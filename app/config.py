@@ -16,8 +16,9 @@ class Config:
     APP_DIR = Path(__file__).resolve().parent
     BASE_DIR = APP_DIR.parent
     LEGACY_DIR = APP_DIR / "static" / "legacy"
-    TEMPLATES_AUTO_RELOAD = True
+    TEMPLATES_AUTO_RELOAD = os.getenv("MK_TEMPLATES_AUTO_RELOAD", "false").lower() in {"1", "true", "yes", "on"}
     JSON_SORT_KEYS = False
+    PREFERRED_URL_SCHEME = "https"
 
     # Hosted AI companion. The default preserves the bot used by the legacy
     # public HTML site. It can be overridden or disabled without code changes.

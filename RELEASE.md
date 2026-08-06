@@ -1,3 +1,44 @@
+# Manabi Kōbō v1.0.18 — Google Cloud Run Readiness
+
+## Summary
+
+Prepared the Manabi Kōbō v1 application for production deployment to Google Cloud Run while preserving the local PyCharm workflow.
+
+## Deployment changes
+
+- Added a production `Dockerfile` based on Python 3.12 slim.
+- Added a non-root runtime user.
+- Added PORT-aware Gunicorn configuration with threaded request handling and stdout/stderr logging.
+- Updated `main.py` to listen on `0.0.0.0` and honor `PORT` without enabling debug mode by default.
+- Added Cloud Run proxy awareness for public HTTPS host and scheme handling.
+- Disabled template auto-reload by default for production and made it environment-configurable.
+- Added PowerShell and Bash source-deployment helpers.
+- Updated `.dockerignore`, `.gcloudignore`, and `.env.example`.
+- Added deployment validation tests for the health endpoint and root-scoped service worker.
+- Expanded the README with Cloud Run deployment and post-deployment validation steps.
+
+## Files added
+
+- `Dockerfile`
+- `gunicorn.conf.py`
+- `deployment/cloud-run/README.md`
+- `deployment/cloud-run/deploy.ps1`
+- `deployment/cloud-run/deploy.sh`
+
+## Files modified
+
+- `.dockerignore`
+- `.env.example`
+- `.gcloudignore`
+- `README.md`
+- `RELEASE.md`
+- `app/__init__.py`
+- `app/config.py`
+- `main.py`
+- `tests/test_app.py`
+
+---
+
 # Manabi Kōbō v1.0.17 — Reference Hub Feature Tiles
 
 ## Changes

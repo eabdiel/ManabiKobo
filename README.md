@@ -96,15 +96,40 @@ pytest -q
 
 GitHub Actions runs the same validation on Python 3.11, 3.12, and 3.13 for pushes to `main` and pull requests.
 
-## Deployment
+## Google Cloud Run deployment
 
-The repository includes a `Procfile` for Gunicorn-compatible hosting:
+The repository is ready for container-based or source-based Cloud Run deployment. It includes:
 
 ```text
-gunicorn --bind 0.0.0.0:$PORT main:app
+Dockerfile                         Production Python 3.12 image
+gunicorn.conf.py                  PORT-aware threaded WSGI configuration
+deployment/cloud-run/deploy.ps1   Windows/PowerShell deployment helper
+deployment/cloud-run/deploy.sh    macOS/Linux deployment helper
+/health                           Lightweight readiness endpoint
 ```
 
-For Google Cloud Run, configure the service to use the repository source and provide runtime environment variables through Cloud Run rather than committing secrets.
+Cloud Run requires the ingress container to listen on `0.0.0.0` using the injected `PORT` value. The production image and local entry point both follow that contract.
+
+Deploy from the repository root with PowerShell:
+
+```powershell
+.\deployment\cloud-run\deploy.ps1 -ProjectId "YOUR_PROJECT_ID" -Region "us-east1"
+```
+
+Or with Bash:
+
+```bash
+export PROJECT_ID="YOUR_PROJECT_ID"
+./deployment/cloud-run/deploy.sh
+```
+
+You can also deploy directly:
+
+```bash
+gcloud run deploy manabi-kobo --source . --region us-east1 --allow-unauthenticated
+```
+
+After deployment, validate `/health`, `/en/`, `/es/`, and `/service-worker.js` on the generated service URL before configuring the custom domain. Runtime variables should be configured in Cloud Run rather than committed to Git.
 
 ## Repository hygiene
 

@@ -63,3 +63,26 @@ def test_unknown_route_returns_404():
     response = client.get("/en/not-a-real-page/")
 
     assert response.status_code == 404
+
+
+def test_cloud_run_health_contract_is_small_and_cache_safe():
+    app = create_app()
+    app.config.update(TESTING=True)
+    client = app.test_client()
+
+    response = client.get("/health")
+
+    assert response.status_code == 200
+    assert response.mimetype == "application/json"
+    assert response.get_json()["status"] == "ok"
+
+
+def test_service_worker_is_available_at_root_scope():
+    app = create_app()
+    app.config.update(TESTING=True)
+    client = app.test_client()
+
+    response = client.get("/service-worker.js")
+
+    assert response.status_code == 200
+    assert response.headers["Service-Worker-Allowed"] == "/"
