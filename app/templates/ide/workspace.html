@@ -1,88 +1,87 @@
 {% extends "base.html" %}
-{% block title %}Language Engineering IDE{% endblock %}
-
+{% block title %}Manabi Kōbō — {{ 'Language Engineering IDE' if lang=='en' else 'IDE de Ingeniería del Lenguaje' }}{% endblock %}
 {% block content %}
-<div class="ide-shell">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/language-ide.css') }}?v=1.1">
+<section class="ide-hero">
+  <img src="{{ url_for('static',filename='assets/manabi-kobo-banner.png') }}" alt="">
+  <div><span class="section-kicker">{{ 'LANGUAGE ENGINEERING' if lang=='en' else 'INGENIERÍA DEL LENGUAJE' }}</span>
+  <h1>{{ 'Language IDE' if lang=='en' else 'IDE de idiomas' }}</h1>
+  <p>{{ 'Build Japanese the way you learned software: model syntax, compile ideas, debug mistakes, and refactor toward natural communication.' if lang=='en' else 'Construye japonés como aprendiste software: modela sintaxis, compila ideas, depura errores y refactoriza hacia una comunicación natural.' }}</p></div>
+  <div class="ide-profile"><div class="ide-avatar">ER</div><span><b>Local Learner</b><small>{{ 'Software Engineer' if lang=='en' else 'Ingeniero de software' }}</small></span></div>
+</section>
 
-<header class="ide-banner">
-    <div>
-        <div class="kicker">LANGUAGE ENGINEERING</div>
-        <h1>Manabi Kōbō IDE</h1>
-        <p>Build. Compile. Debug. Improve Japanese.</p>
-    </div>
-</header>
-
-<section class="ide-grid">
-
-<aside class="ide-sidebar">
-<h3>Project Progress</h3>
-<div class="cat-panel">
-🐱
-<p>Japanese Level</p>
-<strong>N5 Beginner</strong>
+<div class="ide-commandbar">
+ <div><b>{{ 'Project:' if lang=='en' else 'Proyecto:' }}</b> Restaurant_Order_System <span class="ide-saved">● {{ 'Saved locally' if lang=='en' else 'Guardado localmente' }}</span></div>
+ <div class="ide-actions"><button class="ide-primary" data-ide-run>▶ {{ 'Run (Compile)' if lang=='en' else 'Ejecutar (Compilar)' }}</button><button data-ide-debug>⚙ Debug</button><button data-ide-refactor>↻ Refactor</button><button data-ide-save>▣ Save</button></div>
 </div>
 
-<ul>
-<li>✓ Greeting Module</li>
-<li>◯ Restaurant API</li>
-<li>◯ Standup Project</li>
-</ul>
-</aside>
+<section class="ide-workbench" data-mk-canvas="language-ide">
+ <article class="ide-tile ide-tracker" data-mk-tile="project-tracker">
+  <div data-mk-toolbar><span data-mk-drag>⋮⋮</span><span>{{ 'PROJECT & LEARNER' if lang=='en' else 'PROYECTO Y ESTUDIANTE' }}</span><button data-mk-minimize>−</button><span class="mk-resize-handle">↔</span></div>
+  <div data-mk-body>
+   <div class="ide-cat">招き猫<small>{{ 'Keep building.' if lang=='en' else 'Sigue construyendo.' }}</small></div>
+   <div class="ide-level"><b>{{ 'Japanese Level' if lang=='en' else 'Nivel de japonés' }}</b><strong>N5 Beginner</strong><div><i style="width:42%"></i></div><small>1,250 / 2,000 XP</small></div>
+   <h3>{{ 'Project Progress' if lang=='en' else 'Progreso del proyecto' }}</h3>
+   <ol class="ide-tasklist"><li class="done">Greet & Seat</li><li class="active">Take Order</li><li>Confirm Order</li><li>Payment</li><li>Thank You</li></ol>
+  </div>
+ </article>
 
-<section class="ide-editor">
-<div class="ide-toolbar">
-<button>▶ Run Compile</button>
-<button>⚙ Debug</button>
-<button>↻ Refactor</button>
-</div>
-
-<div class="editor-panel">
-<h3>main.mkpl</h3>
-<pre>
-project Restaurant_Order_System
-
+ <article class="ide-tile ide-editor-tile" data-mk-tile="editor">
+  <div data-mk-toolbar><span data-mk-drag>⋮⋮</span><span>main.mkpl</span><button data-mk-minimize>−</button><span class="mk-resize-handle">↔</span></div>
+  <div data-mk-body>
+   <div class="ide-tabs"><b>main.mkpl</b><span>dialog.mkpl</span><span>menu_items.mkvoc</span></div>
+   <textarea class="ide-code" spellcheck="false" data-ide-source>project Restaurant_Order_System
 import japanese.business
 import restaurant.vocabulary
 
-function take_order(customer,item):
+goal:
+    complete restaurant ordering workflow
 
-    customer.say(
-        "sumimasen, menu onegaishimasu"
-    )
+function take_order(customer, item):
+    # 1. Customer requests an item
+    customer.say("sumimasen, menyuu o onegaishimasu")
+
+    # 2. Restaurant responds
+    staff.say("hai, kashikomarimashita")
+
+    # 3. Confirm the order
+    staff.say("hambagu teishoku o gochuumon desu ne?")
 
 compile japanese.polite
-</pre>
-</div>
+end</textarea>
+  </div>
+ </article>
+
+ <article class="ide-tile ide-compiler" data-mk-tile="compiler">
+  <div data-mk-toolbar><span data-mk-drag>⋮⋮</span><span>{{ 'COMPILER OUTPUT' if lang=='en' else 'SALIDA DEL COMPILADOR' }}</span><button data-mk-minimize>−</button><span class="mk-resize-handle">↔</span></div>
+  <div data-mk-body>
+   <div class="ide-compile-status" data-ide-status>✓ {{ 'Ready to compile' if lang=='en' else 'Listo para compilar' }}</div>
+   <h3>{{ 'Diagnostics' if lang=='en' else 'Diagnósticos' }}</h3>
+   <div class="ide-diagnostic warn">△ Naturalness Warning<br><small>{{ 'Run the project to analyze the current script.' if lang=='en' else 'Ejecuta el proyecto para analizar el script.' }}</small></div>
+   <div class="ide-diagnostic info">ⓘ Style Suggestion<br><small>{{ 'Compiler feedback is educational, not a translation verdict.' if lang=='en' else 'La retroalimentación es educativa, no un veredicto de traducción.' }}</small></div>
+  </div>
+ </article>
+
+ <article class="ide-tile ide-runtime" data-mk-tile="runtime">
+  <div data-mk-toolbar><span data-mk-drag>⋮⋮</span><span>{{ 'LANGUAGE RUNTIME' if lang=='en' else 'RUNTIME DEL IDIOMA' }}</span><button data-mk-minimize>−</button><span class="mk-resize-handle">↔</span></div>
+  <div data-mk-body>
+   <div class="ide-runtime-tabs"><b>OUTPUT</b><span>TRANSLATION</span><span>ROMAJI → KANA</span><span>KANA → KANJI</span></div>
+   <div class="ide-dialog"><b>CUSTOMER</b><p>すみません、メニューをお願いします。</p><small>sumimasen, menyū o onegaishimasu.</small></div>
+   <div class="ide-dialog staff"><b>STAFF</b><p>はい、かしこまりました。</p><small>hai, kashikomarimashita.</small></div>
+   <div class="ide-dialog staff"><b>STAFF</b><p>ハンバーグ定食をご注文ですね？</p><small>hanbāgu teishoku o gochūmon desu ne?</small></div>
+  </div>
+ </article>
+
+ <article class="ide-tile ide-vocab" data-mk-tile="vocabulary">
+  <div data-mk-toolbar><span data-mk-drag>⋮⋮</span><span>{{ 'VOCABULARY LIBRARY' if lang=='en' else 'BIBLIOTECA DE VOCABULARIO' }}</span><button data-mk-minimize>−</button><span class="mk-resize-handle">↔</span></div>
+  <div data-mk-body><input placeholder="{{ 'Search vocabulary…' if lang=='en' else 'Buscar vocabulario…' }}"><table><tr><td>メニュー</td><td>menu</td></tr><tr><td>注文する</td><td>to order</td></tr><tr><td>おすすめ</td><td>recommendation</td></tr><tr><td>～をください</td><td>please give me ~</td></tr><tr><td>いくらですか</td><td>how much?</td></tr></table></div>
+ </article>
+
+ <article class="ide-tile ide-tests" data-mk-tile="tests">
+  <div data-mk-toolbar><span data-mk-drag>⋮⋮</span><span>{{ 'PROJECT TASKS & TESTS' if lang=='en' else 'TAREAS Y PRUEBAS' }}</span><button data-mk-minimize>−</button><span class="mk-resize-handle">↔</span></div>
+  <div data-mk-body><ul><li>✓ Use polite greeting <em>Passed</em></li><li>✓ Request menu <em>Passed</em></li><li>✓ Acknowledge order <em>Passed</em></li><li>○ Confirm the order <button data-ide-test>Run Test</button></li><li>○ Handle special request</li></ul></div>
+ </article>
 </section>
-
-<aside class="ide-output">
-
-<div class="panel">
-<h3>Compiler Output</h3>
-<p class="success">✓ Compilation Successful</p>
-<p>Naturalness Warning</p>
-</div>
-
-<div class="panel">
-<h3>Vocabulary Library</h3>
-<ul>
-<li>注文する - to order</li>
-<li>おすすめ - recommendation</li>
-<li>メニュー - menu</li>
-</ul>
-</div>
-
-</aside>
-
-</section>
-
-<section class="translation-panel">
-<h3>Language Runtime Output</h3>
-<p>すみません、メニューをお願いします。</p>
-<p>Sumimasen, menyū o onegaishimasu.</p>
-<button>Explain</button>
-<button>Listen</button>
-</section>
-
-</div>
+<div class="ide-statusbar"><span>MK-LPL v0.1 · UTF-8 · LF</span><span>● Romaji Mode · Ln 16, Col 34</span></div>
 {% endblock %}
+{% block scripts %}<script src="{{ url_for('static',filename='js/language-ide.js') }}" defer></script>{% endblock %}
