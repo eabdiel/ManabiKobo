@@ -1,4 +1,4 @@
-const CACHE_NAME = "manabi-kobo-shell-v1";
+const CACHE_NAME = "manabi-kobo-shell-v2";
 const SHELL_ASSETS = [
   "/static/css/design-tokens.css",
   "/static/css/app.css",
@@ -6,6 +6,8 @@ const SHELL_ASSETS = [
   "/static/js/app.js",
   "/static/js/workbench-core.js",
   "/static/js/install-app.js",
+  "/static/css/language-ide.css",
+  "/static/js/language-ide.js",
   "/static/icons/favicon.ico",
   "/static/icons/apple-touch-icon.png",
   "/static/icons/android-chrome-192x192.png",

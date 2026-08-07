@@ -86,3 +86,21 @@ def test_service_worker_is_available_at_root_scope():
 
     assert response.status_code == 200
     assert response.headers["Service-Worker-Allowed"] == "/"
+
+
+def test_language_ide_route_and_assets_render():
+    app = create_app()
+    app.config.update(TESTING=True)
+    client = app.test_client()
+
+    response = client.get("/en/language-ide/")
+    assert response.status_code == 200
+    assert b"Language IDE" in response.data
+    assert b"PROJECT EXPLORER" in response.data
+
+    for path in (
+        "/static/js/language-ide.js",
+        "/static/css/language-ide.css",
+    ):
+        asset = client.get(path)
+        assert asset.status_code == 200, path
