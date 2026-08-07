@@ -1,0 +1,1 @@
+Language IDE v2.1 Feature Heavy\n\nFixes MK001 regex, say() parser and Reset. Adds richer runnable sample, scratch projects, JSON import, tutorial/how-to area and regression coverage. Modified IDE data/compiler/template/JS/CSS/tests only. No infrastructure/deployment files modified.

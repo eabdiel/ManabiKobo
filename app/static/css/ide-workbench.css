@@ -1,0 +1,36 @@
+/* Manabi Kōbō IDE visual baseline */
+
+.ide-banner {
+    background:
+    linear-gradient(rgba(255,248,235,.82),rgba(255,248,235,.82)),
+    url('/static/assets/manabi-banner.jpg');
+    background-size:cover;
+    border-radius:20px;
+    padding:32px;
+}
+
+.ide-grid {
+    display:grid;
+    grid-template-columns:260px 1fr 360px;
+    gap:16px;
+}
+
+.ide-sidebar,
+.ide-editor,
+.ide-output,
+.translation-panel {
+    background:#fff;
+    border-radius:16px;
+    padding:18px;
+}
+
+.editor-panel pre {
+    background:#211d1a;
+    color:#f5ead8;
+    padding:20px;
+    border-radius:12px;
+}
+
+.success {
+    color:#25823a;
+}

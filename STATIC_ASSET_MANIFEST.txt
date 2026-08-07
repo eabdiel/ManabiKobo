@@ -1,0 +1,8 @@
+Required tracked Language IDE assets:
+app/static/js/language-ide.js
+app/static/css/language-ide.css
+app/templates/ide/workspace.html
+
+After extracting into a Git working tree, confirm:
+git add app/static/js/language-ide.js app/static/css/language-ide.css app/templates/ide/workspace.html tests/test_app.py app/__init__.py
+git status --short

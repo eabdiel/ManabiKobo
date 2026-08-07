@@ -1,0 +1,27 @@
+# Required change
+
+The top navigation in base.html uses:
+pages[:8]
+
+Therefore Language IDE must be inserted inside the first 8 entries.
+
+Recommended location:
+
+After Tech & Office Talk:
+
+{
+"slug":"language-ide",
+"icon":"⌘",
+"en":"Language IDE",
+"es":"IDE de idiomas",
+"file_en":"",
+"file_es":"",
+"group":"support",
+"desc_en":"Build, compile, debug, and improve Japanese using software engineering workflows.",
+"desc_es":"Construye, compila, depura y mejora japonés usando flujos de ingeniería de software."
+}
+
+This will expose it in:
+- Desktop top navigation
+- Sidebar navigation
+- Mobile navigation
