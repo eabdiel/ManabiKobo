@@ -16,11 +16,11 @@
   <div class="section-heading"><span class="section-kicker">{{ 'CHOOSE YOUR MANUAL' if lang=='en' else 'ELIGE TU MANUAL' }}</span><h2>{{ 'Same tools, different screen experience' if lang=='en' else 'Las mismas herramientas, una experiencia distinta según la pantalla' }}</h2></div>
   <div class="guide-choice-grid">
     <article class="guide-choice-card guide-choice-card--desktop">
-      <img src="{{ url_for('static',filename='assets/tutorial/desktop-home.png') }}" alt="{{ 'Manabi Kōbō desktop home page with sidebar and workbench layout' if lang=='en' else 'Página principal de Manabi Kōbō en escritorio con barra lateral y entorno de trabajo' }}">
+      <img src="{{ url_for('static',filename='assets/tutorial/desktop-home.png') }}?v=1.0.1" alt="{{ 'Manabi Kōbō desktop home page with sidebar and workbench layout' if lang=='en' else 'Página principal de Manabi Kōbō en escritorio con barra lateral y entorno de trabajo' }}">
       <div><span class="resource-badge resource-badge--direct">{{ 'RECOMMENDED EXPERIENCE' if lang=='en' else 'EXPERIENCIA RECOMENDADA' }}</span><h3>{{ 'Desktop / Laptop Guide' if lang=='en' else 'Guía para escritorio / portátil' }}</h3><p>{{ 'Best for the Language IDE, side-by-side Tsundoku reading, larger workbenches, and custom dashboard layouts.' if lang=='en' else 'Ideal para Language IDE, lectura paralela en Tsundoku, entornos amplios y diseños personalizados.' }}</p><a class="resource-button" href="{{ url_for('core.how_to_guide',lang=lang,guide='desktop') }}">{{ 'Open desktop guide' if lang=='en' else 'Abrir guía de escritorio' }} →</a></div>
     </article>
     <article class="guide-choice-card guide-choice-card--mobile">
-      <img src="{{ url_for('static',filename='assets/tutorial/mobile-home.jpg') }}" alt="{{ 'Manabi Kōbō mobile layout on an Android foldable phone' if lang=='en' else 'Diseño móvil de Manabi Kōbō en un teléfono plegable Android' }}">
+      <img src="{{ url_for('static',filename='assets/tutorial/mobile-home.jpg') }}?v=1.0.1" alt="{{ 'Manabi Kōbō mobile layout on an Android foldable phone' if lang=='en' else 'Diseño móvil de Manabi Kōbō en un teléfono plegable Android' }}">
       <div><span class="resource-badge resource-badge--neutral">{{ 'PHONE · TABLET · FOLDABLE' if lang=='en' else 'TELÉFONO · TABLETA · PLEGABLE' }}</span><h3>{{ 'Mobile / Foldable Guide' if lang=='en' else 'Guía móvil / plegable' }}</h3><p>{{ 'Learn the compact navigation, stacked workbenches, touch controls, and how to study comfortably on smaller screens.' if lang=='en' else 'Aprende la navegación compacta, paneles apilados, controles táctiles y cómo estudiar cómodamente en pantallas pequeñas.' }}</p><a class="resource-button resource-button--secondary" href="{{ url_for('core.how_to_guide',lang=lang,guide='mobile') }}">{{ 'Open mobile guide' if lang=='en' else 'Abrir guía móvil' }} →</a></div>
     </article>
   </div>
@@ -46,4 +46,4 @@
   <ol><li><b>1</b><span>{{ 'Choose one skill for the session.' if lang=='en' else 'Elige una habilidad para la sesión.' }}</span></li><li><b>2</b><span>{{ 'Spend 10–20 focused minutes in the matching tool.' if lang=='en' else 'Dedica 10–20 minutos enfocados en la herramienta adecuada.' }}</span></li><li><b>3</b><span>{{ 'Save one phrase, pattern, or reading insight worth reusing.' if lang=='en' else 'Guarda una frase, patrón o idea de lectura que puedas reutilizar.' }}</span></li><li><b>4</b><span>{{ 'Apply it in your course, notes, conversation, or work context.' if lang=='en' else 'Aplícalo en tu curso, notas, conversación o contexto de trabajo.' }}</span></li></ol>
 </section>
 {% endblock %}
-{% block scripts %}<link rel="stylesheet" href="{{ url_for('static',filename='css/how-to-use.css') }}?v=1.0.0">{% endblock %}
+{% block scripts %}<link rel="stylesheet" href="{{ url_for('static',filename='css/how-to-use.css') }}?v=1.0.1">{% endblock %}

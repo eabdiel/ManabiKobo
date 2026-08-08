@@ -19,3 +19,9 @@ __pycache__/
 .env.*
 !.env.example
 .DS_Store
+
+# Tutorial guide assets are production runtime files. Keep these explicitly included
+# even if broader static-asset exclusions are introduced later.
+!app/static/css/how-to-use.css
+!app/static/assets/tutorial/
+!app/static/assets/tutorial/**

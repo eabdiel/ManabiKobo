@@ -132,3 +132,17 @@ def test_reference_intro_uses_neutral_engineering_title():
     assert b"Software and Reliability Engineer" in response.data
     assert b"software and SAP professional" not in response.data
     assert b"I needed a practical workspace" in response.data
+
+def test_tutorial_static_assets_are_served(client):
+    """Tutorial CSS/screenshots must be present in the production Flask artifact."""
+    for path in [
+        "/static/css/how-to-use.css",
+        "/static/assets/tutorial/desktop-home.png",
+        "/static/assets/tutorial/mobile-home.jpg",
+        "/static/assets/tutorial/desktop-ide.png",
+        "/static/assets/tutorial/mobile-ide.jpg",
+    ]:
+        response = client.get(path)
+        assert response.status_code == 200, path
+
+
