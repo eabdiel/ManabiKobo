@@ -12,7 +12,7 @@
         <label class="phrase-search-label">{{ 'Search phrases' if lang=='en' else 'Buscar frases' }}<input id="phrase-search" type="search" placeholder="{{ 'Japanese, romaji, translation…' if lang=='en' else 'Japonés, romaji, traducción…' }}"></label>
         <label>{{ 'Category' if lang=='en' else 'Categoría' }}<select id="phrase-category"><option value="">{{ 'All categories' if lang=='en' else 'Todas las categorías' }}</option></select></label>
         <div class="phrase-control-stack"><button class="workbench-button workbench-button--primary" id="phrase-shuffle" type="button">🔀 {{ 'Shuffle deck' if lang=='en' else 'Mezclar mazo' }}</button><button class="workbench-button" id="phrase-focus" type="button">🎯 {{ 'Focus mode' if lang=='en' else 'Modo enfoque' }}</button><button class="workbench-button" id="phrase-memorized-only" type="button">✓ {{ 'Memorized only' if lang=='en' else 'Solo memorizadas' }}</button></div>
-        <div class="phrase-metrics"><div><small>{{ 'Visible' if lang=='en' else 'Visibles' }}</small><strong id="phrase-visible">100</strong></div><div><small>{{ 'Memorized' if lang=='en' else 'Memorizadas' }}</small><strong id="phrase-memorized">0</strong></div></div>
+        <div class="phrase-metrics"><div><small>{{ 'Visible' if lang=='en' else 'Visibles' }}</small><strong id="phrase-visible">{{ deck["items"]|length }}</strong></div><div><small>{{ 'Memorized' if lang=='en' else 'Memorizadas' }}</small><strong id="phrase-memorized">0</strong></div></div>
       </div>
     </article>
     <article class="phrase-workbench-tile phrase-deck-tile" data-phrase-tile="deck">

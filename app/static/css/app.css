@@ -978,3 +978,11 @@ button.header-layout-button--save{
   .learning-path-section.reference-feature-tile{padding:24px 18px}
   .learning-path-section.reference-feature-tile .section-heading{text-align:left}
 }
+
+/* =============================================================================
+Home catalog workbench — movable/resizable catalog tiles
+============================================================================= */
+.catalog-layout-note{margin:-10px 0 16px;color:var(--muted);font-size:.75rem}.tool-grid-workbench[data-mk-canvas]{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}.catalog-tile[data-mk-tile]{flex:1 1 360px;width:calc(33.333% - 8px);min-width:280px;min-height:145px;box-shadow:none;border-radius:16px;background:var(--surface2)}.catalog-tile-toolbar{min-height:35px!important;padding:5px 9px!important;background:color-mix(in srgb,var(--surface) 70%,var(--surface2))!important;font-size:.68rem!important}.catalog-tile-toolbar [data-mk-drag]{font-size:.8rem}.catalog-tile .tool-card{height:100%;width:100%;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:auto}.catalog-tile .tool-card:hover{transform:none;box-shadow:none}.catalog-tile.is-minimized{min-height:0!important}.catalog-tile.is-minimized .catalog-tile-toolbar{border-bottom:0}.catalog-tile.is-minimized .tool-card{display:none!important}@media(max-width:900px){.catalog-tile[data-mk-tile]{width:calc(50% - 6px);flex-basis:calc(50% - 6px)}}@media(max-width:600px){.tool-grid-workbench[data-mk-canvas]{display:grid;grid-template-columns:1fr}.catalog-tile[data-mk-tile]{width:100%!important;min-width:0;flex-basis:auto!important}.catalog-layout-note{line-height:1.45}}
+
+/* How-to placeholder */
+.stub-page{max-width:980px;margin:0 auto;padding:24px}.stub-page h1{margin:.35rem 0 1.2rem}.stub-card{min-height:260px;display:grid;place-items:center;border:1px solid var(--line);border-radius:20px;background:var(--surface);box-shadow:var(--shadow)}.stub-card strong{font-size:clamp(1.4rem,3vw,2.2rem);color:var(--primary)}

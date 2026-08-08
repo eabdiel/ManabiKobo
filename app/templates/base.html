@@ -15,9 +15,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icons/favicon-16x16.png') }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}">
   <link rel="manifest" href="{{ url_for('static', filename='icons/site.webmanifest') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/design-tokens.css') }}?v=1.0.17">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}?v=1.0.17">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/workbench.css') }}?v=1.0.17">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/design-tokens.css') }}?v=1.0.18">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}?v=1.0.18">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/workbench.css') }}?v=1.0.18">
 </head>
 <body data-lang="{{ lang }}" data-page="{{ current.slug if current else '' }}">
 <a class="skip-link" href="#main">{{ 'Skip to content' if lang=='en' else 'Saltar al contenido' }}</a>
@@ -41,7 +41,7 @@
   {% for group,label_en,label_es in [('learn','Learn','Aprender'),('tools','Practice & Tools','Práctica y herramientas'),('support','Professional Resources','Recursos profesionales')] %}<div class="nav-label">{{ label_en if lang=='en' else label_es }}</div>{% for p in pages if p.group==group %}<a class="side-link {{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span class="nav-icon">{{ p.icon }}</span><span>{{ p.en if lang=='en' else p.es }}</span></a>{% endfor %}{% endfor %}
   <div class="study-tip"><b>{{ 'Office Study Tip' if lang=='en' else 'Consejo de estudio' }}</b><p>{{ 'Use one focused tool for 10–15 minutes, then apply one phrase during your workday.' if lang=='en' else 'Usa una herramienta por 10–15 minutos y aplica una frase durante tu jornada.' }}</p></div>
 </aside><div class="drawer-scrim" data-drawer-close></div><main id="main" class="main-content">{% block content %}{% endblock %}</main></div>
-<nav class="mobile-tabs" aria-label="Mobile navigation">{% for p in [pages[0],pages[1],pages[2],pages[7]] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span><small>{{ p.en if lang=='en' else p.es }}</small></a>{% endfor %}<button data-drawer-open><span>☰</span><small>{{ 'More' if lang=='en' else 'Más' }}</small></button></nav>
+<nav class="mobile-tabs" aria-label="Mobile navigation">{% for p in pages if p.slug in ['home','how-to-use','kana-dojo','tsundoku'] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span><small>{{ p.en if lang=='en' else p.es }}</small></a>{% endfor %}<button data-drawer-open><span>☰</span><small>{{ 'More' if lang=='en' else 'Más' }}</small></button></nav>
 <div class="install-dialog" data-install-dialog hidden role="dialog" aria-modal="true" aria-labelledby="install-dialog-title">
   <section class="install-dialog-card">
     <button class="install-dialog-close" type="button" data-install-close aria-label="{{ 'Close' if lang=='en' else 'Cerrar' }}">×</button>
