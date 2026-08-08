@@ -1,0 +1,10 @@
+{
+  "content_version": "2026.08.08",
+  "readings": [
+    {
+      "id": "developer-day-001",
+      "file": "workplace/developer-day-001.json",
+      "enabled": true
+    }
+  ]
+}
