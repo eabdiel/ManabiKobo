@@ -193,3 +193,18 @@ def test_how_to_css_cache_version_is_current(client):
         assert response.status_code == 200
         assert b"how-to-use.css" in response.data
         assert b"v=1.0.2" in response.data
+
+
+def test_michel_thomas_method_companion_naming_and_guidance(client):
+    response = client.get("/en/audio-companion/")
+    assert response.status_code == 200
+    assert b"Michel Thomas Method Companion" in response.data
+    assert b"Finish the audio material first" in response.data
+    assert b"independent learning toolkit" in response.data
+    assert b"Audio Course Companion" not in response.data
+
+
+def test_michel_thomas_method_companion_spanish_label(client):
+    response = client.get("/es/audio-companion/")
+    assert response.status_code == 200
+    assert "Compañero del Método Michel Thomas" in response.get_data(as_text=True)

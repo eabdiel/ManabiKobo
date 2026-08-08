@@ -1053,3 +1053,14 @@ html[data-theme="night"] .install-platform-grid>div{background:var(--surface);co
 .theme-toggle:focus-visible{outline:3px solid color-mix(in srgb,var(--primary) 24%,transparent);outline-offset:2px}
 .theme-toggle .theme-toggle__icon{font-size:1.05rem;line-height:1}
 @media(max-width:800px){.theme-toggle{width:40px;height:40px}}
+
+/* v1.0.20 — Michel Thomas Method Companion provenance / post-course guidance */
+.mt-method-intro{max-width:1390px;margin:8px auto 18px;padding:22px 24px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;background:var(--mk-surface);border:1px solid var(--mk-line);border-radius:var(--mk-radius-lg);box-shadow:var(--mk-shadow)}
+.mt-method-intro__mark{width:58px;height:58px;display:grid;place-items:center;border-radius:14px;background:var(--mk-surface-alt);color:var(--mk-red);font-size:1.7rem;font-weight:900}
+.mt-method-intro h2{margin:6px 0 10px;font-size:clamp(1.35rem,2.4vw,2rem);color:var(--mk-ink)}
+.mt-method-intro p{max-width:1080px;margin:8px 0;color:var(--mk-muted);line-height:1.65}
+.mt-method-intro__steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}
+.mt-method-intro__steps span{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--mk-line);border-radius:12px;background:var(--mk-surface-alt);color:var(--mk-ink);font-weight:800}
+.mt-method-intro__steps b{flex:0 0 28px;width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:var(--mk-red);color:#fff}
+.mt-method-intro__note{padding-top:12px;border-top:1px solid var(--mk-line);font-size:.88rem}
+@media(max-width:760px){.mt-method-intro{margin:8px 12px 16px;padding:18px;grid-template-columns:1fr}.mt-method-intro__mark{width:48px;height:48px}.mt-method-intro__steps{grid-template-columns:1fr}}

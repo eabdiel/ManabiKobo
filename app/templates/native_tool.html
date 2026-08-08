@@ -2,6 +2,23 @@
 {% block title %}{{ native.title }} — Manabi Kōbō{% endblock %}
 {% block content %}
 <section class="kana-heading"><div><span class="section-kicker">{{ current.icon }} {{ 'LEARNING TOOL' if lang=='en' else 'HERRAMIENTA DE APRENDIZAJE' }}</span><h1>{{ native.title }}</h1><p>{{ native.subtitle }}</p></div></section>
+{% if native.slug == 'audio-companion' %}
+<section class="mt-method-intro" aria-labelledby="mt-method-intro-title">
+  <div class="mt-method-intro__mark" aria-hidden="true">聴</div>
+  <div class="mt-method-intro__copy">
+    <span class="section-kicker">{{ 'PERSONAL POST-COURSE STUDY WORKFLOW' if lang=='en' else 'FLUJO PERSONAL DE REPASO POSTERIOR AL CURSO' }}</span>
+    <h2 id="mt-method-intro-title">{{ 'How I use this page with the Michel Thomas Method' if lang=='en' else 'Cómo uso esta página con el Método Michel Thomas' }}</h2>
+    <p>{{ 'This is an independent study page I use to supplement the Michel Thomas Japanese audio material after completing the course. It does not contain Michel Thomas audio, is not an official Michel Thomas product, and is not intended to replace the course.' if lang=='en' else 'Esta es una página de estudio independiente que uso para complementar el material de audio de Michel Thomas Japanese después de completar el curso. No contiene audio de Michel Thomas, no es un producto oficial de Michel Thomas y no pretende reemplazar el curso.' }}</p>
+    <p>{{ 'During the audio course, I follow the method as intended: listen, respond aloud, and avoid relying on written notes or memorization aids. Only after finishing the program do I use the tools below to do the things the audio method intentionally asks learners not to do during the lessons—read the material, write kana, review track notes, make recall cards, and organize what I learned for longer-term retention.' if lang=='en' else 'Durante el curso de audio sigo el método como está planteado: escucho, respondo en voz alta y evito depender de notas escritas o ayudas de memorización. Solo después de terminar el programa uso las herramientas de abajo para hacer las cosas que el método de audio pide intencionalmente no hacer durante las lecciones: leer el material, escribir kana, repasar notas de las pistas, crear tarjetas de recuerdo y organizar lo aprendido para retenerlo a largo plazo.' }}</p>
+    <div class="mt-method-intro__steps">
+      <span><b>1</b>{{ 'Finish the audio material first' if lang=='en' else 'Primero termina el material de audio' }}</span>
+      <span><b>2</b>{{ 'Return here for visual/written review' if lang=='en' else 'Luego vuelve aquí para repaso visual/escrito' }}</span>
+      <span><b>3</b>{{ 'Use recall, writing, and reference tools to reinforce weak areas' if lang=='en' else 'Usa recuerdo, escritura y referencias para reforzar áreas débiles' }}</span>
+    </div>
+    <p class="mt-method-intro__note">{{ 'Michel Thomas® and related course materials belong to their respective rights holders. Manabi Kōbō is an independent learning toolkit and is not affiliated with or endorsed by the Michel Thomas Method.' if lang=='en' else 'Michel Thomas® y los materiales relacionados pertenecen a sus respectivos titulares. Manabi Kōbō es una herramienta de aprendizaje independiente y no está afiliada ni respaldada por el Método Michel Thomas.' }}</p>
+  </div>
+</section>
+{% endif %}
 <section class="native-tool" data-language="{{ lang }}" data-tool="{{ native.slug }}"><header class="study-native__header"><div><span class="status-dot"></span><strong>{{ 'Interactive workbench' if lang=='en' else 'Entorno interactivo' }}</strong><small>{{ 'Drag, resize, and minimize the tiles. Your layout and local study state stay in this browser.' if lang=='en' else 'Mueve, ajusta y minimiza los paneles. El diseño y el estado local permanecen en este navegador.' }}</small></div><div class="mk-layout-actions"><button class="workbench-button workbench-button--primary" type="button" data-mk-save-layout>▣ {{ 'Save layout' if lang=='en' else 'Guardar diseño' }}</button><button class="workbench-button workbench-button--quiet" id="native-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button></div></header>
 <div class="native-canvas" id="native-canvas">
 <article class="native-workbench-tile" data-native-tile="controls"><div class="native-tile-toolbar"><span class="native-drag-handle">⠿</span><span>{{ 'Controls' if lang=='en' else 'Controles' }}</span><button class="native-minimize" type="button">−</button><span class="native-resize-handle">↘</span></div><div class="native-tile-body" id="native-controls"></div></article>
