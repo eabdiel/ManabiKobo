@@ -12,24 +12,47 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      # Let every supported Python version report its result. One failure should
+      # not hide whether the same change also breaks another interpreter.
+      fail-fast: false
       matrix:
         python-version: ["3.11", "3.12", "3.13"]
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
 
       - name: Install dependencies
-        run: python -m pip install --upgrade pip && pip install -r requirements-dev.txt
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
+
+      - name: Verify release-critical files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          required = [
+              Path("app/services/reading_content_service.py"),
+              Path("app/content/readings/readings-manifest.json"),
+              Path("app/static/css/how-to-use.css"),
+              Path("app/static/assets/tutorial/desktop-home.png"),
+              Path("app/static/assets/tutorial/mobile-home.jpg"),
+              Path("app/static/assets/tutorial/desktop-ide.png"),
+              Path("app/static/assets/tutorial/mobile-ide.jpg"),
+          ]
+          missing = [str(path) for path in required if not path.is_file()]
+          if missing:
+              raise SystemExit("Missing release-critical files:\n- " + "\n- ".join(missing))
+          print(f"Verified {len(required)} release-critical files.")
+          PY
 
       - name: Compile Python sources
-        run: python -m compileall -q app main.py
+        run: python -m compileall -q app main.py tests
 
       - name: Run tests
-        run: pytest -q
+        run: python -m pytest -q
