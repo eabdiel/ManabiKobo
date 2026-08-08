@@ -208,3 +208,17 @@ def test_michel_thomas_method_companion_spanish_label(client):
     response = client.get("/es/audio-companion/")
     assert response.status_code == 200
     assert "Compañero del Método Michel Thomas" in response.get_data(as_text=True)
+
+
+def test_michel_thomas_kana_writing_lab_has_print_action(client):
+    response = client.get("/en/audio-companion/")
+    assert response.status_code == 200
+    assert b'data-mt-print-writing' in response.data
+    assert b'Kana Writing Lab' in response.data
+
+
+def test_michel_thomas_print_worksheet_runtime_is_available(client):
+    response = client.get("/static/js/native_tools.js")
+    assert response.status_code == 200
+    assert b'printWritingWorksheet' in response.data
+    assert b'Personal post-course study worksheet' in response.data
