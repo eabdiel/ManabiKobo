@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ 'How to Use the Site' if lang=='en' else 'Cómo usar el sitio' }} — Manabi Kōbō{% endblock %}
+{% block content %}
+<section class="stub-page">
+  <span class="section-kicker">{{ 'HOW TO USE MANABI KŌBŌ' if lang=='en' else 'CÓMO USAR MANABI KŌBŌ' }}</span>
+  <h1>{{ 'How to Use the Site' if lang=='en' else 'Cómo usar el sitio' }}</h1>
+  <div class="stub-card"><strong>{{ 'In the works!' if lang=='en' else '¡En desarrollo!' }}</strong></div>
+</section>
+{% endblock %}

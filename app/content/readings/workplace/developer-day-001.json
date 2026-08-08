@@ -1,0 +1,2467 @@
+{
+  "id": "developer-day-001",
+  "version": 1,
+  "title": {
+    "ja": "開発者の一日",
+    "en": "A Day in the Life of a Developer",
+    "es": "Un día en la vida de un desarrollador"
+  },
+  "collection": "it-workplace",
+  "collection_title": {
+    "en": "IT Workplace",
+    "es": "Trabajo en TI"
+  },
+  "difficulty": 2,
+  "estimated_minutes": 6,
+  "tags": [
+    "developer",
+    "workplace",
+    "standup",
+    "code-review",
+    "debugging"
+  ],
+  "grammar_focus": [
+    "は",
+    "を",
+    "に",
+    "で",
+    "ます",
+    "ています"
+  ],
+  "technical_vocabulary": [
+    "ノートパソコン",
+    "デイリースタンドアップ",
+    "コードレビュー",
+    "チケット",
+    "バグ"
+  ],
+  "sentences": [
+    {
+      "id": "s001",
+      "ja": [
+        {
+          "text": "朝",
+          "reading": "あさ",
+          "romaji": "asa",
+          "role": "time",
+          "relation": "time-morning"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "六時半",
+          "reading": "ろくじはん",
+          "romaji": "rokuji han",
+          "role": "time",
+          "relation": "time-six-thirty"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "time-marker"
+        },
+        {
+          "text": "起きます",
+          "reading": "おきます",
+          "romaji": "okimasu",
+          "role": "verb",
+          "relation": "action-wake"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "In the morning, I wake up at 6:30.",
+          "literal": "Morning, at 6:30, wake up.",
+          "tokens": [
+            {
+              "text": "In the morning",
+              "role": "time",
+              "relation": "time-morning"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "at 6:30",
+              "role": "time",
+              "relation": "time-six-thirty"
+            },
+            {
+              "text": ", I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "wake up",
+              "role": "verb",
+              "relation": "action-wake"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Por la mañana, me despierto a las 6:30.",
+          "literal": "Mañana, a las 6:30, me despierto.",
+          "tokens": [
+            {
+              "text": "Por la mañana",
+              "role": "time",
+              "relation": "time-morning"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "a las 6:30",
+              "role": "time",
+              "relation": "time-six-thirty"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "me despierto",
+              "role": "verb",
+              "relation": "action-wake"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s002",
+      "ja": [
+        {
+          "text": "コーヒー",
+          "reading": "コーヒー",
+          "romaji": "kōhī",
+          "role": "object",
+          "relation": "coffee"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "飲んで",
+          "reading": "のんで",
+          "romaji": "nonde",
+          "role": "verb",
+          "relation": "action-drink"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "仕事",
+          "reading": "しごと",
+          "romaji": "shigoto",
+          "role": "object",
+          "relation": "work"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "準備",
+          "reading": "じゅんび",
+          "romaji": "junbi",
+          "role": "object",
+          "relation": "preparation"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "します",
+          "reading": "します",
+          "romaji": "shimasu",
+          "role": "verb",
+          "relation": "action-prepare"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "I drink coffee and get ready for work.",
+          "literal": "Coffee drink, and work preparation do.",
+          "tokens": [
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "drink",
+              "role": "verb",
+              "relation": "action-drink"
+            },
+            {
+              "text": " coffee",
+              "role": "object",
+              "relation": "coffee"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "get ready",
+              "role": "verb",
+              "relation": "action-prepare"
+            },
+            {
+              "text": " for work",
+              "role": "object",
+              "relation": "work"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Tomo café y me preparo para el trabajo.",
+          "literal": "Café bebo, y preparación para el trabajo hago.",
+          "tokens": [
+            {
+              "text": "Tomo",
+              "role": "verb",
+              "relation": "action-drink"
+            },
+            {
+              "text": " café",
+              "role": "object",
+              "relation": "coffee"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "me preparo",
+              "role": "verb",
+              "relation": "action-prepare"
+            },
+            {
+              "text": " para el trabajo",
+              "role": "object",
+              "relation": "work"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s003",
+      "ja": [
+        {
+          "text": "七時半",
+          "reading": "しちじはん",
+          "romaji": "shichiji han",
+          "role": "time",
+          "relation": "time-seven-thirty"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "time-marker"
+        },
+        {
+          "text": "車",
+          "reading": "くるま",
+          "romaji": "kuruma",
+          "role": "object",
+          "relation": "car"
+        },
+        {
+          "text": "で",
+          "reading": "で",
+          "romaji": "de",
+          "role": "particle",
+          "relation": "means-marker"
+        },
+        {
+          "text": "会社",
+          "reading": "かいしゃ",
+          "romaji": "kaisha",
+          "role": "place",
+          "relation": "office"
+        },
+        {
+          "text": "へ",
+          "reading": "へ",
+          "romaji": "e",
+          "role": "particle",
+          "relation": "direction-marker"
+        },
+        {
+          "text": "行きます",
+          "reading": "いきます",
+          "romaji": "ikimasu",
+          "role": "verb",
+          "relation": "action-go"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "At 7:30, I drive to the office.",
+          "literal": "At 7:30, by car, to company go.",
+          "tokens": [
+            {
+              "text": "At 7:30",
+              "role": "time",
+              "relation": "time-seven-thirty"
+            },
+            {
+              "text": ", I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "drive",
+              "role": "verb",
+              "relation": "action-go"
+            },
+            {
+              "text": " to the office",
+              "role": "place",
+              "relation": "office"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "A las 7:30, conduzco hasta la oficina.",
+          "literal": "A las 7:30, en coche, a la empresa voy.",
+          "tokens": [
+            {
+              "text": "A las 7:30",
+              "role": "time",
+              "relation": "time-seven-thirty"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "conduzco",
+              "role": "verb",
+              "relation": "action-go"
+            },
+            {
+              "text": " hasta la oficina",
+              "role": "place",
+              "relation": "office"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s004",
+      "ja": [
+        {
+          "text": "オフィス",
+          "reading": "オフィス",
+          "romaji": "ofisu",
+          "role": "place",
+          "relation": "office"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "location-marker"
+        },
+        {
+          "text": "着くと",
+          "reading": "つくと",
+          "romaji": "tsuku to",
+          "role": "verb",
+          "relation": "action-arrive"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "同僚",
+          "reading": "どうりょう",
+          "romaji": "dōryō",
+          "role": "object",
+          "relation": "coworkers"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "target-marker"
+        },
+        {
+          "text": "「おはようございます」",
+          "reading": "「おはようございます」",
+          "romaji": "ohayō gozaimasu",
+          "role": "expression",
+          "relation": "greeting"
+        },
+        {
+          "text": "と",
+          "reading": "と",
+          "romaji": "to",
+          "role": "particle",
+          "relation": "quote-marker"
+        },
+        {
+          "text": "言います",
+          "reading": "いいます",
+          "romaji": "iimasu",
+          "role": "verb",
+          "relation": "action-say"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "When I arrive at the office, I say “good morning” to my coworkers.",
+          "literal": "When office arrive, to coworkers, “good morning” say.",
+          "tokens": [
+            {
+              "text": "When I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "arrive",
+              "role": "verb",
+              "relation": "action-arrive"
+            },
+            {
+              "text": " at the office",
+              "role": "place",
+              "relation": "office"
+            },
+            {
+              "text": ", I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "say",
+              "role": "verb",
+              "relation": "action-say"
+            },
+            {
+              "text": " “good morning”",
+              "role": "expression",
+              "relation": "greeting"
+            },
+            {
+              "text": " to my coworkers",
+              "role": "object",
+              "relation": "coworkers"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Cuando llego a la oficina, saludo a mis compañeros con un “buenos días”.",
+          "literal": "Cuando a la oficina llego, a los compañeros “buenos días” digo.",
+          "tokens": [
+            {
+              "text": "Cuando ",
+              "role": "connector",
+              "relation": "when"
+            },
+            {
+              "text": "llego",
+              "role": "verb",
+              "relation": "action-arrive"
+            },
+            {
+              "text": " a la oficina",
+              "role": "place",
+              "relation": "office"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "saludo",
+              "role": "verb",
+              "relation": "action-say"
+            },
+            {
+              "text": " a mis compañeros",
+              "role": "object",
+              "relation": "coworkers"
+            },
+            {
+              "text": " con un “buenos días”",
+              "role": "expression",
+              "relation": "greeting"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s005",
+      "ja": [
+        {
+          "text": "席",
+          "reading": "せき",
+          "romaji": "seki",
+          "role": "place",
+          "relation": "desk"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "location-marker"
+        },
+        {
+          "text": "座って",
+          "reading": "すわって",
+          "romaji": "suwatte",
+          "role": "verb",
+          "relation": "action-sit"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "ノートパソコン",
+          "reading": "ノートパソコン",
+          "romaji": "nōto pasokon",
+          "role": "technical",
+          "relation": "laptop"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "開きます",
+          "reading": "ひらきます",
+          "romaji": "hirakimasu",
+          "role": "verb",
+          "relation": "action-open"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "I sit at my desk and open my laptop.",
+          "literal": "At seat sit, laptop open.",
+          "tokens": [
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "sit",
+              "role": "verb",
+              "relation": "action-sit"
+            },
+            {
+              "text": " at my desk",
+              "role": "place",
+              "relation": "desk"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "open",
+              "role": "verb",
+              "relation": "action-open"
+            },
+            {
+              "text": " my laptop",
+              "role": "technical",
+              "relation": "laptop"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Me siento en mi escritorio y abro mi portátil.",
+          "literal": "En el asiento me siento, portátil abro.",
+          "tokens": [
+            {
+              "text": "Me siento",
+              "role": "verb",
+              "relation": "action-sit"
+            },
+            {
+              "text": " en mi escritorio",
+              "role": "place",
+              "relation": "desk"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "abro",
+              "role": "verb",
+              "relation": "action-open"
+            },
+            {
+              "text": " mi portátil",
+              "role": "technical",
+              "relation": "laptop"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s006",
+      "ja": [
+        {
+          "text": "まず",
+          "reading": "まず",
+          "romaji": "mazu",
+          "role": "adverb",
+          "relation": "first"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "メール",
+          "reading": "メール",
+          "romaji": "mēru",
+          "role": "technical",
+          "relation": "email"
+        },
+        {
+          "text": "と",
+          "reading": "と",
+          "romaji": "to",
+          "role": "particle",
+          "relation": "connector-and"
+        },
+        {
+          "text": "チケット",
+          "reading": "チケット",
+          "romaji": "chiketto",
+          "role": "technical",
+          "relation": "tickets"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "確認します",
+          "reading": "かくにんします",
+          "romaji": "kakunin shimasu",
+          "role": "verb",
+          "relation": "action-check"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "First, I check my email and tickets.",
+          "literal": "First, email and tickets check.",
+          "tokens": [
+            {
+              "text": "First",
+              "role": "adverb",
+              "relation": "first"
+            },
+            {
+              "text": ", I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "check",
+              "role": "verb",
+              "relation": "action-check"
+            },
+            {
+              "text": " my email",
+              "role": "technical",
+              "relation": "email"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "tickets",
+              "role": "technical",
+              "relation": "tickets"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Primero, reviso el correo y los tickets.",
+          "literal": "Primero, correo y tickets reviso.",
+          "tokens": [
+            {
+              "text": "Primero",
+              "role": "adverb",
+              "relation": "first"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "reviso",
+              "role": "verb",
+              "relation": "action-check"
+            },
+            {
+              "text": " el correo",
+              "role": "technical",
+              "relation": "email"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "los tickets",
+              "role": "technical",
+              "relation": "tickets"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s007",
+      "ja": [
+        {
+          "text": "九時",
+          "reading": "くじ",
+          "romaji": "kuji",
+          "role": "time",
+          "relation": "time-nine"
+        },
+        {
+          "text": "から",
+          "reading": "から",
+          "romaji": "kara",
+          "role": "particle",
+          "relation": "from-marker"
+        },
+        {
+          "text": "チーム",
+          "reading": "チーム",
+          "romaji": "chīmu",
+          "role": "subject",
+          "relation": "team"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "デイリースタンドアップ",
+          "reading": "デイリースタンドアップ",
+          "romaji": "deirī sutandoappu",
+          "role": "technical",
+          "relation": "standup"
+        },
+        {
+          "text": "が",
+          "reading": "が",
+          "romaji": "ga",
+          "role": "particle",
+          "relation": "subject-marker"
+        },
+        {
+          "text": "あります",
+          "reading": "あります",
+          "romaji": "arimasu",
+          "role": "verb",
+          "relation": "action-exist"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "At 9:00, the team has its daily stand-up.",
+          "literal": "From 9:00, team daily stand-up exists.",
+          "tokens": [
+            {
+              "text": "At 9:00",
+              "role": "time",
+              "relation": "time-nine"
+            },
+            {
+              "text": ", the team ",
+              "role": "subject",
+              "relation": "team"
+            },
+            {
+              "text": "has",
+              "role": "verb",
+              "relation": "action-exist"
+            },
+            {
+              "text": " its daily stand-up",
+              "role": "technical",
+              "relation": "standup"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "A las 9:00, el equipo tiene su reunión diaria.",
+          "literal": "Desde las 9:00, reunión diaria del equipo hay.",
+          "tokens": [
+            {
+              "text": "A las 9:00",
+              "role": "time",
+              "relation": "time-nine"
+            },
+            {
+              "text": ", el equipo ",
+              "role": "subject",
+              "relation": "team"
+            },
+            {
+              "text": "tiene",
+              "role": "verb",
+              "relation": "action-exist"
+            },
+            {
+              "text": " su reunión diaria",
+              "role": "technical",
+              "relation": "standup"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s008",
+      "ja": [
+        {
+          "text": "私は",
+          "reading": "わたしは",
+          "romaji": "watashi wa",
+          "role": "subject",
+          "relation": "speaker"
+        },
+        {
+          "text": "昨日",
+          "reading": "きのう",
+          "romaji": "kinō",
+          "role": "time",
+          "relation": "yesterday"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "作業",
+          "reading": "さぎょう",
+          "romaji": "sagyō",
+          "role": "object",
+          "relation": "work-item"
+        },
+        {
+          "text": "と",
+          "reading": "と",
+          "romaji": "to",
+          "role": "particle",
+          "relation": "connector-and"
+        },
+        {
+          "text": "今日",
+          "reading": "きょう",
+          "romaji": "kyō",
+          "role": "time",
+          "relation": "today"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "予定",
+          "reading": "よてい",
+          "romaji": "yotei",
+          "role": "object",
+          "relation": "plan"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "話します",
+          "reading": "はなします",
+          "romaji": "hanashimasu",
+          "role": "verb",
+          "relation": "action-talk"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "I talk about yesterday’s work and today’s plan.",
+          "literal": "I, yesterday work and today plan, talk.",
+          "tokens": [
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "talk",
+              "role": "verb",
+              "relation": "action-talk"
+            },
+            {
+              "text": " about yesterday’s work",
+              "role": "object",
+              "relation": "work-item"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "today’s plan",
+              "role": "object",
+              "relation": "plan"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Hablo sobre el trabajo de ayer y el plan de hoy.",
+          "literal": "Yo, trabajo de ayer y plan de hoy, hablo.",
+          "tokens": [
+            {
+              "text": "Hablo",
+              "role": "verb",
+              "relation": "action-talk"
+            },
+            {
+              "text": " sobre el trabajo de ayer",
+              "role": "object",
+              "relation": "work-item"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "el plan de hoy",
+              "role": "object",
+              "relation": "plan"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s009",
+      "ja": [
+        {
+          "text": "今朝",
+          "reading": "けさ",
+          "romaji": "kesa",
+          "role": "time",
+          "relation": "this-morning"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "問題",
+          "reading": "もんだい",
+          "romaji": "mondai",
+          "role": "subject",
+          "relation": "problem"
+        },
+        {
+          "text": "は",
+          "reading": "は",
+          "romaji": "wa",
+          "role": "particle",
+          "relation": "topic-marker"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "ログイン画面",
+          "reading": "ログインがめん",
+          "romaji": "roguin gamen",
+          "role": "technical",
+          "relation": "login-screen"
+        },
+        {
+          "text": "で",
+          "reading": "で",
+          "romaji": "de",
+          "role": "particle",
+          "relation": "location-marker"
+        },
+        {
+          "text": "エラー",
+          "reading": "エラー",
+          "romaji": "erā",
+          "role": "technical",
+          "relation": "error"
+        },
+        {
+          "text": "が",
+          "reading": "が",
+          "romaji": "ga",
+          "role": "particle",
+          "relation": "subject-marker"
+        },
+        {
+          "text": "出る",
+          "reading": "でる",
+          "romaji": "deru",
+          "role": "verb",
+          "relation": "action-appear"
+        },
+        {
+          "text": "ことです",
+          "reading": "ことです",
+          "romaji": "koto desu",
+          "role": "expression",
+          "relation": "problem-definition"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "This morning’s problem is an error appearing on the login screen.",
+          "literal": "As for this morning’s problem, at login screen error appears thing is.",
+          "tokens": [
+            {
+              "text": "This morning’s problem",
+              "role": "subject",
+              "relation": "problem"
+            },
+            {
+              "text": " is ",
+              "role": "verb",
+              "relation": "problem-definition"
+            },
+            {
+              "text": "an error",
+              "role": "technical",
+              "relation": "error"
+            },
+            {
+              "text": " appearing",
+              "role": "verb",
+              "relation": "action-appear"
+            },
+            {
+              "text": " on the login screen",
+              "role": "technical",
+              "relation": "login-screen"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "El problema de esta mañana es un error que aparece en la pantalla de inicio de sesión.",
+          "literal": "En cuanto al problema de esta mañana, en la pantalla de inicio aparece un error.",
+          "tokens": [
+            {
+              "text": "El problema de esta mañana",
+              "role": "subject",
+              "relation": "problem"
+            },
+            {
+              "text": " es ",
+              "role": "verb",
+              "relation": "problem-definition"
+            },
+            {
+              "text": "un error",
+              "role": "technical",
+              "relation": "error"
+            },
+            {
+              "text": " que aparece",
+              "role": "verb",
+              "relation": "action-appear"
+            },
+            {
+              "text": " en la pantalla de inicio de sesión",
+              "role": "technical",
+              "relation": "login-screen"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s010",
+      "ja": [
+        {
+          "text": "原因",
+          "reading": "げんいん",
+          "romaji": "gen'in",
+          "role": "object",
+          "relation": "cause"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "調べる",
+          "reading": "しらべる",
+          "romaji": "shiraberu",
+          "role": "verb",
+          "relation": "action-investigate"
+        },
+        {
+          "text": "ために",
+          "reading": "ために",
+          "romaji": "tame ni",
+          "role": "connector",
+          "relation": "purpose"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "ログ",
+          "reading": "ログ",
+          "romaji": "rogu",
+          "role": "technical",
+          "relation": "logs"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "読みます",
+          "reading": "よみます",
+          "romaji": "yomimasu",
+          "role": "verb",
+          "relation": "action-read"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "To investigate the cause, I read the logs.",
+          "literal": "In order to investigate cause, logs read.",
+          "tokens": [
+            {
+              "text": "To investigate",
+              "role": "verb",
+              "relation": "action-investigate"
+            },
+            {
+              "text": " the cause",
+              "role": "object",
+              "relation": "cause"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "read",
+              "role": "verb",
+              "relation": "action-read"
+            },
+            {
+              "text": " the logs",
+              "role": "technical",
+              "relation": "logs"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Para investigar la causa, leo los registros.",
+          "literal": "Para investigar la causa, registros leo.",
+          "tokens": [
+            {
+              "text": "Para investigar",
+              "role": "verb",
+              "relation": "action-investigate"
+            },
+            {
+              "text": " la causa",
+              "role": "object",
+              "relation": "cause"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "leo",
+              "role": "verb",
+              "relation": "action-read"
+            },
+            {
+              "text": " los registros",
+              "role": "technical",
+              "relation": "logs"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s011",
+      "ja": [
+        {
+          "text": "コードレビュー",
+          "reading": "コードレビュー",
+          "romaji": "kōdo rebyū",
+          "role": "technical",
+          "relation": "code-review"
+        },
+        {
+          "text": "中",
+          "reading": "ちゅう",
+          "romaji": "chū",
+          "role": "time",
+          "relation": "during"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "time-marker"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "「この変更",
+          "reading": "「このへんこう",
+          "romaji": "kono henkō",
+          "role": "object",
+          "relation": "change"
+        },
+        {
+          "text": "は",
+          "reading": "は",
+          "romaji": "wa",
+          "role": "particle",
+          "relation": "topic-marker"
+        },
+        {
+          "text": "本当に",
+          "reading": "ほんとうに",
+          "romaji": "hontō ni",
+          "role": "adverb",
+          "relation": "really"
+        },
+        {
+          "text": "安全",
+          "reading": "あんぜん",
+          "romaji": "anzen",
+          "role": "adjective",
+          "relation": "safe"
+        },
+        {
+          "text": "かな」",
+          "reading": "かな」",
+          "romaji": "kana",
+          "role": "expression",
+          "relation": "inner-question"
+        },
+        {
+          "text": "と",
+          "reading": "と",
+          "romaji": "to",
+          "role": "particle",
+          "relation": "quote-marker"
+        },
+        {
+          "text": "考えます",
+          "reading": "かんがえます",
+          "romaji": "kangaemasu",
+          "role": "verb",
+          "relation": "action-think"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "During code review, I think, “Is this change really safe?”",
+          "literal": "“As for this change, really safe, I wonder,” think.",
+          "tokens": [
+            {
+              "text": "During code review, I ",
+              "role": "technical",
+              "relation": "code-review"
+            },
+            {
+              "text": "think",
+              "role": "verb",
+              "relation": "action-think"
+            },
+            {
+              "text": ", “Is this change",
+              "role": "object",
+              "relation": "change"
+            },
+            {
+              "text": " really",
+              "role": "adverb",
+              "relation": "really"
+            },
+            {
+              "text": " safe",
+              "role": "adjective",
+              "relation": "safe"
+            },
+            {
+              "text": "?”",
+              "role": "expression",
+              "relation": "inner-question"
+            }
+          ]
+        },
+        "es": {
+          "natural": "Durante la revisión de código pienso: “¿Este cambio es realmente seguro?”",
+          "literal": "“En cuanto a este cambio, realmente seguro, me pregunto”, pienso.",
+          "tokens": [
+            {
+              "text": "Durante la revisión de código ",
+              "role": "technical",
+              "relation": "code-review"
+            },
+            {
+              "text": "pienso",
+              "role": "verb",
+              "relation": "action-think"
+            },
+            {
+              "text": ": “¿Este cambio",
+              "role": "object",
+              "relation": "change"
+            },
+            {
+              "text": " realmente",
+              "role": "adverb",
+              "relation": "really"
+            },
+            {
+              "text": " seguro",
+              "role": "adjective",
+              "relation": "safe"
+            },
+            {
+              "text": "?”",
+              "role": "expression",
+              "relation": "inner-question"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s012",
+      "ja": [
+        {
+          "text": "テスト",
+          "reading": "テスト",
+          "romaji": "tesuto",
+          "role": "technical",
+          "relation": "tests"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "追加して",
+          "reading": "ついかして",
+          "romaji": "tsuika shite",
+          "role": "verb",
+          "relation": "action-add"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "もう一度",
+          "reading": "もういちど",
+          "romaji": "mō ichido",
+          "role": "adverb",
+          "relation": "again"
+        },
+        {
+          "text": "コード",
+          "reading": "コード",
+          "romaji": "kōdo",
+          "role": "technical",
+          "relation": "code"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "確認します",
+          "reading": "かくにんします",
+          "romaji": "kakunin shimasu",
+          "role": "verb",
+          "relation": "action-review"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "I add tests and review the code one more time.",
+          "literal": "Tests add, one more time code check.",
+          "tokens": [
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "add",
+              "role": "verb",
+              "relation": "action-add"
+            },
+            {
+              "text": " tests",
+              "role": "technical",
+              "relation": "tests"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "review",
+              "role": "verb",
+              "relation": "action-review"
+            },
+            {
+              "text": " the code",
+              "role": "technical",
+              "relation": "code"
+            },
+            {
+              "text": " one more time",
+              "role": "adverb",
+              "relation": "again"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Agrego pruebas y reviso el código una vez más.",
+          "literal": "Pruebas agrego, una vez más código reviso.",
+          "tokens": [
+            {
+              "text": "Agrego",
+              "role": "verb",
+              "relation": "action-add"
+            },
+            {
+              "text": " pruebas",
+              "role": "technical",
+              "relation": "tests"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "reviso",
+              "role": "verb",
+              "relation": "action-review"
+            },
+            {
+              "text": " el código",
+              "role": "technical",
+              "relation": "code"
+            },
+            {
+              "text": " una vez más",
+              "role": "adverb",
+              "relation": "again"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s013",
+      "ja": [
+        {
+          "text": "昼",
+          "reading": "ひる",
+          "romaji": "hiru",
+          "role": "time",
+          "relation": "noon"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "あと",
+          "reading": "あと",
+          "romaji": "ato",
+          "role": "time",
+          "relation": "after-lunch"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "小さい",
+          "reading": "ちいさい",
+          "romaji": "chiisai",
+          "role": "adjective",
+          "relation": "small"
+        },
+        {
+          "text": "バグ",
+          "reading": "バグ",
+          "romaji": "bagu",
+          "role": "technical",
+          "relation": "bug"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "見つけます",
+          "reading": "みつけます",
+          "romaji": "mitsukemasu",
+          "role": "verb",
+          "relation": "action-find"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "After lunch, I find a small bug.",
+          "literal": "After noon, small bug find.",
+          "tokens": [
+            {
+              "text": "After lunch",
+              "role": "time",
+              "relation": "after-lunch"
+            },
+            {
+              "text": ", I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "find",
+              "role": "verb",
+              "relation": "action-find"
+            },
+            {
+              "text": " a small",
+              "role": "adjective",
+              "relation": "small"
+            },
+            {
+              "text": " bug",
+              "role": "technical",
+              "relation": "bug"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Después del almuerzo, encuentro un pequeño bug.",
+          "literal": "Después del mediodía, pequeño bug encuentro.",
+          "tokens": [
+            {
+              "text": "Después del almuerzo",
+              "role": "time",
+              "relation": "after-lunch"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "encuentro",
+              "role": "verb",
+              "relation": "action-find"
+            },
+            {
+              "text": " un pequeño",
+              "role": "adjective",
+              "relation": "small"
+            },
+            {
+              "text": " bug",
+              "role": "technical",
+              "relation": "bug"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s014",
+      "ja": [
+        {
+          "text": "修正",
+          "reading": "しゅうせい",
+          "romaji": "shūsei",
+          "role": "object",
+          "relation": "fix"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "プッシュして",
+          "reading": "プッシュして",
+          "romaji": "pusshu shite",
+          "role": "verb",
+          "relation": "action-push"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "チームメンバー",
+          "reading": "チームメンバー",
+          "romaji": "chīmu menbā",
+          "role": "object",
+          "relation": "teammate"
+        },
+        {
+          "text": "に",
+          "reading": "に",
+          "romaji": "ni",
+          "role": "particle",
+          "relation": "target-marker"
+        },
+        {
+          "text": "レビュー",
+          "reading": "レビュー",
+          "romaji": "rebyū",
+          "role": "technical",
+          "relation": "review"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "お願いします",
+          "reading": "おねがいします",
+          "romaji": "onegai shimasu",
+          "role": "verb",
+          "relation": "action-request"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "I push the fix and ask a teammate for a review.",
+          "literal": "Fix push, to team member review request.",
+          "tokens": [
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "push",
+              "role": "verb",
+              "relation": "action-push"
+            },
+            {
+              "text": " the fix",
+              "role": "object",
+              "relation": "fix"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "ask",
+              "role": "verb",
+              "relation": "action-request"
+            },
+            {
+              "text": " a teammate",
+              "role": "object",
+              "relation": "teammate"
+            },
+            {
+              "text": " for a review",
+              "role": "technical",
+              "relation": "review"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Subo la corrección y le pido una revisión a un compañero.",
+          "literal": "Corrección subo, a miembro del equipo revisión pido.",
+          "tokens": [
+            {
+              "text": "Subo",
+              "role": "verb",
+              "relation": "action-push"
+            },
+            {
+              "text": " la corrección",
+              "role": "object",
+              "relation": "fix"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "le pido",
+              "role": "verb",
+              "relation": "action-request"
+            },
+            {
+              "text": " una revisión",
+              "role": "technical",
+              "relation": "review"
+            },
+            {
+              "text": " a un compañero",
+              "role": "object",
+              "relation": "teammate"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s015",
+      "ja": [
+        {
+          "text": "夕方",
+          "reading": "ゆうがた",
+          "romaji": "yūgata",
+          "role": "time",
+          "relation": "evening"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "明日",
+          "reading": "あした",
+          "romaji": "ashita",
+          "role": "time",
+          "relation": "tomorrow"
+        },
+        {
+          "text": "の",
+          "reading": "の",
+          "romaji": "no",
+          "role": "particle",
+          "relation": "modifier-marker"
+        },
+        {
+          "text": "メモ",
+          "reading": "メモ",
+          "romaji": "memo",
+          "role": "object",
+          "relation": "notes"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "残して",
+          "reading": "のこして",
+          "romaji": "nokoshite",
+          "role": "verb",
+          "relation": "action-leave"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "パソコン",
+          "reading": "パソコン",
+          "romaji": "pasokon",
+          "role": "technical",
+          "relation": "computer"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "閉じます",
+          "reading": "とじます",
+          "romaji": "tojimasu",
+          "role": "verb",
+          "relation": "action-close"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "In the evening, I leave notes for tomorrow and close my computer.",
+          "literal": "Evening, tomorrow notes leave, computer close.",
+          "tokens": [
+            {
+              "text": "In the evening",
+              "role": "time",
+              "relation": "evening"
+            },
+            {
+              "text": ", I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "leave",
+              "role": "verb",
+              "relation": "action-leave"
+            },
+            {
+              "text": " notes for tomorrow",
+              "role": "object",
+              "relation": "notes"
+            },
+            {
+              "text": " and ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "close",
+              "role": "verb",
+              "relation": "action-close"
+            },
+            {
+              "text": " my computer",
+              "role": "technical",
+              "relation": "computer"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Por la tarde, dejo notas para mañana y cierro el ordenador.",
+          "literal": "Tarde, notas de mañana dejo, ordenador cierro.",
+          "tokens": [
+            {
+              "text": "Por la tarde",
+              "role": "time",
+              "relation": "evening"
+            },
+            {
+              "text": ", ",
+              "role": "punctuation",
+              "relation": ""
+            },
+            {
+              "text": "dejo",
+              "role": "verb",
+              "relation": "action-leave"
+            },
+            {
+              "text": " notas para mañana",
+              "role": "object",
+              "relation": "notes"
+            },
+            {
+              "text": " y ",
+              "role": "connector",
+              "relation": "connector-and"
+            },
+            {
+              "text": "cierro",
+              "role": "verb",
+              "relation": "action-close"
+            },
+            {
+              "text": " el ordenador",
+              "role": "technical",
+              "relation": "computer"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s016",
+      "ja": [
+        {
+          "text": "今日",
+          "reading": "きょう",
+          "romaji": "kyō",
+          "role": "time",
+          "relation": "today"
+        },
+        {
+          "text": "も",
+          "reading": "も",
+          "romaji": "mo",
+          "role": "particle",
+          "relation": "also-marker"
+        },
+        {
+          "text": "少し",
+          "reading": "すこし",
+          "romaji": "sukoshi",
+          "role": "adverb",
+          "relation": "a-little"
+        },
+        {
+          "text": "ずつ",
+          "reading": "ずつ",
+          "romaji": "zutsu",
+          "role": "adverb",
+          "relation": "gradually"
+        },
+        {
+          "text": "、",
+          "reading": "、",
+          "romaji": ",",
+          "role": "punctuation",
+          "relation": ""
+        },
+        {
+          "text": "良い",
+          "reading": "よい",
+          "romaji": "yoi",
+          "role": "adjective",
+          "relation": "better"
+        },
+        {
+          "text": "コード",
+          "reading": "コード",
+          "romaji": "kōdo",
+          "role": "technical",
+          "relation": "code"
+        },
+        {
+          "text": "を",
+          "reading": "を",
+          "romaji": "o",
+          "role": "particle",
+          "relation": "object-marker"
+        },
+        {
+          "text": "作れた",
+          "reading": "つくれた",
+          "romaji": "tsukureta",
+          "role": "verb",
+          "relation": "action-build"
+        },
+        {
+          "text": "と",
+          "reading": "と",
+          "romaji": "to",
+          "role": "particle",
+          "relation": "quote-marker"
+        },
+        {
+          "text": "思います",
+          "reading": "おもいます",
+          "romaji": "omoimasu",
+          "role": "verb",
+          "relation": "action-feel"
+        },
+        {
+          "text": "。",
+          "reading": "。",
+          "romaji": ".",
+          "role": "punctuation",
+          "relation": ""
+        }
+      ],
+      "translation": {
+        "en": {
+          "natural": "I feel like I made the code a little better today, too.",
+          "literal": "Today also, little by little, good code was able to make, I think.",
+          "tokens": [
+            {
+              "text": "I ",
+              "role": "subject",
+              "relation": "speaker"
+            },
+            {
+              "text": "feel",
+              "role": "verb",
+              "relation": "action-feel"
+            },
+            {
+              "text": " like I ",
+              "role": "connector",
+              "relation": "thought-content"
+            },
+            {
+              "text": "made",
+              "role": "verb",
+              "relation": "action-build"
+            },
+            {
+              "text": " the code",
+              "role": "technical",
+              "relation": "code"
+            },
+            {
+              "text": " a little better",
+              "role": "adjective",
+              "relation": "better"
+            },
+            {
+              "text": " today, too",
+              "role": "time",
+              "relation": "today"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        },
+        "es": {
+          "natural": "Siento que hoy también dejé el código un poco mejor.",
+          "literal": "Hoy también, poco a poco, buen código pude hacer, pienso.",
+          "tokens": [
+            {
+              "text": "Siento",
+              "role": "verb",
+              "relation": "action-feel"
+            },
+            {
+              "text": " que ",
+              "role": "connector",
+              "relation": "thought-content"
+            },
+            {
+              "text": "dejé",
+              "role": "verb",
+              "relation": "action-build"
+            },
+            {
+              "text": " el código",
+              "role": "technical",
+              "relation": "code"
+            },
+            {
+              "text": " un poco mejor",
+              "role": "adjective",
+              "relation": "better"
+            },
+            {
+              "text": " hoy también",
+              "role": "time",
+              "relation": "today"
+            },
+            {
+              "text": ".",
+              "role": "punctuation",
+              "relation": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

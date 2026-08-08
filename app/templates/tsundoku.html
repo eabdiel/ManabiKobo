@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Tsundoku Reading Nook' if lang=='en' else 'Rincón de Lectura Tsundoku' }} — Manabi Kōbō{% endblock %}
+{% block content %}
+<section class="tsu-page" data-tsundoku-root data-catalog='{{ reading_catalog|tojson|safe }}'>
+  <header class="tsu-header">
+    <div>
+      <span class="section-kicker">積読 · TSUNDOKU</span>
+      <h1>{{ 'Reading Nook' if lang=='en' else 'Rincón de Lectura' }}</h1>
+      <p>{{ 'Guided bilingual reading for developers — read, inspect, understand, and practice.' if lang=='en' else 'Lectura bilingüe guiada para desarrolladores: lee, inspecciona, comprende y practica.' }}</p>
+    </div>
+    <div class="tsu-header-badge"><span>読</span><b>{{ 'Bilingual Reader' if lang=='en' else 'Lector bilingüe' }}</b><small>{{ reading_catalog.content_version }}</small></div>
+  </header>
+
+  <div class="tsu-layout">
+    <aside class="tsu-bookshelf" aria-label="{{ 'Bookshelf' if lang=='en' else 'Biblioteca' }}">
+      <div class="tsu-shelf-head"><div><span class="section-kicker">{{ 'BOOKSHELF' if lang=='en' else 'BIBLIOTECA' }}</span><h2>{{ 'Your readings' if lang=='en' else 'Tus lecturas' }}</h2></div><span class="tsu-count">{{ reading_catalog.stories|length }}</span></div>
+      <div class="tsu-book-list" data-book-list></div>
+      <div class="tsu-coming-soon"><b>＋ {{ 'More collections coming soon' if lang=='en' else 'Próximas colecciones' }}</b><small>{{ 'Coding stories · Programming basics · Debugging · DevOps/SRE' if lang=='en' else 'Historias de código · Programación · Depuración · DevOps/SRE' }}</small></div>
+    </aside>
+
+    <section class="tsu-reader" aria-live="polite">
+      <div class="tsu-reader-top">
+        <div class="tsu-title-block"><span class="tsu-reader-icon">積</span><div><h2 data-reading-title></h2><p data-reading-subtitle></p></div></div>
+        <div class="tsu-controls">
+          <fieldset><legend>{{ 'Japanese Display' if lang=='en' else 'Japonés' }}</legend><div class="tsu-segment"><button type="button" data-display-mode="furigana" class="active">{{ 'Furigana' if lang=='en' else 'Furigana' }}</button><button type="button" data-display-mode="kana">Kana</button><button type="button" data-display-mode="romaji">Rōmaji</button></div></fieldset>
+          <fieldset><legend>{{ 'Translation' if lang=='en' else 'Traducción' }}</legend><div class="tsu-segment"><button type="button" data-translation-mode="natural" class="active">{{ 'Natural' if lang=='en' else 'Natural' }}</button><button type="button" data-translation-mode="literal">{{ 'Literal' if lang=='en' else 'Literal' }}</button></div></fieldset>
+          <fieldset><legend>{{ 'Language' if lang=='en' else 'Idioma' }}</legend><div class="tsu-segment"><button type="button" data-translation-language="en" class="active">English</button><button type="button" data-translation-language="es">Español</button></div></fieldset>
+          <button class="tsu-toggle active" type="button" data-color-toggle aria-pressed="true">Aa <span>{{ 'Grammar' if lang=='en' else 'Gramática' }}</span></button>
+          <fieldset class="tsu-count-control"><legend>{{ '# of Sentences per Reading' if lang=='en' else '# de oraciones por lectura' }}</legend><input type="number" min="1" max="10" step="1" value="1" inputmode="numeric" data-sentences-per-reading aria-label="{{ 'Number of sentences per reading' if lang=='en' else 'Número de oraciones por lectura' }}"></fieldset>
+          <button class="tsu-toggle" type="button" data-sync-toggle aria-pressed="false">⇅ <span>{{ 'Sync' if lang=='en' else 'Sincronizar' }}</span></button>
+        </div>
+      </div>
+
+      <div class="tsu-reading-grid">
+        <section class="tsu-pane" data-pane="ja"><header><span>日本語 <small>(Japanese)</small></span><span class="tsu-pane-status">{{ 'Color mapping' if lang=='en' else 'Mapeo de color' }}</span></header><div class="tsu-sentences" data-ja-sentences tabindex="0"></div></section>
+        <section class="tsu-pane" data-pane="translation"><header><span data-translation-heading>English</span><span class="tsu-pane-status">{{ 'Natural translation' if lang=='en' else 'Traducción natural' }}</span></header><div class="tsu-sentences" data-translation-sentences tabindex="0"></div></section>
+      </div>
+
+      <div class="tsu-lower-grid">
+        <section class="tsu-panel tsu-legend"><span class="section-kicker">{{ 'GRAMMAR LEGEND' if lang=='en' else 'LEYENDA GRAMATICAL' }}</span><div class="tsu-legend-grid"><span data-role="subject">{{ 'Subject' if lang=='en' else 'Sujeto' }}</span><span data-role="object">{{ 'Object' if lang=='en' else 'Objeto' }}</span><span data-role="verb">{{ 'Verb' if lang=='en' else 'Verbo' }}</span><span data-role="particle">{{ 'Particle' if lang=='en' else 'Partícula' }}</span><span data-role="technical">{{ 'Technical term' if lang=='en' else 'Término técnico' }}</span><span data-role="connector">{{ 'Connector' if lang=='en' else 'Conector' }}</span><span data-role="adjective">{{ 'Adjective' if lang=='en' else 'Adjetivo' }}</span><span data-role="time">{{ 'Time / context' if lang=='en' else 'Tiempo / contexto' }}</span></div></section>
+        <section class="tsu-panel tsu-insight"><span class="section-kicker">{{ 'SELECTED SENTENCE INSIGHT' if lang=='en' else 'ANÁLISIS DE LA ORACIÓN' }}</span><div data-insight></div></section>
+        <section class="tsu-panel tsu-tools"><span class="section-kicker">{{ 'READING TOOLS' if lang=='en' else 'HERRAMIENTAS' }}</span><button type="button" data-prev>← {{ 'Previous' if lang=='en' else 'Anterior' }}</button><button type="button" data-next>{{ 'Next reading' if lang=='en' else 'Siguiente lectura' }} →</button><button type="button" data-bookmark>☆ {{ 'Bookmark reading' if lang=='en' else 'Guardar lectura' }}</button></section>
+      </div>
+
+      <footer class="tsu-progress"><span>読 {{ 'Progress in this reading' if lang=='en' else 'Progreso de lectura' }}</span><div class="tsu-progress-track"><i data-progress-bar></i></div><b data-progress-percent>0%</b><span data-progress-count></span></footer>
+    </section>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/tsundoku.css') }}?v=1.0.2">
+<script src="{{ url_for('static',filename='js/tsundoku.js') }}?v=1.0.2" defer></script>
+{% endblock %}
