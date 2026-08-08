@@ -145,6 +145,47 @@
       handle.addEventListener('pointercancel', finishResize);
     });
 
+    // Home uses the shared workbench contract directly rather than a page-specific
+    // adapter. Keep drag/minimize behavior here so dashboard and catalog tiles use
+    // the same persistence model without coupling it to reading content updates.
+    if (page === 'home') {
+      let draggedTile = null;
+      tiles().forEach(tile => {
+        const minimize = tile.querySelector('[data-mk-minimize]');
+        minimize?.addEventListener('click', event => {
+          event.preventDefault();
+          event.stopPropagation();
+          tile.classList.toggle('is-minimized');
+          minimize.textContent = tile.classList.contains('is-minimized') ? '+' : '−';
+          save();
+        });
+
+        const drag = tile.querySelector('[data-mk-drag]');
+        if (drag) {
+          drag.draggable = true;
+          drag.addEventListener('dragstart', event => {
+            draggedTile = tile;
+            tile.classList.add('is-dragging');
+            event.dataTransfer.effectAllowed = 'move';
+            event.dataTransfer.setData('text/plain', tile.dataset.mkTile || 'tile');
+          });
+          drag.addEventListener('dragend', () => {
+            tile.classList.remove('is-dragging');
+            draggedTile = null;
+            save();
+          });
+        }
+        tile.addEventListener('dragover', event => {
+          if (!draggedTile || draggedTile === tile) return;
+          event.preventDefault();
+          const rect = tile.getBoundingClientRect();
+          const before = event.clientY < rect.top + rect.height / 2 ||
+            (Math.abs(event.clientY - (rect.top + rect.height / 2)) < rect.height * .22 && event.clientX < rect.left + rect.width / 2);
+          canvas.insertBefore(draggedTile, before ? tile : tile.nextSibling);
+        });
+      });
+    }
+
     restore();
     canvasApis.push({save, reset});
 

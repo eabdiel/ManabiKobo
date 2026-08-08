@@ -13,6 +13,23 @@
   const stateKey = `tij.phrases.v220.${deck}.${lang}`;
   const layoutKey = `tij.phrases.layout.v222.${deck}.${lang}`;
   let state = {memorized: [], notes: '', search: '', category: '', focus: false, memorizedOnly: false, order: items.map(x => x.id)};
+
+  // One-time compatibility migration: if the user studied the two former
+  // phrase pages, preserve their memorized marks when opening the merged deck.
+  if (deck === 'memory-monologue' && !localStorage.getItem(stateKey)) {
+    try {
+      const first = JSON.parse(localStorage.getItem(`tij.phrases.v220.phrases-1.${lang}`) || '{}');
+      const second = JSON.parse(localStorage.getItem(`tij.phrases.v220.phrases-2.${lang}`) || '{}');
+      const memorized = [
+        ...(first.memorized || []).map(Number),
+        ...(second.memorized || []).map(id => Number(id) + 100),
+      ];
+      if (memorized.length || first.notes || second.notes) {
+        const migrated = {...state, memorized:[...new Set(memorized)], notes:[first.notes, second.notes].filter(Boolean).join('\n\n')};
+        localStorage.setItem(stateKey, JSON.stringify(migrated));
+      }
+    } catch (_) {}
+  }
   try { state = {...state, ...JSON.parse(localStorage.getItem(stateKey) || '{}')}; } catch (_) {}
   const save = () => localStorage.setItem(stateKey, JSON.stringify(state));
   const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
