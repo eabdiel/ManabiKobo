@@ -1,4 +1,4 @@
-const CACHE_NAME = "manabi-kobo-shell-v3";
+const CACHE_NAME = "manabi-kobo-shell-v5";
 const SHELL_ASSETS = [
   "/static/css/design-tokens.css",
   "/static/css/app.css",

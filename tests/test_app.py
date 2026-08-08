@@ -146,3 +146,42 @@ def test_tutorial_static_assets_are_served(client):
         assert response.status_code == 200, path
 
 
+
+
+def test_global_day_night_toggle_is_wired(client):
+    response = client.get("/en/")
+    assert response.status_code == 200
+    assert b'data-theme-toggle' in response.data
+    assert b'mk.preferences.theme' in response.data
+
+    app_js = client.get("/static/js/app.js")
+    assert app_js.status_code == 200
+    assert b'mk.preferences.theme' in app_js.data
+    assert b'data-theme-toggle' in app_js.data
+
+    tokens = client.get("/static/css/design-tokens.css")
+    assert tokens.status_code == 200
+    assert b'html[data-theme="night"]' in tokens.data
+
+
+def test_service_worker_cache_version_updated_for_theme_release(client):
+    response = client.get("/service-worker.js")
+    assert response.status_code == 200
+    assert b'manabi-kobo-shell-v4' in response.data
+
+
+def test_how_to_night_mode_uses_canonical_theme_tokens():
+    from pathlib import Path
+    css = Path("app/static/css/how-to-use.css").read_text(encoding="utf-8")
+    assert 'html[data-theme="night"] .guide-hero-copy' in css
+    assert 'background:var(--surface2)' in css
+    assert 'color:var(--ink)' in css
+    assert 'var(--surface-2' not in css
+    assert 'var(--text-muted' not in css
+
+def test_how_to_css_cache_version_is_current(client):
+    for url in ("/en/how-to-use/", "/en/how-to-use/desktop/", "/en/how-to-use/mobile/"):
+        response = client.get(url)
+        assert response.status_code == 200
+        assert b"how-to-use.css" in response.data
+        assert b"v=1.0.2" in response.data

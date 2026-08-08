@@ -33,7 +33,7 @@
 .ide-tabs{display:flex;gap:5px;border-bottom:1px solid var(--mk-line);padding:6px;overflow:auto}
 .ide-tabs button{white-space:nowrap;border:1px solid var(--mk-line);background:var(--mk-surface-alt);padding:5px 8px;border-radius:6px;font:11px var(--mk-font-code);cursor:pointer}
 .ide-tabs button.active{color:var(--mk-red);font-weight:900}
-.ide-code{box-sizing:border-box;width:100%;height:505px;resize:none;border:0;outline:0;padding:15px;background:#fffdfa;color:#24201d;font:13px/1.7 var(--mk-font-code);tab-size:4}
+.ide-code{box-sizing:border-box;width:100%;height:505px;resize:none;border:0;outline:0;padding:15px;background:var(--surface);color:var(--ink);font:13px/1.7 var(--mk-font-code);tab-size:4}
 .ide-compile-status{padding:12px;border-radius:8px;background:#eaf6ee;color:var(--mk-success);font-weight:900;margin:8px}
 .ide-compile-status.bad{background:#fbe7e4;color:#a72b1a}
 .ide-diagnostic{display:block;width:calc(100% - 16px);text-align:left;border:0;border-radius:9px;margin:8px;padding:10px;cursor:pointer}
@@ -56,7 +56,7 @@
 .ide-guide-grid section{background:var(--mk-surface-alt);border:1px solid var(--mk-line);border-radius:9px;padding:10px}
 .ide-guide-grid p{margin:5px 0;color:var(--mk-muted);font-size:.78rem}
 .ide-tutorials details{margin:4px 8px;padding:8px;border:1px solid var(--mk-line);border-radius:8px}
-.ide-tutorials pre{overflow:auto;background:#fffdfa;padding:8px}
+.ide-tutorials pre{overflow:auto;background:var(--surface2);padding:8px}
 .ide-tutorial-roadmap{display:flex;flex-direction:column;gap:4px;margin:8px;padding:8px;border-left:3px solid var(--mk-red);background:var(--mk-surface-alt)}
 .ide-research-note{background:var(--mk-surface-alt);padding:9px;border-radius:8px;color:var(--mk-muted);font-size:.78rem}
 .ide-statusbar{display:flex;justify-content:space-between;padding:7px 4px;color:var(--mk-muted);font:11px var(--mk-font-code)}

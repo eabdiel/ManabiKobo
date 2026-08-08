@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="{{ lang }}">
+<html lang="{{ lang }}" data-theme="day">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#B63B20">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5f2eb" data-theme-color>
+  <script>try{const t=localStorage.getItem("mk.preferences.theme")==="night"?"night":"day";document.documentElement.dataset.theme=t;document.querySelector('meta[data-theme-color]')?.setAttribute("content",t==="night"?"#0d1114":"#f5f2eb")}catch(_){document.documentElement.dataset.theme="day"}</script>
   <meta name="application-name" content="Manabi Kōbō">
   <meta name="description" content="{% block meta_description %}Manabi Kōbō is a free bilingual Japanese learning toolkit for developers, engineers, technology professionals, and independent learners.{% endblock %}">
   <meta name="mobile-web-app-capable" content="yes">
@@ -16,9 +17,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icons/favicon-16x16.png') }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}">
   <link rel="manifest" href="{{ url_for('static', filename='icons/site.webmanifest') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/design-tokens.css') }}?v=1.0.18">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}?v=1.0.18">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/workbench.css') }}?v=1.0.18">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/design-tokens.css') }}?v=1.0.19">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}?v=1.0.19">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/workbench.css') }}?v=1.0.19">
 </head>
 <body data-lang="{{ lang }}" data-page="{{ current.slug if current else '' }}">
 <a class="skip-link" href="#main">{{ 'Skip to content' if lang=='en' else 'Saltar al contenido' }}</a>
@@ -34,6 +35,7 @@
       <button class="language-switch header-layout-button" type="button" data-mk-reset-page title="{{ 'Reset dashboard layout' if lang=='en' else 'Restablecer diseño del panel' }}"><span class="header-layout-icon" aria-hidden="true">↺</span><span class="header-layout-label">{{ 'Reset' if lang=='en' else 'Restablecer' }}</span></button>
     </div>
     {% endif %}
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="{{ 'Switch to night mode' if lang=='en' else 'Cambiar a modo nocturno' }}" title="{{ 'Day / Night mode' if lang=='en' else 'Modo día / noche' }}"><span class="theme-toggle__icon" aria-hidden="true">☾</span></button>
     <a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a>
   </div>
 </header>
@@ -54,5 +56,5 @@
     </div>
   </section>
 </div>
-<script type="module" src="{{ url_for('static',filename='js/app.js') }}"></script><script src="{{ url_for('static',filename='js/workbench-core.js') }}" defer></script><script src="{{ url_for('static',filename='js/install-app.js') }}" defer></script>{% block scripts %}{% endblock %}
+<script type="module" src="{{ url_for('static',filename='js/app.js') }}?v=1.0.19"></script><script src="{{ url_for('static',filename='js/workbench-core.js') }}" defer></script><script src="{{ url_for('static',filename='js/install-app.js') }}" defer></script>{% block scripts %}{% endblock %}
 </body></html>

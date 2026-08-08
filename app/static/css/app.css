@@ -986,3 +986,70 @@ Home catalog workbench — movable/resizable catalog tiles
 
 /* How-to placeholder */
 .stub-page{max-width:980px;margin:0 auto;padding:24px}.stub-page h1{margin:.35rem 0 1.2rem}.stub-card{min-height:260px;display:grid;place-items:center;border:1px solid var(--line);border-radius:20px;background:var(--surface);box-shadow:var(--shadow)}.stub-card strong{font-size:clamp(1.4rem,3vw,2.2rem);color:var(--primary)}
+
+/* =============================================================================
+Global Day / Night mode v1.0.19
+Keeps the professional Manabi Kōbō palette while switching the complete shell,
+workbenches, reader, guides, and native tools between light and dark surfaces.
+============================================================================= */
+html[data-theme="day"]{
+  --bg:var(--mk-bg);--surface:var(--mk-surface);--surface2:var(--mk-surface-alt);
+  --ink:var(--mk-ink);--muted:var(--mk-muted);--primary:var(--mk-red);
+  --secondary:var(--mk-red-dark);--accent:var(--mk-gold);--line:var(--mk-line);
+  --shadow:var(--mk-shadow);--hero-filter:none;
+}
+html[data-theme="night"]{
+  --bg:var(--mk-bg);--surface:var(--mk-surface);--surface2:var(--mk-surface-alt);
+  --ink:var(--mk-ink);--muted:var(--mk-muted);--primary:var(--mk-red);
+  --secondary:var(--mk-red-dark);--accent:var(--mk-gold);--line:var(--mk-line);
+  --shadow:var(--mk-shadow);--hero-filter:brightness(.72) saturate(.9);
+  --panel:var(--mk-surface);--panel-soft:var(--mk-surface-alt);--field:var(--mk-surface-alt);
+  --border:var(--mk-line);--text:var(--mk-ink);--text-muted:var(--mk-muted);
+  --accent-soft:color-mix(in srgb,var(--mk-red) 18%,var(--mk-surface));
+}
+html[data-theme="night"] body{
+  background:radial-gradient(circle at 8% -4%,color-mix(in srgb,var(--primary) 12%,transparent),transparent 34%),linear-gradient(180deg,#0d1114 0%,#11171b 100%);
+}
+html[data-theme="night"] .topbar{background:color-mix(in srgb,var(--surface) 94%,transparent)}
+html[data-theme="night"] .sidebar{background:color-mix(in srgb,var(--surface) 97%,transparent)}
+html[data-theme="night"] .desktop-nav a:hover,
+html[data-theme="night"] .desktop-nav a.active,
+html[data-theme="night"] .side-link:hover,
+html[data-theme="night"] .side-link.active{background:var(--surface2);color:var(--primary)}
+html[data-theme="night"] .study-tip,
+html[data-theme="night"] .professional-note{background:color-mix(in srgb,var(--primary) 9%,var(--surface2))}
+html[data-theme="night"] .page-header{background:linear-gradient(135deg,var(--surface),var(--surface2))}
+html[data-theme="night"] .tool-icon{background:var(--surface2);color:var(--primary)}
+html[data-theme="night"] #tool-frame{background:var(--surface)}
+html[data-theme="night"] .memory-anchor{background:var(--surface2);border-color:var(--line)}
+html[data-theme="night"] .kanji-study-card>header{background:linear-gradient(135deg,var(--surface2),var(--surface))}
+html[data-theme="night"] .reference-hero-copy,
+html[data-theme="night"] .current-stack-panel,
+html[data-theme="night"] .current-stack-panel.reference-feature-tile,
+html[data-theme="night"] .learning-path-section.reference-feature-tile{background:linear-gradient(135deg,var(--surface),var(--surface2));border-color:var(--line)}
+html[data-theme="night"] .current-stack-tags span{background:var(--surface2);color:var(--ink)}
+html[data-theme="night"] .learning-path-grid article,
+html[data-theme="night"] .learning-path-section.reference-feature-tile .learning-path-grid article{background:linear-gradient(180deg,var(--surface),var(--surface2));border-color:var(--line)}
+html[data-theme="night"] .affiliate-disclosure-panel{background:color-mix(in srgb,var(--accent) 10%,var(--surface))}
+html[data-theme="night"] .resource-badge--affiliate{background:color-mix(in srgb,var(--primary) 20%,var(--surface));color:#ffb49e}
+html[data-theme="night"] .resource-badge--direct{background:color-mix(in srgb,var(--mk-success) 18%,var(--surface));color:#a7d9b9}
+html[data-theme="night"] .creator-card,
+html[data-theme="night"] .reference-closing,
+html[data-theme="night"] .learning-path-grid .path-daily,
+html[data-theme="night"] .learning-path-section.reference-feature-tile .learning-path-grid .path-daily{background:linear-gradient(135deg,#111518,#242a2f)}
+html[data-theme="night"] .creator-card .resource-button--secondary{background:var(--surface2);color:var(--ink)!important}
+html[data-theme="night"] .guide-choice-card img,
+html[data-theme="night"] .manual-screenshot-row img{background:#101417}
+html[data-theme="night"] .install-dialog-card,
+html[data-theme="night"] .install-platform-grid>div{background:var(--surface);color:var(--ink);border-color:var(--line)}
+
+.theme-toggle{
+  width:40px;height:40px;border:1px solid var(--line);border-radius:12px;
+  background:var(--surface);color:var(--ink);display:grid;place-items:center;
+  cursor:pointer;font:inherit;transition:background .15s ease,border-color .15s ease,transform .15s ease;
+}
+.theme-toggle:hover{background:var(--surface2);border-color:var(--primary);transform:translateY(-1px)}
+.theme-toggle:active{transform:translateY(0)}
+.theme-toggle:focus-visible{outline:3px solid color-mix(in srgb,var(--primary) 24%,transparent);outline-offset:2px}
+.theme-toggle .theme-toggle__icon{font-size:1.05rem;line-height:1}
+@media(max-width:800px){.theme-toggle{width:40px;height:40px}}

@@ -7,3 +7,17 @@
  --mk-font-jp:"Noto Sans JP","Yu Gothic UI","Meiryo",sans-serif;
  --mk-font-code:"JetBrains Mono","Cascadia Code",monospace;
 }
+
+/* v1.0.19 — Global day/night theme tokens. Day remains the default Manabi Kōbō palette. */
+html[data-theme="day"]{
+ --mk-bg:#f5f2eb;--mk-surface:#fffdfa;--mk-surface-alt:#ece6dc;--mk-ink:#181a1b;
+ --mk-muted:#666b6f;--mk-red:#a9321b;--mk-red-dark:#762315;--mk-gold:#b18a50;
+ --mk-line:#d8d0c4;--mk-success:#2f6c50;--mk-shadow:0 10px 30px rgba(33,27,21,.09);
+ color-scheme:light;
+}
+html[data-theme="night"]{
+ --mk-bg:#0d1114;--mk-surface:#171c20;--mk-surface-alt:#22292f;--mk-ink:#f5f0e9;
+ --mk-muted:#b9b2aa;--mk-red:#dc6648;--mk-red-dark:#f08061;--mk-gold:#d5ad69;
+ --mk-line:#394249;--mk-success:#72b78f;--mk-shadow:0 14px 34px rgba(0,0,0,.34);
+ color-scheme:dark;
+}
