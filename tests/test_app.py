@@ -104,3 +104,31 @@ def test_language_ide_route_and_assets_render():
     ):
         asset = client.get(path)
         assert asset.status_code == 200, path
+
+
+def test_how_to_use_guides_render():
+    app = create_app()
+    app.config.update(TESTING=True)
+    client = app.test_client()
+
+    for path in (
+        "/en/how-to-use/",
+        "/en/how-to-use/desktop/",
+        "/en/how-to-use/mobile/",
+        "/es/how-to-use/desktop/",
+        "/es/how-to-use/mobile/",
+    ):
+        response = client.get(path)
+        assert response.status_code == 200, path
+
+
+def test_reference_intro_uses_neutral_engineering_title():
+    app = create_app()
+    app.config.update(TESTING=True)
+    client = app.test_client()
+
+    response = client.get("/en/reference-hub/")
+    assert response.status_code == 200
+    assert b"Software and Reliability Engineer" in response.data
+    assert b"software and SAP professional" not in response.data
+    assert b"I needed a practical workspace" in response.data

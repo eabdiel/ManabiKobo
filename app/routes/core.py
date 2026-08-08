@@ -23,6 +23,13 @@ def home(lang):
     if not is_valid_language(lang): abort(404)
     return render_template("home.html",lang=lang,current=get_page("home"))
 
+
+@core_bp.get("/<lang>/how-to-use/<guide>/")
+def how_to_guide(lang, guide):
+    if not is_valid_language(lang): abort(404)
+    if guide not in {"desktop", "mobile"}: abort(404)
+    return render_template("how_to_guide.html", lang=lang, current=get_page("how-to-use"), guide=guide)
+
 @core_bp.get("/<lang>/<slug>/")
 def tool_page(lang,slug):
     if not is_valid_language(lang): abort(404)

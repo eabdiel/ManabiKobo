@@ -1,9 +1,49 @@
 {% extends "base.html" %}
-{% block title %}{{ 'How to Use the Site' if lang=='en' else 'Cómo usar el sitio' }} — Manabi Kōbō{% endblock %}
+{% block title %}{{ 'How to Use Manabi Kōbō — Japanese Learning Guide' if lang=='en' else 'Cómo usar Manabi Kōbō — Guía de aprendizaje de japonés' }}{% endblock %}
+{% block meta_description %}{{ 'Learn how to use Manabi Kōbō, a free bilingual Japanese study toolkit for developers and technology professionals. Choose a desktop or mobile guide and learn how each study tool can supplement your Japanese learning.' if lang=='en' else 'Aprende a usar Manabi Kōbō, una herramienta gratuita y bilingüe de estudio de japonés para desarrolladores y profesionales de tecnología. Elige una guía de escritorio o móvil y aprende cómo cada herramienta puede complementar tu estudio.' }}{% endblock %}
 {% block content %}
-<section class="stub-page">
-  <span class="section-kicker">{{ 'HOW TO USE MANABI KŌBŌ' if lang=='en' else 'CÓMO USAR MANABI KŌBŌ' }}</span>
-  <h1>{{ 'How to Use the Site' if lang=='en' else 'Cómo usar el sitio' }}</h1>
-  <div class="stub-card"><strong>{{ 'In the works!' if lang=='en' else '¡En desarrollo!' }}</strong></div>
+<section class="guide-hero">
+  <div class="guide-hero-copy">
+    <span class="section-kicker">{{ 'HOW TO USE MANABI KŌBŌ' if lang=='en' else 'CÓMO USAR MANABI KŌBŌ' }}</span>
+    <h1>{{ 'Your guide to the learning workbench' if lang=='en' else 'Tu guía del entorno de aprendizaje' }}</h1>
+    <p>{{ 'Manabi Kōbō is a free bilingual study toolkit built to supplement your Japanese learning with repeatable practice, reading, technical vocabulary, and software-engineering-style workflows.' if lang=='en' else 'Manabi Kōbō es una herramienta gratuita y bilingüe creada para complementar tu aprendizaje de japonés con práctica repetible, lectura, vocabulario técnico y flujos inspirados en la ingeniería de software.' }}</p>
+    <div class="guide-flow" aria-label="Learning workflow"><span>{{ 'Learn' if lang=='en' else 'Aprender' }}</span><b>→</b><span>{{ 'Practice' if lang=='en' else 'Practicar' }}</span><b>→</b><span>{{ 'Read' if lang=='en' else 'Leer' }}</span><b>→</b><span>{{ 'Build' if lang=='en' else 'Construir' }}</span><b>→</b><span>{{ 'Apply' if lang=='en' else 'Aplicar' }}</span></div>
+  </div>
+  <aside class="guide-note"><strong>{{ 'A supplement, not a replacement' if lang=='en' else 'Un complemento, no un reemplazo' }}</strong><p>{{ 'Use the site alongside a course, tutor, textbook, audio program, immersion, or your own study plan. The goal is to give you a practical place to reinforce what you are already learning.' if lang=='en' else 'Usa el sitio junto con un curso, tutor, libro, programa de audio, inmersión o tu propio plan. La meta es ofrecerte un lugar práctico para reforzar lo que ya estás aprendiendo.' }}</p></aside>
+</section>
+
+<section class="guide-choice-section">
+  <div class="section-heading"><span class="section-kicker">{{ 'CHOOSE YOUR MANUAL' if lang=='en' else 'ELIGE TU MANUAL' }}</span><h2>{{ 'Same tools, different screen experience' if lang=='en' else 'Las mismas herramientas, una experiencia distinta según la pantalla' }}</h2></div>
+  <div class="guide-choice-grid">
+    <article class="guide-choice-card guide-choice-card--desktop">
+      <img src="{{ url_for('static',filename='assets/tutorial/desktop-home.png') }}" alt="{{ 'Manabi Kōbō desktop home page with sidebar and workbench layout' if lang=='en' else 'Página principal de Manabi Kōbō en escritorio con barra lateral y entorno de trabajo' }}">
+      <div><span class="resource-badge resource-badge--direct">{{ 'RECOMMENDED EXPERIENCE' if lang=='en' else 'EXPERIENCIA RECOMENDADA' }}</span><h3>{{ 'Desktop / Laptop Guide' if lang=='en' else 'Guía para escritorio / portátil' }}</h3><p>{{ 'Best for the Language IDE, side-by-side Tsundoku reading, larger workbenches, and custom dashboard layouts.' if lang=='en' else 'Ideal para Language IDE, lectura paralela en Tsundoku, entornos amplios y diseños personalizados.' }}</p><a class="resource-button" href="{{ url_for('core.how_to_guide',lang=lang,guide='desktop') }}">{{ 'Open desktop guide' if lang=='en' else 'Abrir guía de escritorio' }} →</a></div>
+    </article>
+    <article class="guide-choice-card guide-choice-card--mobile">
+      <img src="{{ url_for('static',filename='assets/tutorial/mobile-home.jpg') }}" alt="{{ 'Manabi Kōbō mobile layout on an Android foldable phone' if lang=='en' else 'Diseño móvil de Manabi Kōbō en un teléfono plegable Android' }}">
+      <div><span class="resource-badge resource-badge--neutral">{{ 'PHONE · TABLET · FOLDABLE' if lang=='en' else 'TELÉFONO · TABLETA · PLEGABLE' }}</span><h3>{{ 'Mobile / Foldable Guide' if lang=='en' else 'Guía móvil / plegable' }}</h3><p>{{ 'Learn the compact navigation, stacked workbenches, touch controls, and how to study comfortably on smaller screens.' if lang=='en' else 'Aprende la navegación compacta, paneles apilados, controles táctiles y cómo estudiar cómodamente en pantallas pequeñas.' }}</p><a class="resource-button resource-button--secondary" href="{{ url_for('core.how_to_guide',lang=lang,guide='mobile') }}">{{ 'Open mobile guide' if lang=='en' else 'Abrir guía móvil' }} →</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="guide-start-section">
+  <div class="section-heading"><span class="section-kicker">{{ 'WHERE SHOULD I START?' if lang=='en' else '¿POR DÓNDE EMPIEZO?' }}</span><h2>{{ 'Pick the tool that matches the skill you want to reinforce' if lang=='en' else 'Elige la herramienta según la habilidad que quieras reforzar' }}</h2></div>
+  <div class="guide-start-grid">
+    {% set starts = [
+      ('kana-dojo','あ','New to kana','Nuevo con kana','Recognize hiragana and katakana through short drills.','Reconoce hiragana y katakana con ejercicios cortos.'),
+      ('memory-monologue','話','Need usable phrases','Necesitas frases útiles','Build recall for thoughts, everyday language, and internal monologue.','Refuerza frases cotidianas, pensamientos y monólogo interno.'),
+      ('tsundoku','積','Ready to read','Listo para leer','Compare guided Japanese with English or Spanish and inspect grammar relationships.','Compara japonés guiado con inglés o español y observa relaciones gramaticales.'),
+      ('sentence-builder','文','Building sentences','Construyendo oraciones','Practice Japanese word order and sentence patterns.','Practica el orden de palabras y patrones de oraciones.'),
+      ('tech-office-talk','⌘','Professional Japanese','Japonés profesional','Rehearse phrases for meetings, tickets, troubleshooting, and delivery work.','Practica frases para reuniones, tickets, solución de problemas y entregas.'),
+      ('language-ide','</>','Think like an engineer','Pensar como ingeniero','Compile and debug Japanese using software-development metaphors.','Compila y depura japonés usando metáforas de desarrollo de software.')
+    ] %}
+    {% for slug,icon,title_en,title_es,desc_en,desc_es in starts %}<a class="guide-start-card" href="{{ url_for('core.tool_page',lang=lang,slug=slug) }}"><span>{{ icon }}</span><div><b>{{ title_en if lang=='en' else title_es }}</b><p>{{ desc_en if lang=='en' else desc_es }}</p></div></a>{% endfor %}
+  </div>
+</section>
+
+<section class="guide-principles">
+  <div><span class="section-kicker">{{ 'A SIMPLE STUDY LOOP' if lang=='en' else 'UN CICLO DE ESTUDIO SIMPLE' }}</span><h2>{{ 'Use fewer tools with more intention' if lang=='en' else 'Usa menos herramientas con más intención' }}</h2></div>
+  <ol><li><b>1</b><span>{{ 'Choose one skill for the session.' if lang=='en' else 'Elige una habilidad para la sesión.' }}</span></li><li><b>2</b><span>{{ 'Spend 10–20 focused minutes in the matching tool.' if lang=='en' else 'Dedica 10–20 minutos enfocados en la herramienta adecuada.' }}</span></li><li><b>3</b><span>{{ 'Save one phrase, pattern, or reading insight worth reusing.' if lang=='en' else 'Guarda una frase, patrón o idea de lectura que puedas reutilizar.' }}</span></li><li><b>4</b><span>{{ 'Apply it in your course, notes, conversation, or work context.' if lang=='en' else 'Aplícalo en tu curso, notas, conversación o contexto de trabajo.' }}</span></li></ol>
 </section>
 {% endblock %}
+{% block scripts %}<link rel="stylesheet" href="{{ url_for('static',filename='css/how-to-use.css') }}?v=1.0.0">{% endblock %}
